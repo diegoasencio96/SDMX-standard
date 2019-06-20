@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<endpoints version="2.0" xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime">
-  <endpoint implementation="org.estat.nsi.ws.NSIService" name="NSIEstatV20Service" url-pattern="/NSIEstatV20Service"/>
-  <endpoint implementation="org.estat.nsi.ws.NSIStdService" name="NSIStdV20Service" url-pattern="/NSIStdV20Service"/>
-  <endpoint implementation="org.estat.nsi.ws.NSIStdService21" name="NSIStdV21Service" url-pattern="/NSIStdV21Service"/>
-</endpoints>
