@@ -45,7 +45,7 @@ Las herramientas de escritorio _Data Structure Wizard_ y _Mapping Assistant_ se 
 
 <br>
 
-## Despliegue 📦
+### Despliegue 📦
 
 _El despliegue se puede ejecutar en cualquier Sistema Operativo que tenga Docker y Docker Compose. Preferiblemente Linux_
 
