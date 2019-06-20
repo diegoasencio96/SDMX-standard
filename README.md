@@ -62,7 +62,7 @@ docker-compose up -d
 
 <br>
 
-## Autores :clap:
+## Autores :star2:
 
 * **Diego Asencio** - *Trabajo Inicial* - [diegoasencio96](https://github.com/diegoasencio96)
 
@@ -86,4 +86,4 @@ Este proyecto está bajo la Licencia (GNU General Public License v3.0) - mira el
 <br>
 
 ---
-⌨️ con :heartpulse: por [diegoasencio96](https://github.com/diegoasencio96) :man:
+:keyboard: con :heartpulse: por [diegoasencio96](https://github.com/diegoasencio96) :man:
