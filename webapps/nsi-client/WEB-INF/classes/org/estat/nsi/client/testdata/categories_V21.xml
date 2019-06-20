@@ -1,0 +1,173 @@
+         <mes:Structure xmlns:com="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common" 
+		                xmlns:mes="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message" 
+						xmlns:str="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure">
+            <mes:Header>
+               <mes:ID>IDREF2</mes:ID>
+               <mes:Test>false</mes:Test>
+               <mes:Prepared>2013-07-23T07:33:57.190Z</mes:Prepared>
+               <mes:Sender id="Unknown"/>
+               <mes:Receiver id="Unknown"/>
+            </mes:Header>
+            <mes:Structures>
+               <str:CategorySchemes>
+                  <str:CategoryScheme agencyID="ESTAT" id="ESTAT_DATAFLOWS_SCHEME" isFinal="true" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.CategoryScheme=ESTAT:ESTAT_DATAFLOWS_SCHEME(1.1)" version="1.1">
+				    <com:Annotations>
+					  <com:Annotation>
+						<com:AnnotationType>CategoryScheme_node_order</com:AnnotationType>
+						<com:AnnotationText xml:lang="en">1</com:AnnotationText>
+					  </com:Annotation>
+				     </com:Annotations>
+                     <com:Name xml:lang="en">A category scheme of Eurostat"s dataflows</com:Name>
+                     <com:Description xml:lang="en">A scheme to group dataflows used by Eurostat. At this version contains all STS related dataflows.</com:Description>
+                     <str:Category id="14" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=ESTAT:ESTAT_DATAFLOWS_SCHEME(1.1).14">
+    				    <com:Annotations>
+	     				  <com:Annotation>
+				    		<com:AnnotationType>CategoryScheme_node_order</com:AnnotationType>
+			     			<com:AnnotationText xml:lang="en">1</com:AnnotationText>
+		    			  </com:Annotation>
+				        </com:Annotations>
+                        <com:Name xml:lang="en">IT normalisation and collaborative infrastructure for the ESS</com:Name>
+                        <com:Description xml:lang="en">IT normalisation and collaborative infrastructure for the ESS</com:Description>
+                        <str:Category id="14200" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=ESTAT:ESTAT_DATAFLOWS_SCHEME(1.1).14.14200">
+                           <com:Name xml:lang="en">Normalisation of information systems</com:Name>
+                           <str:Category id="SSTSCONS" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=ESTAT:ESTAT_DATAFLOWS_SCHEME(1.1).14.14200.SSTSCONS">
+							  <com:Annotations>
+								<com:Annotation>
+									<com:AnnotationType>CategoryScheme_node_order</com:AnnotationType>
+									<com:AnnotationText xml:lang="en">1</com:AnnotationText>
+								</com:Annotation>
+							  </com:Annotations>
+                              <com:Name xml:lang="en">SODI - Short-term Statistics on Construction</com:Name>							  
+                              <str:Category id="CONS_TTRANS" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=ESTAT:ESTAT_DATAFLOWS_SCHEME(1.1).14.14200.SSTSCONS.CONS_TTRANS">
+								  <com:Annotations>
+									<com:Annotation>
+										<com:AnnotationType>CategoryScheme_node_order</com:AnnotationType>
+										<com:AnnotationText xml:lang="en">1</com:AnnotationText>
+									</com:Annotation>
+								  </com:Annotations>
+                                 <com:Name xml:lang="en">Time transcoding</com:Name>
+                              </str:Category>
+                           </str:Category>
+                           <str:Category id="SSTSIND" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=ESTAT:ESTAT_DATAFLOWS_SCHEME(1.1).14.14200.SSTSIND">
+							  <com:Annotations>
+								<com:Annotation>
+									<com:AnnotationType>CategoryScheme_node_order</com:AnnotationType>
+									<com:AnnotationText xml:lang="en">2</com:AnnotationText>
+								</com:Annotation>
+							  </com:Annotations>
+                              <com:Name xml:lang="en">SODI - Short-term Statistics on Industry</com:Name>
+                           </str:Category>
+                           <str:Category id="SSTSRTD" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=ESTAT:ESTAT_DATAFLOWS_SCHEME(1.1).14.14200.SSTSRTD">
+							  <com:Annotations>
+								<com:Annotation>
+									<com:AnnotationType>CategoryScheme_node_order</com:AnnotationType>
+									<com:AnnotationText xml:lang="en">3</com:AnnotationText>
+								</com:Annotation>
+							  </com:Annotations>
+                              <com:Name xml:lang="en">SODI - Short-term Statistics on Retail Trade</com:Name>
+                           </str:Category>
+                           <str:Category id="SSTSSERV" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=ESTAT:ESTAT_DATAFLOWS_SCHEME(1.1).14.14200.SSTSSERV">
+                              <com:Name xml:lang="en">SODI - Short-term Statistics on Services</com:Name>
+                              <str:Category id="CENSUSHUB_HC6" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=ESTAT:ESTAT_DATAFLOWS_SCHEME(1.1).14.14200.SSTSSERV.CENSUSHUB_HC6">
+								  <com:Annotations>
+									<com:Annotation>
+										<com:AnnotationType>CategoryScheme_node_order</com:AnnotationType>
+										<com:AnnotationText xml:lang="en">4</com:AnnotationText>
+									</com:Annotation>
+								  </com:Annotations>
+                                 <com:Name xml:lang="en">CensusHub HC6</com:Name>
+                              </str:Category>
+                           </str:Category>
+                           <str:Category id="CENCUSHUB" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=ESTAT:ESTAT_DATAFLOWS_SCHEME(1.1).14.14200.CENCUSHUB">
+							  <com:Annotations>
+								<com:Annotation>
+									<com:AnnotationType>CategoryScheme_node_order</com:AnnotationType>
+									<com:AnnotationText xml:lang="en">5</com:AnnotationText>
+								</com:Annotation>
+							  </com:Annotations>
+                              <com:Name xml:lang="en">Cencus Hub</com:Name>
+                              <com:Description xml:lang="en">Cencus Hub</com:Description>
+                           </str:Category>
+                           <str:Category id="DEMO" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=ESTAT:ESTAT_DATAFLOWS_SCHEME(1.1).14.14200.DEMO">
+							  <com:Annotations>
+								<com:Annotation>
+									<com:AnnotationType>CategoryScheme_node_order</com:AnnotationType>
+									<com:AnnotationText xml:lang="en">6</com:AnnotationText>
+								</com:Annotation>
+							  </com:Annotations>
+                              <com:Name xml:lang="en">Demography</com:Name>
+                           </str:Category>
+                           <str:Category id="PC-Axis" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=ESTAT:ESTAT_DATAFLOWS_SCHEME(1.1).14.14200.PC-Axis">
+							  <com:Annotations>
+								<com:Annotation>
+									<com:AnnotationType>CategoryScheme_node_order</com:AnnotationType>
+									<com:AnnotationText xml:lang="en">7</com:AnnotationText>
+								</com:Annotation>
+							  </com:Annotations>
+                              <com:Name xml:lang="en">PC-Axis</com:Name>
+                           </str:Category>
+                           <str:Category id="STSTCONS_ORA" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=ESTAT:ESTAT_DATAFLOWS_SCHEME(1.1).14.14200.STSTCONS_ORA">
+							  <com:Annotations>
+								<com:Annotation>
+									<com:AnnotationType>CategoryScheme_node_order</com:AnnotationType>
+									<com:AnnotationText xml:lang="en">8</com:AnnotationText>
+								</com:Annotation>
+							  </com:Annotations>
+                              <com:Name xml:lang="en">SODI - Short-term Statistics on Construction ORACLE</com:Name>
+                           </str:Category>
+                           <str:Category id="Test_MySQL" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=ESTAT:ESTAT_DATAFLOWS_SCHEME(1.1).14.14200.Test_MySQL">
+							  <com:Annotations>
+								<com:Annotation>
+									<com:AnnotationType>CategoryScheme_node_order</com:AnnotationType>
+									<com:AnnotationText xml:lang="en">9</com:AnnotationText>
+								</com:Annotation>
+							  </com:Annotations>
+                              <com:Name xml:lang="en">Test_MySQL ddbs</com:Name>							  
+                           </str:Category>
+                           <str:Category id="GenTests" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=ESTAT:ESTAT_DATAFLOWS_SCHEME(1.1).14.14200.GenTests">
+							  <com:Annotations>
+								<com:Annotation>
+									<com:AnnotationType>CategoryScheme_node_order</com:AnnotationType>
+									<com:AnnotationText xml:lang="en">10</com:AnnotationText>
+								</com:Annotation>
+							  </com:Annotations>
+                              <com:Name xml:lang="en">General Test category</com:Name>
+                           </str:Category>
+                           <str:Category id="VarData" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=ESTAT:ESTAT_DATAFLOWS_SCHEME(1.1).14.14200.VarData">
+							  <com:Annotations>
+								<com:Annotation>
+									<com:AnnotationType>CategoryScheme_node_order</com:AnnotationType>
+									<com:AnnotationText xml:lang="en">11</com:AnnotationText>
+								</com:Annotation>
+							  </com:Annotations>
+                              <com:Name xml:lang="en">Variable data</com:Name>
+                              <com:Name xml:lang="el">Here was greek description</com:Name>
+                              <com:Description xml:lang="en">Variable dataflows</com:Description>
+                              <com:Description xml:lang="el">Here was greek description</com:Description>
+                           </str:Category>
+                           <str:Category id="testNewLangCat" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=ESTAT:ESTAT_DATAFLOWS_SCHEME(1.1).14.14200.testNewLangCat">
+							  <com:Annotations>
+								<com:Annotation>
+									<com:AnnotationType>CategoryScheme_node_order</com:AnnotationType>
+									<com:AnnotationText xml:lang="en">13</com:AnnotationText>
+								</com:Annotation>
+							  </com:Annotations>
+                              <com:Name xml:lang="en">new language test</com:Name>
+                              <com:Name xml:lang="el">Here was greek description</com:Name>
+                              <com:Name xml:lang="ro">nueva lang rom</com:Name>
+                           </str:Category>
+                           <str:Category id="Misc" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=ESTAT:ESTAT_DATAFLOWS_SCHEME(1.1).14.14200.Misc">
+							  <com:Annotations>
+								<com:Annotation>
+									<com:AnnotationType>CategoryScheme_node_order</com:AnnotationType>
+									<com:AnnotationText xml:lang="en">12</com:AnnotationText>
+								</com:Annotation>
+							  </com:Annotations>
+                              <com:Name xml:lang="en">Misclaneous</com:Name>
+                           </str:Category>
+                        </str:Category>
+                     </str:Category>
+                  </str:CategoryScheme>
+               </str:CategorySchemes>
+            </mes:Structures>
+         </mes:Structure>

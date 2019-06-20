@@ -1,0 +1,16 @@
+version: 
+  '3.3'
+services:
+  tomcat:
+    build:
+      ./docker_images/tomcat/
+    container_name:
+      sdmx_server_tomcat
+    ports:
+      - '8080:8080'
+    volumes:
+      - ./docker_images/tomcat/conf/nsi-jax-ws.xml:/usr/local/tomcat/conf/Catalina/localhost/nsi-jax-ws.xml
+      - ./webapps/nsi-client.war:/usr/local/tomcat/webapps/nsi-client.war
+      - ./webapps/nsi-jax-ws.war:/usr/local/tomcat/webapps/nsi-jax-ws.war
+    restart:
+      on-failure

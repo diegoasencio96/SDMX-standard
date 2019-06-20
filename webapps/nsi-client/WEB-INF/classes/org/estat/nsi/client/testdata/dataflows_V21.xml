@@ -1,0 +1,363 @@
+         <mes:Structure xmlns:com="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common" 
+		                xmlns:mes="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message" 
+						xmlns:str="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure">
+            <mes:Header>
+               <mes:ID>IDREF1</mes:ID>
+               <mes:Test>false</mes:Test>
+               <mes:Prepared>2013-07-23T07:31:01.354Z</mes:Prepared>
+               <mes:Sender id="Unknown"/>
+               <mes:Receiver id="Unknown"/>
+            </mes:Header>
+            <mes:Structures>
+               <str:Dataflows>
+                  <str:Dataflow agencyID="ESTAT" id="CENSUSHUB_HC6" isFinal="true" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:CENSUSHUB_HC6(1.0)" version="1.0">
+					  <com:Annotations>
+						<com:Annotation>
+							<com:AnnotationType>CategoryScheme_node_order</com:AnnotationType>
+							<com:AnnotationText xml:lang="en">3</com:AnnotationText>
+						</com:Annotation>
+					  </com:Annotations>
+                     <com:Name xml:lang="en">Census Hub HC6</com:Name>
+                     <str:Structure>
+                        <Ref agencyID="ESTAT" class="DataStructure" id="HC06" package="datastructure" version="1.0" xmlns=""/>
+                     </str:Structure>
+                  </str:Dataflow>
+                  <str:Dataflow agencyID="ESTAT" id="CENSUSHUB_Q_XS1" isFinal="true" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:CENSUSHUB_Q_XS1(1.0)" version="1.0">
+					  <com:Annotations>
+						<com:Annotation>
+							<com:AnnotationType>CategoryScheme_node_order</com:AnnotationType>
+							<com:AnnotationText xml:lang="en">2</com:AnnotationText>
+						</com:Annotation>
+					  </com:Annotations>
+                     <com:Name xml:lang="en">CENSUSHUB_Q_XS1</com:Name>
+                     <str:Structure>
+                        <Ref agencyID="ESTAT" class="DataStructure" id="CENSUSHUB" package="datastructure" version="1.2" xmlns=""/>
+                     </str:Structure>
+                  </str:Dataflow>
+                  <str:Dataflow agencyID="ESTAT" id="CENSUSHUB_TEST_Q" isFinal="true" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:CENSUSHUB_TEST_Q(1.0)" version="1.0">
+					  <com:Annotations>
+						<com:Annotation>
+							<com:AnnotationType>CategoryScheme_node_order</com:AnnotationType>
+							<com:AnnotationText xml:lang="en">1</com:AnnotationText>
+						</com:Annotation>
+					  </com:Annotations>
+                     <com:Name xml:lang="en">CENCUS_DUMMY</com:Name>
+                     <str:Structure>
+                        <Ref agencyID="ESTAT" class="DataStructure" id="CENSUSHUB_TEST" package="datastructure" version="1.2" xmlns=""/>
+                     </str:Structure>
+                  </str:Dataflow>
+                  <str:Dataflow agencyID="ESTAT" id="CPI_PCAXIS" isFinal="true" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:CPI_PCAXIS(1.0)" version="1.0">
+					  <com:Annotations>
+						<com:Annotation>
+							<com:AnnotationType>CategoryScheme_node_order</com:AnnotationType>
+							<com:AnnotationText xml:lang="en">4</com:AnnotationText>
+						</com:Annotation>
+					  </com:Annotations>
+                     <com:Name xml:lang="en">CPI_PCAXIS</com:Name>
+                     <str:Structure>
+                        <Ref agencyID="ESTAT" class="DataStructure" id="CPI" package="datastructure" version="1.0" xmlns=""/>
+                     </str:Structure>
+                  </str:Dataflow>
+                  <str:Dataflow agencyID="ESTAT" id="CPI_PCAXIS_CV" isFinal="true" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:CPI_PCAXIS_CV(1.0)" version="1.0">
+					  <com:Annotations>
+						<com:Annotation>
+							<com:AnnotationType>CategoryScheme_node_order</com:AnnotationType>
+							<com:AnnotationText xml:lang="en">5</com:AnnotationText>
+						</com:Annotation>
+					  </com:Annotations>
+                     <com:Name xml:lang="en">CPI_PCAXIS_ContVar</com:Name>
+                     <str:Structure>
+                        <Ref agencyID="ESTAT" class="DataStructure" id="CPI" package="datastructure" version="1.0" xmlns=""/>
+                     </str:Structure>
+                  </str:Dataflow>
+                  <str:Dataflow agencyID="ESTAT" id="CPI_PCAXIS_KW" isFinal="true" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:CPI_PCAXIS_KW(1.0)" version="1.0">
+					  <com:Annotations>
+						<com:Annotation>
+							<com:AnnotationType>CategoryScheme_node_order</com:AnnotationType>
+							<com:AnnotationText xml:lang="en">6</com:AnnotationText>
+						</com:Annotation>
+					  </com:Annotations>
+                     <com:Name xml:lang="en">CPI_PCAXIS_Keyword</com:Name>
+                     <str:Structure>
+                        <Ref agencyID="ESTAT" class="DataStructure" id="CPI" package="datastructure" version="1.0" xmlns=""/>
+                     </str:Structure>
+                  </str:Dataflow>
+                  <str:Dataflow agencyID="ESTAT" id="CPI_PCAXIS_TEST" isFinal="true" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:CPI_PCAXIS_TEST(1.0)" version="1.0">
+					  <com:Annotations>
+						<com:Annotation>
+							<com:AnnotationType>CategoryScheme_node_order</com:AnnotationType>
+							<com:AnnotationText xml:lang="en">7</com:AnnotationText>
+						</com:Annotation>
+					  </com:Annotations>
+                     <com:Name xml:lang="en">CPI_PCAXIS_TESTing only exisitng DS</com:Name>
+                     <str:Structure>
+                        <Ref agencyID="ESTAT" class="DataStructure" id="CPI" package="datastructure" version="1.0" xmlns=""/>
+                     </str:Structure>
+                  </str:Dataflow>
+                  <str:Dataflow agencyID="ESTAT" id="CPI_UNION" isFinal="true" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:CPI_UNION(1.0)" version="1.0">
+					  <com:Annotations>
+						<com:Annotation>
+							<com:AnnotationType>CategoryScheme_node_order</com:AnnotationType>
+							<com:AnnotationText xml:lang="en">8</com:AnnotationText>
+						</com:Annotation>
+					  </com:Annotations>
+                     <com:Name xml:lang="en">CPI union for IT and DE</com:Name>
+                     <str:Structure>
+                        <Ref agencyID="ESTAT" class="DataStructure" id="CPI" package="datastructure" version="1.0" xmlns=""/>
+                     </str:Structure>
+                  </str:Dataflow>
+                  <str:Dataflow agencyID="ESTAT" id="DEMOGRAPHY_RQ" isFinal="true" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:DEMOGRAPHY_RQ(1.0)" version="1.0">
+					  <com:Annotations>
+						<com:Annotation>
+							<com:AnnotationType>CategoryScheme_node_order</com:AnnotationType>
+							<com:AnnotationText xml:lang="en">9</com:AnnotationText>
+						</com:Annotation>
+					  </com:Annotations>
+                     <com:Name xml:lang="en">DEMOGRAPHY_RQ</com:Name>
+                     <str:Structure>
+                        <Ref agencyID="ESTAT" class="DataStructure" id="DEMOGRAPHY" package="datastructure" version="2.1" xmlns=""/>
+                     </str:Structure>
+                  </str:Dataflow>
+                  <str:Dataflow agencyID="ESTAT" id="DEMO_XSM" isFinal="true" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:DEMO_XSM(1.0)" version="1.0">
+					  <com:Annotations>
+						<com:Annotation>
+							<com:AnnotationType>CategoryScheme_node_order</com:AnnotationType>
+							<com:AnnotationText xml:lang="en">11</com:AnnotationText>
+						</com:Annotation>
+					  </com:Annotations>
+                     <com:Name xml:lang="en">Demography with XS measure mapping</com:Name>
+                     <str:Structure>
+                        <Ref agencyID="ESTAT" class="DataStructure" id="DEMOGRAPHY" package="datastructure" version="2.1" xmlns=""/>
+                     </str:Structure>
+                  </str:Dataflow>
+                  <str:Dataflow agencyID="ESTAT" id="DEMO_XSM_GROUP" isFinal="true" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:DEMO_XSM_GROUP(1.0)" version="1.0">
+					  <com:Annotations>
+						<com:Annotation>
+							<com:AnnotationType>CategoryScheme_node_order</com:AnnotationType>
+							<com:AnnotationText xml:lang="en">10</com:AnnotationText>
+						</com:Annotation>
+					  </com:Annotations>
+                     <com:Name xml:lang="en">Demo with XS measures mapped and group with MD</com:Name>
+                     <str:Structure>
+                        <Ref agencyID="ESTAT" class="DataStructure" id="DEMOGRAPHY" package="datastructure" version="2.2" xmlns=""/>
+                     </str:Structure>
+                  </str:Dataflow>
+                  <str:Dataflow agencyID="ESTAT" id="HC06_PCAXIS" isFinal="true" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:HC06_PCAXIS(1.0)" version="1.0">
+					  <com:Annotations>
+						<com:Annotation>
+							<com:AnnotationType>CategoryScheme_node_order</com:AnnotationType>
+							<com:AnnotationText xml:lang="en">12</com:AnnotationText>
+						</com:Annotation>
+					  </com:Annotations>
+                     <com:Name xml:lang="en">HC06_PCAXIS</com:Name>
+                     <str:Structure>
+                        <Ref agencyID="ESTAT" class="DataStructure" id="HC06" package="datastructure" version="1.0" xmlns=""/>
+                     </str:Structure>
+                  </str:Dataflow>
+                  <str:Dataflow agencyID="ESTAT" id="SSTSCONS_PROD_A" isFinal="true" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:SSTSCONS_PROD_A(1.0)" version="1.0">
+					  <com:Annotations>
+						<com:Annotation>
+							<com:AnnotationType>CategoryScheme_node_order</com:AnnotationType>
+							<com:AnnotationText xml:lang="en">13</com:AnnotationText>
+						</com:Annotation>
+					  </com:Annotations>
+                     <com:Name xml:lang="en">SSTSCONS_PROD_A</com:Name>
+                     <str:Structure>
+                        <Ref agencyID="ESTAT" class="DataStructure" id="STS" package="datastructure" version="2.2" xmlns=""/>
+                     </str:Structure>
+                  </str:Dataflow>
+                  <str:Dataflow agencyID="ESTAT" id="SSTSCONS_PROD_DT_A" isFinal="true" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:SSTSCONS_PROD_DT_A(1.0)" version="1.0">
+					  <com:Annotations>
+						<com:Annotation>
+							<com:AnnotationType>CategoryScheme_node_order</com:AnnotationType>
+							<com:AnnotationText xml:lang="en">14</com:AnnotationText>
+						</com:Annotation>
+					  </com:Annotations>
+                     <com:Name xml:lang="en">SSTSCONS_PROD_Datetime Annual</com:Name>
+                     <str:Structure>
+                        <Ref agencyID="ESTAT" class="DataStructure" id="STS" package="datastructure" version="2.2" xmlns=""/>
+                     </str:Structure>
+                  </str:Dataflow>
+                  <str:Dataflow agencyID="ESTAT" id="SSTSCONS_PROD_DT_M" isFinal="true" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:SSTSCONS_PROD_DT_M(1.0)" version="1.0">
+					  <com:Annotations>
+						<com:Annotation>
+							<com:AnnotationType>CategoryScheme_node_order</com:AnnotationType>
+							<com:AnnotationText xml:lang="en">15</com:AnnotationText>
+						</com:Annotation>
+					  </com:Annotations>
+                     <com:Name xml:lang="en">SSTSCONS_PROD_ Datetime monthly</com:Name>
+                     <str:Structure>
+                        <Ref agencyID="ESTAT" class="DataStructure" id="STS" package="datastructure" version="2.2" xmlns=""/>
+                     </str:Structure>
+                  </str:Dataflow>
+                  <str:Dataflow agencyID="ESTAT" id="SSTSCONS_PROD_DT_Q" isFinal="true" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:SSTSCONS_PROD_DT_Q(1.0)" version="1.0">
+					  <com:Annotations>
+						<com:Annotation>
+							<com:AnnotationType>CategoryScheme_node_order</com:AnnotationType>
+							<com:AnnotationText xml:lang="en">16</com:AnnotationText>
+						</com:Annotation>
+					  </com:Annotations>
+                     <com:Name xml:lang="en">SSTSCONS_Date column</com:Name>
+                     <str:Structure>
+                        <Ref agencyID="ESTAT" class="DataStructure" id="STS" package="datastructure" version="2.2" xmlns=""/>
+                     </str:Structure>
+                  </str:Dataflow>
+                  <str:Dataflow agencyID="ESTAT" id="SSTSCONS_PROD_MT" isFinal="true" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:SSTSCONS_PROD_MT(1.0)" version="1.0">
+					  <com:Annotations>
+						<com:Annotation>
+							<com:AnnotationType>CategoryScheme_node_order</com:AnnotationType>
+							<com:AnnotationText xml:lang="en">17</com:AnnotationText>
+						</com:Annotation>
+					  </com:Annotations>
+                     <com:Name xml:lang="en">SSTSCONPROD_Monthly Transcoding</com:Name>
+                     <str:Structure>
+                        <Ref agencyID="ESTAT" class="DataStructure" id="STS" package="datastructure" version="2.2" xmlns=""/>
+                     </str:Structure>
+                  </str:Dataflow>
+                  <str:Dataflow agencyID="ESTAT" id="SSTSCONS_PROD_MT2" isFinal="true" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:SSTSCONS_PROD_MT2(1.0)" version="1.0">
+					  <com:Annotations>
+						<com:Annotation>
+							<com:AnnotationType>CategoryScheme_node_order</com:AnnotationType>
+							<com:AnnotationText xml:lang="en">19</com:AnnotationText>
+						</com:Annotation>
+					  </com:Annotations>
+                     <com:Name xml:lang="en">SSTSCONS_PROD_Month Trans 2 cols</com:Name>
+                     <str:Structure>
+                        <Ref agencyID="ESTAT" class="DataStructure" id="STS" package="datastructure" version="2.2" xmlns=""/>
+                     </str:Structure>
+                  </str:Dataflow>
+                  <str:Dataflow agencyID="ESTAT" id="SSTSCONS_PROD_M_2GROUPS" isFinal="true" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:SSTSCONS_PROD_M_2GROUPS(1.0)" version="1.0">
+					  <com:Annotations>
+						<com:Annotation>
+							<com:AnnotationType>CategoryScheme_node_order</com:AnnotationType>
+							<com:AnnotationText xml:lang="en">18</com:AnnotationText>
+						</com:Annotation>
+					  </com:Annotations>
+                     <com:Name xml:lang="en">SSTSCONS_PROD_M_2GROUPS</com:Name>
+                     <str:Structure>
+                        <Ref agencyID="ESTAT" class="DataStructure" id="STS2GRP" package="datastructure" version="2.2" xmlns=""/>
+                     </str:Structure>
+                  </str:Dataflow>
+                  <str:Dataflow agencyID="ESTAT" id="SSTSCONS_PROD_QT" isFinal="true" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:SSTSCONS_PROD_QT(2.0)" version="2.0">
+					  <com:Annotations>
+						<com:Annotation>
+							<com:AnnotationType>CategoryScheme_node_order</com:AnnotationType>
+							<com:AnnotationText xml:lang="en">20</com:AnnotationText>
+						</com:Annotation>
+					  </com:Annotations>
+                     <com:Name xml:lang="en">Production in construction, total, building construction, civil engineering (Quarterly)</com:Name>
+                     <str:Structure>
+                        <Ref agencyID="ESTAT" class="DataStructure" id="STS" package="datastructure" version="2.2" xmlns=""/>
+                     </str:Structure>
+                  </str:Dataflow>
+                  <str:Dataflow agencyID="ESTAT" id="SSTSCONS_PROD_QT2" isFinal="true" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:SSTSCONS_PROD_QT2(1.0)" version="1.0">
+					  <com:Annotations>
+						<com:Annotation>
+							<com:AnnotationType>CategoryScheme_node_order</com:AnnotationType>
+							<com:AnnotationText xml:lang="en">21</com:AnnotationText>
+						</com:Annotation>
+					  </com:Annotations>
+                     <com:Name xml:lang="en">SSTSCONS_PROD_Quarter Trans 2 cols</com:Name>
+                     <str:Structure>
+                        <Ref agencyID="ESTAT" class="DataStructure" id="STS" package="datastructure" version="2.2" xmlns=""/>
+                     </str:Structure>
+                  </str:Dataflow>
+                  <str:Dataflow agencyID="ESTAT" id="SSTSCONS_PROD_QT_ORA" isFinal="true" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:SSTSCONS_PROD_QT_ORA(1.0)" version="1.0">
+					  <com:Annotations>
+						<com:Annotation>
+							<com:AnnotationType>CategoryScheme_node_order</com:AnnotationType>
+							<com:AnnotationText xml:lang="en">22</com:AnnotationText>
+						</com:Annotation>
+					  </com:Annotations>
+                     <com:Name xml:lang="en">STST Construction on production ORACLE msets</com:Name>
+                     <str:Structure>
+                        <Ref agencyID="ESTAT" class="DataStructure" id="STS" package="datastructure" version="2.2" xmlns=""/>
+                     </str:Structure>
+                  </str:Dataflow>
+                  <str:Dataflow agencyID="ESTAT" id="SSTSCONS_PROD_Q_TRANS" isFinal="true" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:SSTSCONS_PROD_Q_TRANS(1.0)" version="1.0">
+					  <com:Annotations>
+						<com:Annotation>
+							<com:AnnotationType>CategoryScheme_node_order</com:AnnotationType>
+							<com:AnnotationText xml:lang="en">23</com:AnnotationText>
+						</com:Annotation>
+					  </com:Annotations>
+                     <com:Name xml:lang="en">SSTSCONS_PROD_Q_TRANS</com:Name>
+                     <str:Structure>
+                        <Ref agencyID="ESTAT" class="DataStructure" id="STS" package="datastructure" version="2.2" xmlns=""/>
+                     </str:Structure>
+                  </str:Dataflow>
+                  <str:Dataflow agencyID="ESTAT" id="SSTSIND_PROD_M" isFinal="true" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:SSTSIND_PROD_M(2.0)" version="2.0">
+                     <com:Name xml:lang="en">Production in INDUSTRY, total, (MONTHLY)</com:Name>
+                     <str:Structure>
+                        <Ref agencyID="ESTAT" class="DataStructure" id="STS" package="datastructure" version="2.2" xmlns=""/>
+                     </str:Structure>
+                  </str:Dataflow>
+                  <str:Dataflow agencyID="ESTAT" id="SSTSIND_PROD_M_GROUP" isFinal="true" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:SSTSIND_PROD_M_GROUP(1.0)" version="1.0">
+					  <com:Annotations>
+						<com:Annotation>
+							<com:AnnotationType>CategoryScheme_node_order</com:AnnotationType>
+							<com:AnnotationText xml:lang="en">24</com:AnnotationText>
+						</com:Annotation>
+					  </com:Annotations>
+                     <com:Name xml:lang="en">SSTSIND_PROD_M_GROUP containing groups</com:Name>
+                     <str:Structure>
+                        <Ref agencyID="ESTAT" class="DataStructure" id="STS" package="datastructure" version="2.5" xmlns=""/>
+                     </str:Structure>
+                  </str:Dataflow>
+                  <str:Dataflow agencyID="ESTAT" id="TEST_MYSQL" isFinal="true" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:TEST_MYSQL(1.0)" version="1.0">
+					  <com:Annotations>
+						<com:Annotation>
+							<com:AnnotationType>CategoryScheme_node_order</com:AnnotationType>
+							<com:AnnotationText xml:lang="en">3</com:AnnotationText>
+						</com:Annotation>
+					  </com:Annotations>
+                     <com:Name xml:lang="en">TEST_MYSQL df</com:Name>
+                     <str:Structure>
+                        <Ref agencyID="ESTAT" class="DataStructure" id="STS" package="datastructure" version="2.2" xmlns=""/>
+                     </str:Structure>
+                  </str:Dataflow>
+                  <str:Dataflow agencyID="ESTAT" id="px_large_df" isFinal="true" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:px_large_df(1.0)" version="1.0">
+					  <com:Annotations>
+						<com:Annotation>
+							<com:AnnotationType>CategoryScheme_node_order</com:AnnotationType>
+							<com:AnnotationText xml:lang="en">25</com:AnnotationText>
+						</com:Annotation>
+					  </com:Annotations>
+                     <com:Name xml:lang="en">px_large_df</com:Name>
+                     <str:Structure>
+                        <Ref agencyID="ESTAT" class="DataStructure" id="DEMOGRAPHY" package="datastructure" version="2.1" xmlns=""/>
+                     </str:Structure>
+                  </str:Dataflow>
+               </str:Dataflows>
+               <str:DataStructures>
+                  <str:DataStructure agencyID="ESTAT" id="CENSUSHUB_TEST" isFinal="true" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=ESTAT:CENSUSHUB_TEST(1.2)" version="1.2" isExternalReference="true" structureURL="http://need/to/change/this">
+		            <com:Annotations>
+		               <com:Annotation>
+		                  <com:AnnotationTitle>Only for SDMX v2.0</com:AnnotationTitle>
+		                  <com:AnnotationText>This is something that can be qiueried using SDMX v2.0</com:AnnotationText>
+		               </com:Annotation>
+		            </com:Annotations>
+                     <com:Name xml:lang="en">CensusHub Data Structure Definition</com:Name>
+                  </str:DataStructure>
+                  <str:DataStructure agencyID="ESTAT" id="CENSUSHUB" isFinal="true" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=ESTAT:CENSUSHUB(1.1)" version="1.1" isExternalReference="true" structureURL="http://need/to/change/this">
+ 					 <com:Annotations>
+					   <com:Annotation>
+						  <com:AnnotationTitle>Only for SDMX v2.0</com:AnnotationTitle>
+						  <com:AnnotationText>This is something that can be qiueried using SDMX v2.0</com:AnnotationText>
+					   </com:Annotation>
+					 </com:Annotations>
+                     <com:Name xml:lang="en">CensusHub Data Structure Definition</com:Name>
+				  </str:DataStructure>
+                  <str:DataStructure agencyID="ESTAT" id="DEMOGRAPHY" isFinal="true" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=ESTAT:DEMOGRAPHY(2.1)" version="2.1" isExternalReference="true" structureURL="http://need/to/change/this">
+ 					 <com:Annotations>
+					   <com:Annotation>
+						  <com:AnnotationTitle>Only for SDMX v2.0</com:AnnotationTitle>
+						  <com:AnnotationText>This is something that can be qiueried using SDMX v2.0</com:AnnotationText>
+					   </com:Annotation>
+					 </com:Annotations>
+                     <com:Name xml:lang="en">Demography Rapid Questionnaire Data Structure Definition</com:Name>
+				  </str:DataStructure>
+               </str:DataStructures>
+
+            </mes:Structures>
+         </mes:Structure>

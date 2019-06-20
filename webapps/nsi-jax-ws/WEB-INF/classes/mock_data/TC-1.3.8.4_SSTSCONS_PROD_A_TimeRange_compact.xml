@@ -1,0 +1,91 @@
+<?xml version="1.0" ?>
+<message:GenericData
+	xmlns:footer="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message/footer"
+	xmlns:generic="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic"
+	xmlns:common="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common"
+	xmlns:message="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<message:Header>
+		<message:ID>SSTSCONS_PROD_A</message:ID>
+		<message:Test>true</message:Test>
+		<message:Prepared>2013-09-17T16:50:30</message:Prepared>
+		<message:Sender id="NS1">
+			<common:Name xml:lang="en">One NSI</common:Name>
+			<message:Contact>
+				<common:Name xml:lang="en">Mr. Smith</common:Name>
+				<message:Department xml:lang="en">nsi dissemination
+				</message:Department>
+				<message:Role xml:lang="en">IT</message:Role>
+				<message:Email>smith@nsi.com</message:Email>
+			</message:Contact>
+			<message:Timezone>+00:00</message:Timezone>
+		</message:Sender>
+		<message:Receiver id="4D0">
+			<common:Name xml:lang="en">Eurostat</common:Name>
+			<message:Contact>
+				<common:Name xml:lang="en">Francesco</common:Name>
+				<message:Department xml:lang="en">ESTAT/B5
+				</message:Department>
+				<message:Role xml:lang="en">IT</message:Role>
+				<message:Email>fr@eurostat.com</message:Email>
+			</message:Contact>
+		</message:Receiver>
+		<message:Receiver id="4D1">
+			<common:Name xml:lang="en">OECD</common:Name>
+			<message:Contact>
+				<common:Name xml:lang="en">Ole</common:Name>
+				<message:Department xml:lang="en">OE dep
+				</message:Department>
+				<message:Role xml:lang="en">Manager</message:Role>
+				<message:Email>Ole@oecd</message:Email>
+			</message:Contact>
+		</message:Receiver>
+		<common:Name xml:lang="en">NSI dissemination WS</common:Name>
+		<message:Structure structureID="ESTAT_STS_2_2"
+			dimensionAtObservation="TIME_PERIOD">
+			<common:Structure>
+				<Ref agencyID="ESTAT" id="STS" version="2.2"></Ref>
+			</common:Structure>
+		</message:Structure>
+		<message:DataSetAction>Information</message:DataSetAction>
+		<message:DataSetID>SSTSCONS_PROD_A_NS1_1379436630538
+		</message:DataSetID>
+		<message:Extracted>2013-09-17T16:50:30</message:Extracted>
+		<message:Source xml:lang="en">This is originated from the
+			One NSI dissemination Web Service in Neveland</message:Source>
+	</message:Header>
+	<message:DataSet structureRef="ESTAT_STS_2_2">
+		<generic:Series>
+			<generic:SeriesKey>
+				<generic:Value id="FREQ" value="A"></generic:Value>
+				<generic:Value id="REF_AREA" value="IT"></generic:Value>
+				<generic:Value id="ADJUSTMENT" value="W"></generic:Value>
+				<generic:Value id="STS_INDICATOR" value="PROD"></generic:Value>
+				<generic:Value id="STS_ACTIVITY" value="NS0020"></generic:Value>
+				<generic:Value id="STS_INSTITUTION" value="1"></generic:Value>
+				<generic:Value id="STS_BASE_YEAR" value="2000"></generic:Value>
+			</generic:SeriesKey>
+			<generic:Attributes>
+				<generic:Value id="COLLECTION" value="A"></generic:Value>
+				<generic:Value id="AVAILABILITY" value="B"></generic:Value>
+				<generic:Value id="TIME_FORMAT" value="P1M"></generic:Value>
+			</generic:Attributes>
+			<generic:Obs>
+				<generic:ObsDimension value="2003"></generic:ObsDimension>
+				<generic:ObsValue value="1.54"></generic:ObsValue>
+				<generic:Attributes>
+					<generic:Value id="OBS_STATUS" value="A"></generic:Value>
+					<generic:Value id="OBS_CONF" value="F"></generic:Value>
+				</generic:Attributes>
+			</generic:Obs>
+			<generic:Obs>
+				<generic:ObsDimension value="2004"></generic:ObsDimension>
+				<generic:ObsValue value="1.61"></generic:ObsValue>
+				<generic:Attributes>
+					<generic:Value id="OBS_STATUS" value="A"></generic:Value>
+					<generic:Value id="OBS_CONF" value="F"></generic:Value>
+				</generic:Attributes>
+			</generic:Obs>
+		</generic:Series>
+	</message:DataSet>
+</message:GenericData>

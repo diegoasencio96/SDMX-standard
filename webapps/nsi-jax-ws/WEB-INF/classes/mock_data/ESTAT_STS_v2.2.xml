@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Structure xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message" xmlns:common="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/common"
+    xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message http://katharma.agilis-sa.gr/SDMXML/SDMXMessage.xsd">
+    <Header>
+        <ID>ESTAT_STS</ID>
+        <Test>false</Test>
+        <Truncated>false</Truncated>
+        <Name xml:lang="en">Short-Terms Statistics DSD</Name>
+        <Prepared>2008-03-21T13:30:00+02:00</Prepared>
+        <Sender id="ESTAT">
+            <Name xml:lang="en">Statistical Office of the European Communities</Name>
+        </Sender>
+        <Extracted>2008-03-21T13:30:00+02:00</Extracted>
+    </Header>
+    <KeyFamilies>
+        <structure:KeyFamily agencyID="ESTAT" id="STS" isExternalReference="false" isFinal="true" version="2.2" validFrom="2008-03-21"
+            validTo="2200-12-31">
+            <structure:Name xml:lang="en">Short Term Statistics</structure:Name>
+            <structure:Components>
+                <structure:Dimension conceptRef="FREQ" conceptSchemeRef="STS_SCHEME" conceptSchemeAgency="ESTAT" 
+                    codelist="CL_FREQ" codelistAgency="ECB" codelistVersion="1.0" isFrequencyDimension="true"/>
+                <structure:Dimension conceptRef="REF_AREA" conceptSchemeRef="STS_SCHEME" conceptSchemeAgency="ESTAT" 
+                    codelist="CL_AREA_EE" codelistAgency="ECB" codelistVersion="2.1"/>
+                <structure:Dimension conceptRef="ADJUSTMENT" conceptSchemeRef="STS_SCHEME" conceptSchemeAgency="ESTAT" 
+                    codelist="CL_ADJUSTMENT" codelistAgency="ECB" codelistVersion="1.1"/>
+                <structure:Dimension conceptRef="STS_INDICATOR" conceptSchemeRef="STS_SCHEME" conceptSchemeAgency="ESTAT" 
+                    codelist="CL_STS_INDICATOR" codelistAgency="ESTAT" codelistVersion="1.0"/>
+                <structure:Dimension conceptRef="STS_ACTIVITY" conceptSchemeRef="STS_SCHEME" conceptSchemeAgency="ESTAT" 
+                    codelist="CL_STS_ACTIVITY" codelistAgency="ESTAT" codelistVersion="1.0"/>
+                <structure:Dimension conceptRef="STS_INSTITUTION" conceptSchemeRef="STS_SCHEME" conceptSchemeAgency="ESTAT" 
+                    codelist="CL_STS_INSTITUTION" codelistAgency="ESTAT" codelistVersion="1.0"/>
+                <structure:Dimension conceptRef="STS_BASE_YEAR" conceptSchemeRef="STS_SCHEME" conceptSchemeAgency="ESTAT" 
+                    codelist="CL_STS_BASE_YEAR" codelistAgency="ESTAT" codelistVersion="1.0"/>
+                <structure:TimeDimension conceptRef="TIME_PERIOD" conceptSchemeRef="STS_SCHEME" conceptSchemeAgency="ESTAT" >
+                    <structure:TextFormat textType="String"/>
+                </structure:TimeDimension>
+                <structure:Group id="Sibling">
+                    <structure:DimensionRef>REF_AREA</structure:DimensionRef>
+                    <structure:DimensionRef>ADJUSTMENT</structure:DimensionRef>
+                    <structure:DimensionRef>STS_INDICATOR</structure:DimensionRef>
+                    <structure:DimensionRef>STS_ACTIVITY</structure:DimensionRef>
+                    <structure:DimensionRef>STS_INSTITUTION</structure:DimensionRef>
+                    <structure:DimensionRef>STS_BASE_YEAR</structure:DimensionRef>
+                </structure:Group>
+                <structure:PrimaryMeasure conceptRef="OBS_VALUE" conceptSchemeRef="STS_SCHEME" conceptSchemeAgency="ESTAT" >
+                    <structure:TextFormat textType="Double"/>
+                </structure:PrimaryMeasure>
+                <structure:Attribute assignmentStatus="Conditional" attachmentLevel="Group" 
+                    conceptRef="TITLE" conceptSchemeRef="STS_SCHEME" conceptSchemeAgency="ESTAT" >
+                    <structure:TextFormat textType="String"/>
+                    <structure:AttachmentGroup>Sibling</structure:AttachmentGroup>
+                </structure:Attribute>
+                <structure:Attribute assignmentStatus="Conditional" attachmentLevel="Group" codelist="CL_UNIT" codelistAgency="ECB"
+                    codelistVersion="2.2" conceptRef="UNIT" conceptSchemeRef="STS_SCHEME" conceptSchemeAgency="ESTAT" >
+                    <structure:AttachmentGroup>Sibling</structure:AttachmentGroup>
+                </structure:Attribute>
+                <structure:Attribute assignmentStatus="Conditional" attachmentLevel="Group" codelist="CL_UNIT_MULT" codelistAgency="ECB"
+                    codelistVersion="1.1" conceptRef="UNIT_MULT" conceptSchemeRef="STS_SCHEME" conceptSchemeAgency="ESTAT" >
+                    <structure:AttachmentGroup>Sibling</structure:AttachmentGroup>
+                </structure:Attribute>
+                <structure:Attribute assignmentStatus="Conditional" attachmentLevel="Group" codelist="CL_DECIMALS" codelistAgency="ECB"
+                    codelistVersion="1.0" conceptRef="DECIMALS" conceptSchemeRef="STS_SCHEME" conceptSchemeAgency="ESTAT" >
+                    <structure:AttachmentGroup>Sibling</structure:AttachmentGroup>
+                </structure:Attribute>
+                <structure:Attribute assignmentStatus="Conditional" attachmentLevel="Series" codelist="CL_COLLECTION" codelistAgency="ECB"
+                    codelistVersion="1.0" conceptRef="COLLECTION" conceptSchemeRef="STS_SCHEME" conceptSchemeAgency="ESTAT" />
+                <structure:Attribute assignmentStatus="Conditional" attachmentLevel="Series" codelist="CL_AVAILABILITY" codelistAgency="ESTAT"
+                    codelistVersion="1.0" conceptRef="AVAILABILITY" conceptSchemeRef="STS_SCHEME" conceptSchemeAgency="ESTAT"
+                />
+                <structure:Attribute assignmentStatus="Conditional" attachmentLevel="Series"
+                    conceptRef="UNIT_INDEX_BASE" conceptSchemeRef="STS_SCHEME" conceptSchemeAgency="ESTAT" >
+                    <structure:TextFormat textType="String"/>
+                </structure:Attribute>
+                <structure:Attribute assignmentStatus="Conditional" attachmentLevel="Group" 
+                    conceptRef="TITLE_COMPL" conceptSchemeRef="STS_SCHEME" conceptSchemeAgency="ESTAT" >
+                    <structure:TextFormat textType="String"/>
+                    <structure:AttachmentGroup>Sibling</structure:AttachmentGroup>
+                </structure:Attribute>
+                <structure:Attribute assignmentStatus="Conditional" attachmentLevel="Group" 
+                    conceptRef="NAT_TITLE" conceptSchemeRef="STS_SCHEME" conceptSchemeAgency="ESTAT" >
+                    <structure:TextFormat textType="String"/>
+                    <structure:AttachmentGroup>Sibling</structure:AttachmentGroup>
+                </structure:Attribute>
+                <structure:Attribute assignmentStatus="Conditional" attachmentLevel="Series" 
+                    conceptRef="DOM_SER_IDS" conceptSchemeRef="STS_SCHEME" conceptSchemeAgency="ESTAT" >
+                    <structure:TextFormat textType="String"/>
+                </structure:Attribute>
+                <structure:Attribute assignmentStatus="Conditional" attachmentLevel="Group" 
+                    conceptRef="COMPILATION" conceptSchemeRef="STS_SCHEME" conceptSchemeAgency="ESTAT" >
+                    <structure:TextFormat textType="String"/>
+                    <structure:AttachmentGroup>Sibling</structure:AttachmentGroup>
+                </structure:Attribute>
+                <structure:Attribute assignmentStatus="Conditional" attachmentLevel="Series" 
+                    conceptRef="BREAKS" conceptSchemeRef="STS_SCHEME" conceptSchemeAgency="ESTAT" >
+                    <structure:TextFormat textType="String"/>
+                </structure:Attribute>
+                <structure:Attribute assignmentStatus="Conditional" attachmentLevel="Group" 
+                    conceptRef="COVERAGE" conceptSchemeRef="STS_SCHEME" conceptSchemeAgency="ESTAT" >
+                    <structure:TextFormat textType="String"/>
+                    <structure:AttachmentGroup>Sibling</structure:AttachmentGroup>
+                </structure:Attribute>
+                <structure:Attribute assignmentStatus="Conditional" attachmentLevel="Group" 
+                    conceptRef="SOURCE_PUB" conceptSchemeRef="STS_SCHEME" conceptSchemeAgency="ESTAT" >
+                    <structure:TextFormat textType="String"/>
+                    <structure:AttachmentGroup>Sibling</structure:AttachmentGroup>
+                </structure:Attribute>
+                <structure:Attribute assignmentStatus="Conditional" attachmentLevel="Group" codelist="CL_ORGANISATION" codelistAgency="ECB"
+                    codelistVersion="1.1" conceptRef="SOURCE_AGENCY" conceptSchemeRef="STS_SCHEME" conceptSchemeAgency="ESTAT"
+                    >
+                    <structure:AttachmentGroup>Sibling</structure:AttachmentGroup>
+                </structure:Attribute>
+                <structure:Attribute assignmentStatus="Conditional" attachmentLevel="Observation" 
+                    conceptRef="OBS_COM" conceptSchemeRef="STS_SCHEME" conceptSchemeAgency="ESTAT" >
+                    <structure:TextFormat textType="String"/>
+                </structure:Attribute>
+                <structure:Attribute assignmentStatus="Mandatory" attachmentLevel="Series" codelist="CL_TIME_FORMAT" codelistAgency="ESTAT"
+                    codelistVersion="1.0" conceptRef="TIME_FORMAT" isTimeFormat="true" conceptSchemeRef="STS_SCHEME" conceptSchemeAgency="ESTAT"
+                />
+                <structure:Attribute assignmentStatus="Mandatory" attachmentLevel="Observation" codelist="CL_OBS_STATUS" codelistAgency="ECB"
+                    codelistVersion="1.0" conceptRef="OBS_STATUS" conceptSchemeRef="STS_SCHEME" conceptSchemeAgency="ESTAT" />
+                <structure:Attribute assignmentStatus="Conditional" attachmentLevel="Observation" codelist="CL_OBS_CONF" codelistAgency="ECB"
+                    codelistVersion="1.0" conceptRef="OBS_CONF" conceptSchemeRef="STS_SCHEME" conceptSchemeAgency="ESTAT" />
+                <structure:Attribute assignmentStatus="Conditional" attachmentLevel="Observation" 
+                    conceptRef="OBS_PRE_BREAK" conceptSchemeRef="STS_SCHEME" conceptSchemeAgency="ESTAT" >
+                    <structure:TextFormat textType="String"/>
+                </structure:Attribute>
+            </structure:Components>
+        </structure:KeyFamily>
+    </KeyFamilies>
+</Structure>

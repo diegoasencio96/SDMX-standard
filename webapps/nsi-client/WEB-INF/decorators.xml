@@ -1,0 +1,9 @@
+<decorators defaultdir="/WEB-INF/decorator">
+    <excludes>
+        <pattern>/ajax/*</pattern>
+        <pattern>/download/*</pattern>
+    </excludes>
+    <decorator name="main" page="main.jsp">
+          <pattern>/*</pattern>
+    </decorator>
+</decorators>

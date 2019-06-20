@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jee="http://www.springframework.org/schema/jee" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+			http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+			http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+			http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
+			http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.5.xsd
+			http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+
+
+	<context:spring-configured />
+
+	<context:annotation-config />
+
+	<aop:aspectj-autoproxy />
+
+	<context:component-scan base-package="org.sdmxsource">
+		<context:exclude-filter type="regex"
+			expression="org\.sdmxsource\.sdmx\.structureparser\.builder\.query\.impl\.QueryBeanBuilderV2" />
+		<context:exclude-filter type="regex"
+			expression="org\.sdmxsource\.sdmx\.structureparser\.builder\.xmlBeans\.v2\.ConceptXmlBeanBuilder" />
+		<context:exclude-filter type="regex"
+			expression="org\.sdmxsource\.sdmx\.structureparser\.builder\.xmlBeans\.v2\.MetadataAttributeXmlBeanBuilder" />
+		<context:exclude-filter type="regex"
+			expression="org\.sdmxsource\.sdmx\.structureparser\.builder\.xmlBeans\.v2\.MetadataStructureDefinitionXmlBeansBuilder" />
+	</context:component-scan>
+
+	<context:component-scan base-package="org.estat">
+		<context:exclude-filter type="regex"
+			expression="org\.estat\.nsi\.spring\.mockup\.MockApplicationConfig" />
+	</context:component-scan>
+	<!-- <context:component-scan base-package="org.estat.dr" /> -->
+
+	<!-- The following beans are required by the SDMX Source module. They are required for the NSI WS -->
+	<bean id="readableDataLocationFactory"
+		class="org.sdmxsource.util.factory.SdmxSourceReadableDataLocationFactory" />
+	<bean id="writeableDataLocationFactory"
+		class="org.sdmxsource.util.factory.SdmxSourceWriteableDataLocationFactory" />
+
+	<!-- The following bean is required by both the Data Retriever and Structure Retriever module. You 
+		need not define it in case you provide your own implementation. This bean is adding 
+		the implementation of the DataSource for the connection pooling -->
+	<bean id="connectionPool" class="org.estat.nsi.spring.sri.MappingStorePool">
+		<qualifier value="sriPool" />
+	</bean>
+
+	<!-- The following beans are required by the Structure Retriever module. 
+		You need not define them in case you provide your own implementation -->
+	<bean id="resolveTreeBean" class="org.estat.sr.impl.SRResolverReferencesTreeImpl"
+		scope="prototype">
+		<!-- dummy value -->
+		<constructor-arg value="VERSION_TWO_POINT_ONE"
+			type="org.sdmxsource.sdmx.api.constants.SDMX_SCHEMA" index="0" />
+	</bean>
+
+	<bean id="retrievalBean"
+		class="org.estat.mastore.AdvancedMappingStoreMutableStructureRetriever"
+		scope="prototype">
+		<!-- dummy values -->
+		<constructor-arg type="java.sql.Connection" index="0">
+			<null />
+		</constructor-arg>
+	</bean>
+
+	<bean id="authRetrievalBean"
+		class="org.estat.mastore.AdvancedMappingStoreMutableStructureRetriever"
+		scope="prototype">
+		<!-- dummy values -->
+		<constructor-arg type="java.sql.Connection" index="0">
+			<null />
+		</constructor-arg>
+	</bean>
+
+	<bean id="retrievalBeanSqlParam"
+		class="org.estat.mastore.AdvancedMappingStoreMutableStructureRetriever"
+		scope="prototype">
+		<!-- dummy values -->
+		<constructor-arg type="java.sql.Connection" index="0">
+			<null />
+		</constructor-arg>
+		<constructor-arg type="int" index="1" value="10" />
+	</bean>
+
+	<bean id="crossReferenceBean"
+		class="org.estat.mastore.MappingStoreCrossReferenceStructureRetriever"
+		scope="prototype">
+		<!-- dummy values -->
+		<constructor-arg type="java.sql.Connection" index="0">
+			<null />
+		</constructor-arg>
+		<constructor-arg value="VERSION_TWO_POINT_ONE"
+			type="org.sdmxsource.sdmx.api.constants.SDMX_SCHEMA" index="1" />
+	</bean>
+
+	<bean id="authCrossReferenceBean"
+		class="org.estat.mastore.AuthMappingStoreCrossReferenceStructureRetriever"
+		scope="prototype">
+		<!-- dummy values -->
+		<constructor-arg
+			type="org.estat.sdmxsource.sdmx.api.manager.retrieval.mutable.AuthAdvancedSdmxMutableBeanRetrievalManager"
+			index="0">
+			<null />
+		</constructor-arg>
+		<constructor-arg type="java.sql.Connection" index="1">
+			<null />
+		</constructor-arg>
+		<constructor-arg value="VERSION_TWO_POINT_ONE"
+			type="org.sdmxsource.sdmx.api.constants.SDMX_SCHEMA" index="2" />
+	</bean>
+	<!-- <bean id="categorisationResolver" class="org.estat.sr.impl.Categorisationv20ResolverImpl" 
+		scope="prototype"> </bean> -->
+	<bean id="structureParsingManagerImpl"  primary="true" class="org.sdmxsource.sdmx.structureparser.manager.parsing.impl.StructureParsingManagerImpl">
+ 		<qualifier value="structureParsingManagerImpl"/>
+	</bean>
+</beans>

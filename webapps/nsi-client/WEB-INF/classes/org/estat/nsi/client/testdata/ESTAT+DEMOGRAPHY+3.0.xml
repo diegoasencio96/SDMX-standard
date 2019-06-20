@@ -1,0 +1,2478 @@
+<?xml version="1.0" encoding="UTF-8"?><Structure xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message" xmlns:common="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/common" xmlns:registry="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/registry" xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message https://katharma.agilis-sa.gr/sdmxrr/xsd/SDMXMessage.xsd">
+<Header>
+<ID>REGISTRY_RESPONSE</ID>
+<Test>false</Test>
+<Prepared>2009-09-04T15:10:35</Prepared>
+<Sender id="ESTAT"/>
+</Header>
+<CodeLists>
+<structure:CodeList id="CL_FREQ" agencyID="ESTAT" version="1.0" validFrom="2007-01-01" validTo="2007-12-31" isFinal="true">
+<structure:Name xml:lang="en">Frequency codelist</structure:Name>
+<structure:Code value="A">
+<structure:Description xml:lang="en">Annual</structure:Description>
+</structure:Code>
+<structure:Code value="M">
+<structure:Description xml:lang="en">Monthly</structure:Description>
+</structure:Code>
+</structure:CodeList>
+<structure:CodeList id="CL_COUNTRY" agencyID="ESTAT" version="1.0" validFrom="2007-01-01" validTo="2007-12-31" isFinal="true">
+<structure:Name xml:lang="en">Country Codelist</structure:Name>
+<structure:Code value="AL">
+<structure:Description xml:lang="en">Albania</structure:Description>
+</structure:Code>
+<structure:Code value="AD">
+<structure:Description xml:lang="en">Andorra</structure:Description>
+</structure:Code>
+<structure:Code value="AM">
+<structure:Description xml:lang="en">Armenia</structure:Description>
+</structure:Code>
+<structure:Code value="AT">
+<structure:Description xml:lang="en">Austria</structure:Description>
+</structure:Code>
+<structure:Code value="AZ">
+<structure:Description xml:lang="en">Azerbaijan</structure:Description>
+</structure:Code>
+<structure:Code value="BE">
+<structure:Description xml:lang="en">Belgium</structure:Description>
+</structure:Code>
+<structure:Code value="BA">
+<structure:Description xml:lang="en">Bosnia and Herzegovina</structure:Description>
+</structure:Code>
+<structure:Code value="BG">
+<structure:Description xml:lang="en">Bulgaria</structure:Description>
+</structure:Code>
+<structure:Code value="HR">
+<structure:Description xml:lang="en">Croatia</structure:Description>
+</structure:Code>
+<structure:Code value="CY">
+<structure:Description xml:lang="en">Cyprus</structure:Description>
+</structure:Code>
+<structure:Code value="CZ">
+<structure:Description xml:lang="en">Czech Republic</structure:Description>
+</structure:Code>
+<structure:Code value="DK">
+<structure:Description xml:lang="en">Denmark</structure:Description>
+</structure:Code>
+<structure:Code value="EE">
+<structure:Description xml:lang="en">Estonia</structure:Description>
+</structure:Code>
+<structure:Code value="FI">
+<structure:Description xml:lang="en">Finland</structure:Description>
+</structure:Code>
+<structure:Code value="FR">
+<structure:Description xml:lang="en">France</structure:Description>
+</structure:Code>
+<structure:Code value="GE">
+<structure:Description xml:lang="en">Georgia</structure:Description>
+</structure:Code>
+<structure:Code value="DE">
+<structure:Description xml:lang="en">Germany</structure:Description>
+</structure:Code>
+<structure:Code value="EL">
+<structure:Description xml:lang="en">Greece</structure:Description>
+</structure:Code>
+<structure:Code value="HU">
+<structure:Description xml:lang="en">Hungary</structure:Description>
+</structure:Code>
+<structure:Code value="IS">
+<structure:Description xml:lang="en">Iceland</structure:Description>
+</structure:Code>
+<structure:Code value="IE">
+<structure:Description xml:lang="en">Ireland</structure:Description>
+</structure:Code>
+<structure:Code value="IT">
+<structure:Description xml:lang="en">Italy</structure:Description>
+</structure:Code>
+<structure:Code value="LV">
+<structure:Description xml:lang="en">Latvia</structure:Description>
+</structure:Code>
+<structure:Code value="LI">
+<structure:Description xml:lang="en">Liechtenstein</structure:Description>
+</structure:Code>
+<structure:Code value="LT">
+<structure:Description xml:lang="en">Lithuania</structure:Description>
+</structure:Code>
+<structure:Code value="LU">
+<structure:Description xml:lang="en">Luxembourg</structure:Description>
+</structure:Code>
+<structure:Code value="ME">
+<structure:Description xml:lang="en">Montenegro</structure:Description>
+</structure:Code>
+<structure:Code value="MT">
+<structure:Description xml:lang="en">Malta</structure:Description>
+</structure:Code>
+<structure:Code value="MD">
+<structure:Description xml:lang="en">Moldova</structure:Description>
+</structure:Code>
+<structure:Code value="NO">
+<structure:Description xml:lang="en">Norway</structure:Description>
+</structure:Code>
+<structure:Code value="PL">
+<structure:Description xml:lang="en">Poland</structure:Description>
+</structure:Code>
+<structure:Code value="PT">
+<structure:Description xml:lang="en">Portugal</structure:Description>
+</structure:Code>
+<structure:Code value="RO">
+<structure:Description xml:lang="en">Romania</structure:Description>
+</structure:Code>
+<structure:Code value="RS">
+<structure:Description xml:lang="en">Serbia</structure:Description>
+</structure:Code>
+<structure:Code value="RU">
+<structure:Description xml:lang="en">Russian Federation</structure:Description>
+</structure:Code>
+<structure:Code value="SM">
+<structure:Description xml:lang="en">San Marino</structure:Description>
+</structure:Code>
+<structure:Code value="SK">
+<structure:Description xml:lang="en">Slovak Republic</structure:Description>
+</structure:Code>
+<structure:Code value="SI">
+<structure:Description xml:lang="en">Slovenia</structure:Description>
+</structure:Code>
+<structure:Code value="ES">
+<structure:Description xml:lang="en">Spain</structure:Description>
+</structure:Code>
+<structure:Code value="SE">
+<structure:Description xml:lang="en">Sweden</structure:Description>
+</structure:Code>
+<structure:Code value="MK">
+<structure:Description xml:lang="en">The former Yugoslav Republic of Macedonia</structure:Description>
+</structure:Code>
+<structure:Code value="NL">
+<structure:Description xml:lang="en">The Netherlands</structure:Description>
+</structure:Code>
+<structure:Code value="TR">
+<structure:Description xml:lang="en">Turkey</structure:Description>
+</structure:Code>
+<structure:Code value="UA">
+<structure:Description xml:lang="en">Ukraine</structure:Description>
+</structure:Code>
+<structure:Code value="UK">
+<structure:Description xml:lang="en">United Kingdom</structure:Description>
+</structure:Code>
+</structure:CodeList>
+<structure:CodeList id="CL_DEMO" agencyID="ESTAT" version="1.0" validFrom="2007-01-01" validTo="2007-12-31" isFinal="true">
+<structure:Name xml:lang="en">Demography code list</structure:Name>
+<structure:Code value="PJANT">
+<structure:Description xml:lang="en">Population on 1 January of Year X</structure:Description>
+</structure:Code>
+<structure:Code value="LBIRTHST">
+<structure:Description xml:lang="en">Births in Year X</structure:Description>
+</structure:Code>
+<structure:Code value="DEATHST">
+<structure:Description xml:lang="en">Deaths in Year X</structure:Description>
+</structure:Code>
+<structure:Code value="ADJT">
+<structure:Description xml:lang="en">Statistical adjustment in Year X</structure:Description>
+</structure:Code>
+<structure:Code value="PJAN1T">
+<structure:Description xml:lang="en">Population on 1 January Year X+1</structure:Description>
+</structure:Code>
+<structure:Code value="LBIRTHOUT">
+<structure:Description xml:lang="en">Births outside marriage in Year X</structure:Description>
+</structure:Code>
+<structure:Code value="DEATHUN1">
+<structure:Description xml:lang="en">Deaths under 1 year in Year X</structure:Description>
+</structure:Code>
+<structure:Code value="MAR">
+<structure:Description xml:lang="en">Marriages in Year X</structure:Description>
+</structure:Code>
+<structure:Code value="DIV">
+<structure:Description xml:lang="en">Divorces in Year X</structure:Description>
+</structure:Code>
+<structure:Code value="IMMIT">
+<structure:Description xml:lang="en">Immigrants in Year X</structure:Description>
+</structure:Code>
+<structure:Code value="EMIGT">
+<structure:Description xml:lang="en">Emigrants in Year X</structure:Description>
+</structure:Code>
+<structure:Code value="NETMT">
+<structure:Description xml:lang="en">Net migration in Year X</structure:Description>
+</structure:Code>
+<structure:Code value="TFRNSI">
+<structure:Description xml:lang="en">Total fertility rate in Year X</structure:Description>
+</structure:Code>
+<structure:Code value="LEXPNSIT">
+<structure:Description xml:lang="en">Life expectancy at birth in Year X</structure:Description>
+</structure:Code>
+</structure:CodeList>
+<structure:CodeList id="CL_DECI" agencyID="ESTAT" version="1.0" validFrom="2007-01-01" validTo="2007-12-31" isFinal="true">
+<structure:Name xml:lang="en">Decimals codelist</structure:Name>
+<structure:Code value="0">
+<structure:Description xml:lang="en">Zero</structure:Description>
+</structure:Code>
+<structure:Code value="1">
+<structure:Description xml:lang="en">One</structure:Description>
+</structure:Code>
+<structure:Code value="2">
+<structure:Description xml:lang="en">Two</structure:Description>
+</structure:Code>
+<structure:Code value="3">
+<structure:Description xml:lang="en">Three</structure:Description>
+</structure:Code>
+<structure:Code value="4">
+<structure:Description xml:lang="en">Four</structure:Description>
+</structure:Code>
+<structure:Code value="5">
+<structure:Description xml:lang="en">Five</structure:Description>
+</structure:Code>
+<structure:Code value="6">
+<structure:Description xml:lang="en">Six</structure:Description>
+</structure:Code>
+<structure:Code value="7">
+<structure:Description xml:lang="en">Seven</structure:Description>
+</structure:Code>
+</structure:CodeList>
+<structure:CodeList id="CL_TIME_FORMAT" agencyID="ESTAT" version="1.0" validFrom="2007-01-01" validTo="2007-12-31" isFinal="true">
+<structure:Name xml:lang="en">Time Format</structure:Name>
+<structure:Code value="P1Y">
+<structure:Description xml:lang="en">Annual</structure:Description>
+</structure:Code>
+<structure:Code value="P6M">
+<structure:Description xml:lang="en">Semi-Annual</structure:Description>
+</structure:Code>
+<structure:Code value="P3M">
+<structure:Description xml:lang="en">Quarterly</structure:Description>
+</structure:Code>
+<structure:Code value="P1M">
+<structure:Description xml:lang="en">Monthly</structure:Description>
+</structure:Code>
+<structure:Code value="P7D">
+<structure:Description xml:lang="en">Weekly</structure:Description>
+</structure:Code>
+<structure:Code value="P1D">
+<structure:Description xml:lang="en">Daily</structure:Description>
+</structure:Code>
+<structure:Code value="PT1M">
+<structure:Description xml:lang="en">Minutely</structure:Description>
+</structure:Code>
+</structure:CodeList>
+<structure:CodeList id="CL_UNIT" agencyID="ESTAT" version="1.0" validFrom="2007-01-01" validTo="2007-12-31" isFinal="true">
+<structure:Name xml:lang="en">Unit code list</structure:Name>
+<structure:Code value="ARS">
+<structure:Description xml:lang="en">Argentine peso</structure:Description>
+</structure:Code>
+<structure:Code value="ATS">
+<structure:Description xml:lang="en">Austrian Schilling</structure:Description>
+</structure:Code>
+<structure:Code value="AUD">
+<structure:Description xml:lang="en">Australian Dollar</structure:Description>
+</structure:Code>
+<structure:Code value="BEF">
+<structure:Description xml:lang="en">Belgian Franc</structure:Description>
+</structure:Code>
+<structure:Code value="BEL">
+<structure:Description xml:lang="en">Belgian Franc (Financial)</structure:Description>
+</structure:Code>
+<structure:Code value="BGN">
+<structure:Description xml:lang="en">Bulgarian Lev</structure:Description>
+</structure:Code>
+<structure:Code value="BRL">
+<structure:Description xml:lang="en">Brazilian real</structure:Description>
+</structure:Code>
+<structure:Code value="CAD">
+<structure:Description xml:lang="en">Canadian Dollar</structure:Description>
+</structure:Code>
+<structure:Code value="CHF">
+<structure:Description xml:lang="en">Swiss Franc</structure:Description>
+</structure:Code>
+<structure:Code value="CNY">
+<structure:Description xml:lang="en">Chinese Yuan Renminbi</structure:Description>
+</structure:Code>
+<structure:Code value="CYP">
+<structure:Description xml:lang="en">Cypriot Pound</structure:Description>
+</structure:Code>
+<structure:Code value="CZK">
+<structure:Description xml:lang="en">Czech Koruna</structure:Description>
+</structure:Code>
+<structure:Code value="DAYS">
+<structure:Description xml:lang="en">Days</structure:Description>
+</structure:Code>
+<structure:Code value="DEM">
+<structure:Description xml:lang="en">German Mark</structure:Description>
+</structure:Code>
+<structure:Code value="DKK">
+<structure:Description xml:lang="en">Danish Krone</structure:Description>
+</structure:Code>
+<structure:Code value="DZD">
+<structure:Description xml:lang="en">Algerian dinar</structure:Description>
+</structure:Code>
+<structure:Code value="EEK">
+<structure:Description xml:lang="en">Estonian Kroon</structure:Description>
+</structure:Code>
+<structure:Code value="ESP">
+<structure:Description xml:lang="en">Spanish Peseta</structure:Description>
+</structure:Code>
+<structure:Code value="EUR">
+<structure:Description xml:lang="en">Euro</structure:Description>
+</structure:Code>
+<structure:Code value="FIM">
+<structure:Description xml:lang="en">Finnish Markka</structure:Description>
+</structure:Code>
+<structure:Code value="FRF">
+<structure:Description xml:lang="en">French Franc</structure:Description>
+</structure:Code>
+<structure:Code value="GBP">
+<structure:Description xml:lang="en">UK Pound Sterling</structure:Description>
+</structure:Code>
+<structure:Code value="GRD">
+<structure:Description xml:lang="en">Greek Drachma</structure:Description>
+</structure:Code>
+<structure:Code value="HKD">
+<structure:Description xml:lang="en">Hong Kong Dollar</structure:Description>
+</structure:Code>
+<structure:Code value="HOURS">
+<structure:Description xml:lang="en">Hours</structure:Description>
+</structure:Code>
+<structure:Code value="HRK">
+<structure:Description xml:lang="en">Kroatian kuna</structure:Description>
+</structure:Code>
+<structure:Code value="HUF">
+<structure:Description xml:lang="en">Hungarian Forint</structure:Description>
+</structure:Code>
+<structure:Code value="IDR">
+<structure:Description xml:lang="en">Indonesian rupiah</structure:Description>
+</structure:Code>
+<structure:Code value="IEP">
+<structure:Description xml:lang="en">Irish Pound</structure:Description>
+</structure:Code>
+<structure:Code value="ILS">
+<structure:Description xml:lang="en">Israeli shekel</structure:Description>
+</structure:Code>
+<structure:Code value="INR">
+<structure:Description xml:lang="en">Indian Rupee</structure:Description>
+</structure:Code>
+<structure:Code value="ISK">
+<structure:Description xml:lang="en">Iceland Krona</structure:Description>
+</structure:Code>
+<structure:Code value="ITL">
+<structure:Description xml:lang="en">Italian Lira</structure:Description>
+</structure:Code>
+<structure:Code value="JPY">
+<structure:Description xml:lang="en">Japanese Yen</structure:Description>
+</structure:Code>
+<structure:Code value="KILO">
+<structure:Description xml:lang="en">Kilograms</structure:Description>
+</structure:Code>
+<structure:Code value="KLITRE">
+<structure:Description xml:lang="en">Kilolitres</structure:Description>
+</structure:Code>
+<structure:Code value="KRW">
+<structure:Description xml:lang="en">Korean Won (Republic)</structure:Description>
+</structure:Code>
+<structure:Code value="LITRES">
+<structure:Description xml:lang="en">Litres</structure:Description>
+</structure:Code>
+<structure:Code value="LKR">
+<structure:Description xml:lang="en">Sri Lanka Rupee</structure:Description>
+</structure:Code>
+<structure:Code value="LTL">
+<structure:Description xml:lang="en">Lithuanian Litas</structure:Description>
+</structure:Code>
+<structure:Code value="LUF">
+<structure:Description xml:lang="en">Luxembourg Franc</structure:Description>
+</structure:Code>
+<structure:Code value="LVL">
+<structure:Description xml:lang="en">Latvian Lats</structure:Description>
+</structure:Code>
+<structure:Code value="MAD">
+<structure:Description xml:lang="en">Moroccan dirham</structure:Description>
+</structure:Code>
+<structure:Code value="MAN-DY">
+<structure:Description xml:lang="en">Man Days</structure:Description>
+</structure:Code>
+<structure:Code value="MAN-YR">
+<structure:Description xml:lang="en">Man Years</structure:Description>
+</structure:Code>
+<structure:Code value="MONTHS">
+<structure:Description xml:lang="en">Months</structure:Description>
+</structure:Code>
+<structure:Code value="MTL">
+<structure:Description xml:lang="en">Maltese Lira</structure:Description>
+</structure:Code>
+<structure:Code value="MXN">
+<structure:Description xml:lang="en">Mexican Peso</structure:Description>
+</structure:Code>
+<structure:Code value="MXP">
+<structure:Description xml:lang="en">Mexican Peso</structure:Description>
+</structure:Code>
+<structure:Code value="MYR">
+<structure:Description xml:lang="en">Malaysian Ringgit</structure:Description>
+</structure:Code>
+<structure:Code value="NATCUR">
+<structure:Description xml:lang="en">National Currency</structure:Description>
+</structure:Code>
+<structure:Code value="NLG">
+<structure:Description xml:lang="en">Netherlands Guilder</structure:Description>
+</structure:Code>
+<structure:Code value="NOK">
+<structure:Description xml:lang="en">Nowegian Krone</structure:Description>
+</structure:Code>
+<structure:Code value="NZD">
+<structure:Description xml:lang="en">New Zealand Dollar</structure:Description>
+</structure:Code>
+<structure:Code value="OUNCES">
+<structure:Description xml:lang="en">Ounces</structure:Description>
+</structure:Code>
+<structure:Code value="PC">
+<structure:Description xml:lang="en">Percent</structure:Description>
+</structure:Code>
+<structure:Code value="PCPA">
+<structure:Description xml:lang="en">Percent per annum</structure:Description>
+</structure:Code>
+<structure:Code value="PERS">
+<structure:Description xml:lang="en">Persons</structure:Description>
+</structure:Code>
+<structure:Code value="PHP">
+<structure:Description xml:lang="en">Philippine peso</structure:Description>
+</structure:Code>
+<structure:Code value="PLN">
+<structure:Description xml:lang="en">Polish (new) Zloty</structure:Description>
+</structure:Code>
+<structure:Code value="PM">
+<structure:Description xml:lang="en">Per thousand</structure:Description>
+</structure:Code>
+<structure:Code value="POINTS">
+<structure:Description xml:lang="en">Points</structure:Description>
+</structure:Code>
+<structure:Code value="PTE">
+<structure:Description xml:lang="en">Portugese Escudo</structure:Description>
+</structure:Code>
+<structure:Code value="PURE_NUMB">
+<structure:Description xml:lang="en">dimensionless value other than PC, PCPA and POINTS</structure:Description>
+</structure:Code>
+<structure:Code value="ROL">
+<structure:Description xml:lang="en">Romanian Leu</structure:Description>
+</structure:Code>
+<structure:Code value="RUB">
+<structure:Description xml:lang="en">Rouble (new)</structure:Description>
+</structure:Code>
+<structure:Code value="SAR">
+<structure:Description xml:lang="en">Saudi Riyal</structure:Description>
+</structure:Code>
+<structure:Code value="SEK">
+<structure:Description xml:lang="en">Swedish Krona</structure:Description>
+</structure:Code>
+<structure:Code value="SGD">
+<structure:Description xml:lang="en">Singapore Dollar</structure:Description>
+</structure:Code>
+<structure:Code value="SIT">
+<structure:Description xml:lang="en">Slovenian Tolar</structure:Description>
+</structure:Code>
+<structure:Code value="SKK">
+<structure:Description xml:lang="en">Slovak Koruna</structure:Description>
+</structure:Code>
+<structure:Code value="SQ_M">
+<structure:Description xml:lang="en">Square Metres</structure:Description>
+</structure:Code>
+<structure:Code value="THB">
+<structure:Description xml:lang="en">Thai Bhat</structure:Description>
+</structure:Code>
+<structure:Code value="TONNES">
+<structure:Description xml:lang="en">Tonnes</structure:Description>
+</structure:Code>
+<structure:Code value="TRL">
+<structure:Description xml:lang="en">Turkish Lira</structure:Description>
+</structure:Code>
+<structure:Code value="TRY">
+<structure:Description xml:lang="en">Turkish lira (new)</structure:Description>
+</structure:Code>
+<structure:Code value="TWD">
+<structure:Description xml:lang="en">New Taiwan Dollar</structure:Description>
+</structure:Code>
+<structure:Code value="UNITS">
+<structure:Description xml:lang="en">Unit described in title</structure:Description>
+</structure:Code>
+<structure:Code value="USD">
+<structure:Description xml:lang="en">US Dollar</structure:Description>
+</structure:Code>
+<structure:Code value="XDR">
+<structure:Description xml:lang="en">Special Drawing Rights (S.D.R.)</structure:Description>
+</structure:Code>
+<structure:Code value="XEU">
+<structure:Description xml:lang="en">European Currecy Unit (E.C.U.)</structure:Description>
+</structure:Code>
+<structure:Code value="ZAR">
+<structure:Description xml:lang="en">South African Rand</structure:Description>
+</structure:Code>
+</structure:CodeList>
+<structure:CodeList id="CL_UNIT_MULT" agencyID="ESTAT" version="1.0" validFrom="2007-01-01" validTo="2007-12-31" isFinal="true">
+<structure:Name xml:lang="en">Unit multiplier code list</structure:Name>
+<structure:Code value="0">
+<structure:Description xml:lang="en">Units</structure:Description>
+</structure:Code>
+<structure:Code value="1">
+<structure:Description xml:lang="en">Tens</structure:Description>
+</structure:Code>
+<structure:Code value="2">
+<structure:Description xml:lang="en">Hundreds</structure:Description>
+</structure:Code>
+<structure:Code value="3">
+<structure:Description xml:lang="en">Thousands</structure:Description>
+</structure:Code>
+<structure:Code value="4">
+<structure:Description xml:lang="en">Tens of thousands</structure:Description>
+</structure:Code>
+<structure:Code value="6">
+<structure:Description xml:lang="en">Millions</structure:Description>
+</structure:Code>
+<structure:Code value="9">
+<structure:Description xml:lang="en">Billions</structure:Description>
+</structure:Code>
+</structure:CodeList>
+<structure:CodeList id="CL_OBS_STATUS" agencyID="ESTAT" version="1.0" validFrom="2007-01-01" validTo="2007-12-31" isFinal="true">
+<structure:Name xml:lang="en">Observation status code list</structure:Name>
+<structure:Code value="P">
+<structure:Description xml:lang="en">Provisional</structure:Description>
+</structure:Code>
+<structure:Code value="U">
+<structure:Description xml:lang="en">Unreliable</structure:Description>
+</structure:Code>
+<structure:Code value="A">
+<structure:Description xml:lang="en">Normal value</structure:Description>
+</structure:Code>
+<structure:Code value="B">
+<structure:Description xml:lang="en">Break</structure:Description>
+</structure:Code>
+<structure:Code value="E">
+<structure:Description xml:lang="en">Estimated value</structure:Description>
+</structure:Code>
+<structure:Code value="F">
+<structure:Description xml:lang="en">Forecast value</structure:Description>
+</structure:Code>
+<structure:Code value="H">
+<structure:Description xml:lang="en">Missing value; holiday or weekend</structure:Description>
+</structure:Code>
+<structure:Code value="L">
+<structure:Description xml:lang="en">Missing value; data exist but were not collected</structure:Description>
+</structure:Code>
+<structure:Code value="M">
+<structure:Description xml:lang="en">Missing value; data cannot exist</structure:Description>
+</structure:Code>
+<structure:Code value="S">
+<structure:Description xml:lang="en">Strike</structure:Description>
+</structure:Code>
+</structure:CodeList>
+</CodeLists>
+<Concepts>
+<structure:ConceptScheme id="DEMO_CONCEPTS" agencyID="ESTAT" version="2.0" isFinal="true">
+<structure:Name xml:lang="en">Demography domain concept scheme</structure:Name>
+<structure:Concept id="FREQ">
+<structure:Name xml:lang="en">Frequency</structure:Name>
+</structure:Concept>
+<structure:Concept id="COUNTRY">
+<structure:Name xml:lang="en">Reporting Country</structure:Name>
+</structure:Concept>
+<structure:Concept id="SEX">
+<structure:Name xml:lang="en">Sex</structure:Name>
+</structure:Concept>
+<structure:Concept id="DEMO">
+<structure:Name xml:lang="en">Demography</structure:Name>
+</structure:Concept>
+<structure:Concept id="TIME_FORMAT">
+<structure:Name xml:lang="en">Time format code</structure:Name>
+</structure:Concept>
+<structure:Concept id="TIME">
+<structure:Name xml:lang="en">Time period or range</structure:Name>
+</structure:Concept>
+<structure:Concept id="OBS_VALUE">
+<structure:Name xml:lang="en">Observation Value</structure:Name>
+</structure:Concept>
+<structure:Concept id="OBS_STATUS">
+<structure:Name xml:lang="en">Observation Status</structure:Name>
+</structure:Concept>
+<structure:Concept id="UNIT">
+<structure:Name xml:lang="en">Base Unit measure</structure:Name>
+</structure:Concept>
+<structure:Concept id="UNIT_MULT">
+<structure:Name xml:lang="en">Unit Multiplier</structure:Name>
+</structure:Concept>
+<structure:Concept id="DECI">
+<structure:Name xml:lang="en">Decimals</structure:Name>
+</structure:Concept>
+<structure:Concept id="TAB_NUM">
+<structure:Name xml:lang="en">Table Number</structure:Name>
+</structure:Concept>
+<structure:Concept id="REV_NUM">
+<structure:Name xml:lang="en">Revision Number</structure:Name>
+</structure:Concept>
+<structure:Concept id="PJANT">
+<structure:Name xml:lang="en">Population on 1 January of Year X</structure:Name>
+</structure:Concept>
+<structure:Concept id="LBIRTHST">
+<structure:Name xml:lang="en">Births in Year X</structure:Name>
+</structure:Concept>
+<structure:Concept id="DEATHST">
+<structure:Name xml:lang="en">Deaths in Year X</structure:Name>
+</structure:Concept>
+<structure:Concept id="ADJT">
+<structure:Name xml:lang="en">Statistical adjustment in Year X</structure:Name>
+</structure:Concept>
+<structure:Concept id="PJAN1T">
+<structure:Name xml:lang="en">Population on 1 January Year X+1</structure:Name>
+</structure:Concept>
+<structure:Concept id="LBIRTHOUT">
+<structure:Name xml:lang="en">Births outside marriage in Year X</structure:Name>
+</structure:Concept>
+<structure:Concept id="DEATHUN1">
+<structure:Name xml:lang="en">Deaths under 1 year in Year X</structure:Name>
+</structure:Concept>
+<structure:Concept id="MAR">
+<structure:Name xml:lang="en">Marriages in Year X</structure:Name>
+</structure:Concept>
+<structure:Concept id="DIV">
+<structure:Name xml:lang="en">Divorces in Year X</structure:Name>
+</structure:Concept>
+<structure:Concept id="IMMIT">
+<structure:Name xml:lang="en">Immigrants in Year X</structure:Name>
+</structure:Concept>
+<structure:Concept id="EMIGT">
+<structure:Name xml:lang="en">Emigrants in Year X</structure:Name>
+</structure:Concept>
+<structure:Concept id="NETMT">
+<structure:Name xml:lang="en">Net migration in Year X</structure:Name>
+</structure:Concept>
+<structure:Concept id="TFRNSI">
+<structure:Name xml:lang="en">Total fertility rate in Year X</structure:Name>
+</structure:Concept>
+<structure:Concept id="LEXPNSIT">
+<structure:Name xml:lang="en">Life expectancy at birth in Year X</structure:Name>
+</structure:Concept>
+</structure:ConceptScheme>
+<structure:ConceptScheme id="GESMES_CONCEPTS" agencyID="ESTAT" version="1.0" validFrom="2008-01-01" isFinal="true">
+<structure:Name xml:lang="en">Concept Scheme for GESMES/TS structures</structure:Name>
+<structure:Concept id="ACC_DG_N">
+<structure:Name xml:lang="en">Number of accidents ñ Dangerous substances Involved (H2)</structure:Name>
+<structure:Description xml:lang="en">Number of accidents where dangerous substances are involved (H2)</structure:Description>
+</structure:Concept>
+<structure:Concept id="ACC_DG_R">
+<structure:Name xml:lang="en">Number of accidents ñ Dangerous substances Released (H2)</structure:Name>
+<structure:Description xml:lang="en">Number of accidents where dangerous substances are released (H2)</structure:Description>
+</structure:Concept>
+<structure:Concept id="ACC_ING">
+<structure:Name xml:lang="en">Number of Accidents - Specific Serious Injury (H1 optional)</structure:Name>
+<structure:Description xml:lang="en">Number of accidents ñ serious injury accidents (H1 optional)</structure:Description>
+</structure:Concept>
+<structure:Concept id="ACC_SIG">
+<structure:Name xml:lang="en">Number of Accidents - Total Significant (H1)</structure:Name>
+<structure:Description xml:lang="en">Number of accidents ñ total of significant accidents (H1)</structure:Description>
+</structure:Concept>
+<structure:Concept id="ACCDATE">
+<structure:Name xml:lang="en">Date of the accident</structure:Name>
+<structure:Description xml:lang="en">The date when the accident occurred.</structure:Description>
+</structure:Concept>
+<structure:Concept id="ACCID">
+<structure:Name xml:lang="en">Type of Accident</structure:Name>
+<structure:Description xml:lang="en">Type of Accident</structure:Description>
+</structure:Concept>
+<structure:Concept id="ACCTIME">
+<structure:Name xml:lang="en">Time of the accident</structure:Name>
+<structure:Description xml:lang="en">The time of the day when the accident occurred.</structure:Description>
+</structure:Concept>
+<structure:Concept id="ADJUST_DETAIL">
+<structure:Name xml:lang="en">Any textual explanation on the seasonal adjustment method applied</structure:Name>
+<structure:Description xml:lang="en">Any textual explanation on the seasonal adjustment method applied</structure:Description>
+</structure:Concept>
+<structure:Concept id="ADJUSTMENT">
+<structure:Name xml:lang="en">Adjustment indicator</structure:Name>
+<structure:Description xml:lang="en">Indicates whether a seasonal adjustment and/or a working day adjustment has been applied</structure:Description>
+</structure:Concept>
+<structure:Concept id="ADJUSTMENT_METHOD">
+<structure:Name xml:lang="en">Method of adjustment</structure:Name>
+<structure:Description xml:lang="en">The method of seasonal adjustment. Used for quarterly data sets only.</structure:Description>
+</structure:Concept>
+<structure:Concept id="ADJUSTMENT_TYPE">
+<structure:Name xml:lang="en">Type of adjustment</structure:Name>
+<structure:Description xml:lang="en">The type of seasonal adjustment. Used for quarterly data sets only.</structure:Description>
+</structure:Concept>
+<structure:Concept id="AGE">
+<structure:Name xml:lang="en">Age</structure:Name>
+<structure:Description xml:lang="en">Employee&apos;s age</structure:Description>
+</structure:Concept>
+<structure:Concept id="AGE_BREAKDOWN">
+<structure:Name xml:lang="en">Age breakdown</structure:Name>
+<structure:Description xml:lang="en">Age group breakdown.</structure:Description>
+</structure:Concept>
+<structure:Concept id="AGG_EQUN">
+<structure:Name xml:lang="en">Aggregation equations</structure:Name>
+<structure:Description xml:lang="en">Aggregation equations</structure:Description>
+</structure:Concept>
+<structure:Concept id="AIRCRAFT_TYPE">
+<structure:Name xml:lang="en">Aircraft type</structure:Name>
+<structure:Description xml:lang="en">Type of aircraft</structure:Description>
+</structure:Concept>
+<structure:Concept id="AIRLINE_INFO">
+<structure:Name xml:lang="en">Airline Information</structure:Name>
+<structure:Description xml:lang="en">Information on the airline</structure:Description>
+</structure:Concept>
+<structure:Concept id="AIRPORT">
+<structure:Name xml:lang="en">Reporting Airport</structure:Name>
+<structure:Description xml:lang="en">The ICAO code of the reporting airport</structure:Description>
+</structure:Concept>
+<structure:Concept id="ANNUAL_ABS">
+<structure:Name xml:lang="en">Annual absence</structure:Name>
+<structure:Description xml:lang="en">Annual days of absence</structure:Description>
+</structure:Concept>
+<structure:Concept id="ANNUAL_BONUS">
+<structure:Name xml:lang="en">Annual bonus</structure:Name>
+<structure:Description xml:lang="en">Total annual bonuses</structure:Description>
+</structure:Concept>
+<structure:Concept id="ANNUAL_HOL_LEAVE">
+<structure:Name xml:lang="en">Annual holiday leave</structure:Name>
+<structure:Description xml:lang="en">Annual days of holiday leave excluding days of sick leave</structure:Description>
+</structure:Concept>
+<structure:Concept id="ANNUAL_PREMIUMS">
+<structure:Name xml:lang="en">Annual premiums</structure:Name>
+<structure:Description xml:lang="en">Annual premiums related to profit sharing</structure:Description>
+</structure:Concept>
+<structure:Concept id="ANNUAL_SICK">
+<structure:Name xml:lang="en">Annual sick</structure:Name>
+<structure:Description xml:lang="en">Annual days of sick leave</structure:Description>
+</structure:Concept>
+<structure:Concept id="ASSET_LIAB">
+<structure:Name xml:lang="en">Assets or Liabilities</structure:Name>
+<structure:Description xml:lang="en">Assets or Liabilities</structure:Description>
+</structure:Concept>
+<structure:Concept id="AVAILABILITY">
+<structure:Name xml:lang="en">Availability</structure:Name>
+<structure:Description xml:lang="en">Indicates the organisations to which the data can be made available.  There will be additional access restrictions within institutions</structure:Description>
+</structure:Concept>
+<structure:Concept id="AXLE">
+<structure:Name xml:lang="en">Axle configuration (Var. A1.2)</structure:Name>
+<structure:Description xml:lang="en">Axle configuration (Var. A1.2)</structure:Description>
+</structure:Concept>
+<structure:Concept id="BARRIERS">
+<structure:Name xml:lang="en">Barriers perceived</structure:Name>
+<structure:Description xml:lang="en">Barriers perceived</structure:Description>
+</structure:Concept>
+<structure:Concept id="BASE_YEAR">
+<structure:Name xml:lang="en">Series variation in the domainís context</structure:Name>
+<structure:Description xml:lang="en">Concept to distinguish series variations in the domainís context</structure:Description>
+</structure:Concept>
+<structure:Concept id="BOP_BASIS">
+<structure:Name xml:lang="en">BoP data collection basis</structure:Name>
+<structure:Description xml:lang="en">BoP data collection basis</structure:Description>
+</structure:Concept>
+<structure:Concept id="BREAKS">
+<structure:Name xml:lang="en">Breaks</structure:Name>
+<structure:Description xml:lang="en">A short description of important breaks and major changes over time in the collection, coverage and compilation of the series. In the case of breaks it is often stated whether old and new data are comparable or not</structure:Description>
+</structure:Concept>
+<structure:Concept id="BS_SERIES">
+<structure:Name xml:lang="en">Business Services Series</structure:Name>
+<structure:Description xml:lang="en">Type of series (Business Services)</structure:Description>
+</structure:Concept>
+<structure:Concept id="CAREER_BREAK">
+<structure:Name xml:lang="en">Career break</structure:Name>
+<structure:Description xml:lang="en">Total period of career breaks - in months</structure:Description>
+</structure:Concept>
+<structure:Concept id="CARGO">
+<structure:Name xml:lang="en">Type of cargo (Var. A3.4)</structure:Name>
+<structure:Description xml:lang="en">Type of cargo (Var. A3.4)</structure:Description>
+</structure:Concept>
+<structure:Concept id="CASENR">
+<structure:Name xml:lang="en">Case Number</structure:Name>
+<structure:Description xml:lang="en">A unique case number to identify each record submitted to Eurostat.</structure:Description>
+</structure:Concept>
+<structure:Concept id="CITIZENSHIP">
+<structure:Name xml:lang="en">Citizenship</structure:Name>
+<structure:Description xml:lang="en">Citizenship</structure:Description>
+</structure:Concept>
+<structure:Concept id="CLIENT">
+<structure:Name xml:lang="en">Client</structure:Name>
+<structure:Description xml:lang="en">Type of client</structure:Description>
+</structure:Concept>
+<structure:Concept id="CLIENT_SPEC">
+<structure:Name xml:lang="en">Client specialisation</structure:Name>
+<structure:Description xml:lang="en">Client specialization class</structure:Description>
+</structure:Concept>
+<structure:Concept id="COLLECTION">
+<structure:Name xml:lang="en">Collection indicator</structure:Name>
+<structure:Description xml:lang="en">Explanation on how observations are made (e.g. beginning, middle or end of period), indication of whether data are averages, highest or lowest in period, etc</structure:Description>
+</structure:Concept>
+<structure:Concept id="COLLECTIVE_PAY">
+<structure:Name xml:lang="en">Collective pay agreements</structure:Name>
+<structure:Description xml:lang="en">Existence of collective pay agreements covering the majority of employees in the observation unit</structure:Description>
+</structure:Concept>
+<structure:Concept id="COMB_TRANS">
+<structure:Name xml:lang="en">Combined transport</structure:Name>
+<structure:Description xml:lang="en">Possibility of using vehicle for combined transport (Var. A1.1)</structure:Description>
+</structure:Concept>
+<structure:Concept id="COMMODITY">
+<structure:Name xml:lang="en">Commodity (nature of Goods)</structure:Name>
+<structure:Description xml:lang="en">Commodity (nature of Goods)</structure:Description>
+</structure:Concept>
+<structure:Concept id="COMP_SECURITY">
+<structure:Name xml:lang="en">Compulsory security</structure:Name>
+<structure:Description xml:lang="en">Compulsory social security contributions</structure:Description>
+</structure:Concept>
+<structure:Concept id="COMPILATION">
+<structure:Name xml:lang="en">Compilation</structure:Name>
+<structure:Description xml:lang="en">Any textual explanation of compilation methods, e.g. weighting, statistical procedures,  type of index, etc</structure:Description>
+</structure:Concept>
+<structure:Concept id="CONFIDENTIALITY">
+<structure:Name xml:lang="en">Confidentiality flag</structure:Name>
+<structure:Description xml:lang="en">Confidentiality flag</structure:Description>
+</structure:Concept>
+<structure:Concept id="CONFNE">
+<structure:Name xml:lang="en">Confidential and state indicator</structure:Name>
+<structure:Description xml:lang="en">Confidential and state indicator</structure:Description>
+</structure:Concept>
+<structure:Concept id="CONFQ1A">
+<structure:Name xml:lang="en">Confidential marking for first qroup of quantity using measuring method A</structure:Name>
+<structure:Description xml:lang="en">Confidential marking for first qroup of quantity using measuring method A</structure:Description>
+</structure:Concept>
+<structure:Concept id="CONFQ1B">
+<structure:Name xml:lang="en">Confidential marking for first qroup of quantity using measuring method B</structure:Name>
+<structure:Description xml:lang="en">Confidential marking for first qroup of quantity using measuring method B</structure:Description>
+</structure:Concept>
+<structure:Concept id="CONFQ2A">
+<structure:Name xml:lang="en">Confidential marking for second qroup of quantity using measuring method A</structure:Name>
+<structure:Description xml:lang="en">Confidential marking for second qroup of quantity using measuring method A</structure:Description>
+</structure:Concept>
+<structure:Concept id="CONFQ2B">
+<structure:Name xml:lang="en">Confidential marking for second qroup of quantity using measuring method B</structure:Name>
+<structure:Description xml:lang="en">Confidential marking for second qroup of quantity using measuring method B</structure:Description>
+</structure:Concept>
+<structure:Concept id="CONFQUALNE">
+<structure:Name xml:lang="en">Qualifier of confidential indicator</structure:Name>
+<structure:Description xml:lang="en">Qualifier of confidential indicator</structure:Description>
+</structure:Concept>
+<structure:Concept id="CONFQUALQ1A">
+<structure:Name xml:lang="en">Qualifier for confidential marking for first qroup of quantity using measuring method A</structure:Name>
+<structure:Description xml:lang="en">Qualifier for confidential marking for first qroup of quantity using measuring method A</structure:Description>
+</structure:Concept>
+<structure:Concept id="CONFQUALQ1B">
+<structure:Name xml:lang="en">Qualifier for confidential marking for first qroup of quantity using measuring method B</structure:Name>
+<structure:Description xml:lang="en">Qualifier for confidential marking for first qroup of quantity using measuring method B</structure:Description>
+</structure:Concept>
+<structure:Concept id="CONFQUALQ2A">
+<structure:Name xml:lang="en">Qualifier for confidential marking for second qroup of quantity using measuring method A</structure:Name>
+<structure:Description xml:lang="en">Qualifier for confidential marking for second qroup of quantity using measuring method A</structure:Description>
+</structure:Concept>
+<structure:Concept id="CONFQUALQ2B">
+<structure:Name xml:lang="en">Qualifier for confidential marking for second qroup of quantity using measuring method B</structure:Name>
+<structure:Description xml:lang="en">Qualifier for confidential marking for second qroup of quantity using measuring method B</structure:Description>
+</structure:Concept>
+<structure:Concept id="CONFQUALVAL">
+<structure:Name xml:lang="en">Qualifier of confidential marking for monetary value</structure:Name>
+<structure:Description xml:lang="en">Qualifier of confidential marking for monetary value</structure:Description>
+</structure:Concept>
+<structure:Concept id="CONFVAL">
+<structure:Name xml:lang="en">Confidential marking for monetary value</structure:Name>
+<structure:Description xml:lang="en">Confidential marking for monetary value</structure:Description>
+</structure:Concept>
+<structure:Concept id="CONSIGNMENT">
+<structure:Name xml:lang="en">Type of consignment</structure:Name>
+<structure:Description xml:lang="en">Type of consignment</structure:Description>
+</structure:Concept>
+<structure:Concept id="CONSOLIDATE">
+<structure:Name xml:lang="en">Consolidation</structure:Name>
+<structure:Description xml:lang="en">Consolidation</structure:Description>
+</structure:Concept>
+<structure:Concept id="CONTACT">
+<structure:Name xml:lang="en">Contact ñ mode of injury</structure:Name>
+<structure:Description xml:lang="en">This describes how the victim was hurt</structure:Description>
+</structure:Concept>
+<structure:Concept id="CONTAGENT">
+<structure:Name xml:lang="en">Material agent of Contact - Mode of injury</structure:Name>
+<structure:Description xml:lang="en">The principal material agent associated or linked with the injuring contact.</structure:Description>
+</structure:Concept>
+<structure:Concept id="CONTAINER">
+<structure:Name xml:lang="en">Container</structure:Name>
+<structure:Description xml:lang="en">Container  transport at the point of crossing the Community&apos;s external frontier</structure:Description>
+</structure:Concept>
+<structure:Concept id="CONTRACT_TYPE">
+<structure:Name xml:lang="en">Contract type</structure:Name>
+<structure:Description xml:lang="en">Type of contract of employment</structure:Description>
+</structure:Concept>
+<structure:Concept id="COUNT_AREA">
+<structure:Name xml:lang="en">Counterpart area</structure:Name>
+<structure:Description xml:lang="en">Counterpart area</structure:Description>
+</structure:Concept>
+<structure:Concept id="COUNT_TRANSIT">
+<structure:Name xml:lang="en">Countries crossed in transit (not more than 5) (Var. A2.7)</structure:Name>
+<structure:Description xml:lang="en">Countries crossed in transit (not more than 5) (Var. A2.7)</structure:Description>
+</structure:Concept>
+<structure:Concept id="COUNTID">
+<structure:Name xml:lang="en">Country in which undertaking is based</structure:Name>
+<structure:Description xml:lang="en">Country in which undertaking is based</structure:Description>
+</structure:Concept>
+<structure:Concept id="COUNTRY">
+<structure:Name xml:lang="en">Reporting Country</structure:Name>
+<structure:Description xml:lang="en">2 first letters of the ICAO code</structure:Description>
+</structure:Concept>
+<structure:Concept id="COV_THRES">
+<structure:Name xml:lang="en">Coverage Threshold</structure:Name>
+<structure:Description xml:lang="en">The minimum coverage threshold</structure:Description>
+</structure:Concept>
+<structure:Concept id="COVERAGE">
+<structure:Name xml:lang="en">Coverage</structure:Name>
+<structure:Description xml:lang="en">Any textual explanation of the coverage, e.g. sample, survey, reporting or non-reporting entities or sectors</structure:Description>
+</structure:Concept>
+<structure:Concept id="CPI_ITEM">
+<structure:Name xml:lang="en">CPI Item</structure:Name>
+<structure:Description xml:lang="en">CPI Item</structure:Description>
+</structure:Concept>
+<structure:Concept id="CPI_SUFFIX">
+<structure:Name xml:lang="en">CPI Suffix</structure:Name>
+<structure:Description xml:lang="en">CPI Suffix</structure:Description>
+</structure:Concept>
+<structure:Concept id="CURR_BRKDWN">
+<structure:Name xml:lang="en">Currency breakdown</structure:Name>
+<structure:Description xml:lang="en">Currency breakdown</structure:Description>
+</structure:Concept>
+<structure:Concept id="CURRENCY">
+<structure:Name xml:lang="en">Currency breakdown</structure:Name>
+<structure:Description xml:lang="en">Code corresponding to currency</structure:Description>
+</structure:Concept>
+<structure:Concept id="CURRENCYVAL">
+<structure:Name xml:lang="en">Currency code name</structure:Name>
+<structure:Description xml:lang="en">Currency code name</structure:Description>
+</structure:Concept>
+<structure:Concept id="DATA_TYPE_FATS">
+<structure:Name xml:lang="en">Data type - FATS related data</structure:Name>
+<structure:Description xml:lang="en">Data type - FATS related data</structure:Description>
+</structure:Concept>
+<structure:Concept id="DATASET_ID">
+<structure:Name xml:lang="en">Data set identifier</structure:Name>
+<structure:Description xml:lang="en">Data set identifier</structure:Description>
+</structure:Concept>
+<structure:Concept id="DECIMALS">
+<structure:Name xml:lang="en">Decimals</structure:Name>
+<structure:Description xml:lang="en">Indicates the number of decimals given for the values of the observations of the series</structure:Description>
+</structure:Concept>
+<structure:Concept id="DELIVERY">
+<structure:Name xml:lang="en">Not relevant (ex Terms of delivery)</structure:Name>
+<structure:Description xml:lang="en">Transmitted when the threshold indicator is equal to 1</structure:Description>
+</structure:Concept>
+<structure:Concept id="DEVIAGENT">
+<structure:Name xml:lang="en">Material agent of Deviation</structure:Name>
+<structure:Description xml:lang="en">The principal material agent associated or linked with the deviant event.</structure:Description>
+</structure:Concept>
+<structure:Concept id="DEVIATION">
+<structure:Name xml:lang="en">Deviation</structure:Name>
+<structure:Description xml:lang="en">The last event deviating from normality and leading to the accident.</structure:Description>
+</structure:Concept>
+<structure:Concept id="DGOODS">
+<structure:Name xml:lang="en">Type of dangerous goods</structure:Name>
+<structure:Description xml:lang="en">Type of dangerous goods</structure:Description>
+</structure:Concept>
+<structure:Concept id="DIRECTION">
+<structure:Name xml:lang="en">Direction (Arrival/Departure)</structure:Name>
+<structure:Description xml:lang="en">Code indication of flight/vessel direction</structure:Description>
+</structure:Concept>
+<structure:Concept id="DISSEMINATION">
+<structure:Name xml:lang="en">Flag of authorisation for the dissemination of confidential data</structure:Name>
+<structure:Description xml:lang="en">Flag of authorisation for the dissemination of confidential data</structure:Description>
+</structure:Concept>
+<structure:Concept id="DISTANCE_GDS">
+<structure:Name xml:lang="en">Distance travelled: actual distance excluding the distance covered by the goods road motor vehicle w</structure:Name>
+<structure:Description xml:lang="en">Distance travelled: actual distance excluding the distance covered by the goods road motor vehicle while being transported by another means of transport (Var. A3.7)</structure:Description>
+</structure:Concept>
+<structure:Concept id="DISTANCE_JRN">
+<structure:Name xml:lang="en">Distance travelled: actual distance excluding the distance covered by the goods road motor vehicle w</structure:Name>
+<structure:Description xml:lang="en">Distance travelled: actual distance excluding the distance covered by the goods road motor vehicle while being transported by another means of transport (Var. A2.5)</structure:Description>
+</structure:Concept>
+<structure:Concept id="DOM_SER_IDS">
+<structure:Name xml:lang="en">Domestic series ids</structure:Name>
+<structure:Description xml:lang="en">Reference codes used in national data bases serving to identify data.  Sometimes formulae using reference codes are specified</structure:Description>
+</structure:Concept>
+<structure:Concept id="DOMINANCE">
+<structure:Name xml:lang="en">Dominance</structure:Name>
+<structure:Description xml:lang="en">Dominance</structure:Description>
+</structure:Concept>
+<structure:Concept id="DSETA">
+<structure:Name xml:lang="en">Data included in annex A</structure:Name>
+<structure:Description xml:lang="en">Data included in annex A</structure:Description>
+</structure:Concept>
+<structure:Concept id="DSETB">
+<structure:Name xml:lang="en">Data included in annex B</structure:Name>
+<structure:Description xml:lang="en">Data included in annex B</structure:Description>
+</structure:Concept>
+<structure:Concept id="DSETC">
+<structure:Name xml:lang="en">Data included in annex C</structure:Name>
+<structure:Description xml:lang="en">Data included in annex C</structure:Description>
+</structure:Concept>
+<structure:Concept id="DSETD">
+<structure:Name xml:lang="en">Data included in annex D</structure:Name>
+<structure:Description xml:lang="en">Data included in annex D</structure:Description>
+</structure:Concept>
+<structure:Concept id="DSETE">
+<structure:Name xml:lang="en">Data included in annex E</structure:Name>
+<structure:Description xml:lang="en">Data included in annex E</structure:Description>
+</structure:Concept>
+<structure:Concept id="DSETF">
+<structure:Name xml:lang="en">Data included in annex F</structure:Name>
+<structure:Description xml:lang="en">Data included in annex F</structure:Description>
+</structure:Concept>
+<structure:Concept id="DSETG">
+<structure:Name xml:lang="en">Data included in annex G</structure:Name>
+<structure:Description xml:lang="en">Data included in annex G</structure:Description>
+</structure:Concept>
+<structure:Concept id="DSETH">
+<structure:Name xml:lang="en">Data included in annex H</structure:Name>
+<structure:Description xml:lang="en">Data included in annex H</structure:Description>
+</structure:Concept>
+<structure:Concept id="DSETID">
+<structure:Name xml:lang="en">Data set identifier</structure:Name>
+<structure:Description xml:lang="en">Data set identifier</structure:Description>
+</structure:Concept>
+<structure:Concept id="DSETIDA">
+<structure:Name xml:lang="en">Number of Table in Annex</structure:Name>
+<structure:Description xml:lang="en">Number of Table in Annex A</structure:Description>
+</structure:Concept>
+<structure:Concept id="DSETIDB">
+<structure:Name xml:lang="en">Number of Table in Annex</structure:Name>
+<structure:Description xml:lang="en">Number of Table in Annex B</structure:Description>
+</structure:Concept>
+<structure:Concept id="DSETIDC">
+<structure:Name xml:lang="en">Number of Table in Annex</structure:Name>
+<structure:Description xml:lang="en">Number of Table in Annex C</structure:Description>
+</structure:Concept>
+<structure:Concept id="DSETIDD">
+<structure:Name xml:lang="en">Number of Table in Annex</structure:Name>
+<structure:Description xml:lang="en">Number of Table in Annex D</structure:Description>
+</structure:Concept>
+<structure:Concept id="DSETIDE">
+<structure:Name xml:lang="en">Number of Table in Annex</structure:Name>
+<structure:Description xml:lang="en">Number of Table in Annex E</structure:Description>
+</structure:Concept>
+<structure:Concept id="DSETIDF">
+<structure:Name xml:lang="en">Number of Table in Annex</structure:Name>
+<structure:Description xml:lang="en">Number of Table in Annex F</structure:Description>
+</structure:Concept>
+<structure:Concept id="DSETIDG">
+<structure:Name xml:lang="en">Number of Table in Annex</structure:Name>
+<structure:Description xml:lang="en">Number of Table in Annex G</structure:Description>
+</structure:Concept>
+<structure:Concept id="DSETIDH">
+<structure:Name xml:lang="en">Number of Table in Annex</structure:Name>
+<structure:Description xml:lang="en">Number of Table in Annex H</structure:Description>
+</structure:Concept>
+<structure:Concept id="DSETIDI">
+<structure:Name xml:lang="en">Number of Table in Annex</structure:Name>
+<structure:Description xml:lang="en">Number of Table in Annex I</structure:Description>
+</structure:Concept>
+<structure:Concept id="ECON_ACTIVITY">
+<structure:Name xml:lang="en">Economic activity</structure:Name>
+<structure:Description xml:lang="en">NACE Revision 1 activity class of the vehicle operator (Var. A1.6)</structure:Description>
+</structure:Concept>
+<structure:Concept id="ECON_FIN_CONTROL">
+<structure:Name xml:lang="en">Economic and financial control</structure:Name>
+<structure:Description xml:lang="en">Form of economic and financial control</structure:Description>
+</structure:Concept>
+<structure:Concept id="EDU_LEVEL">
+<structure:Name xml:lang="en">Education level</structure:Name>
+<structure:Description xml:lang="en">Highest completed level of education and training</structure:Description>
+</structure:Concept>
+<structure:Concept id="EMP_GROSS_FACTOR">
+<structure:Name xml:lang="en">Employee gross factor</structure:Name>
+<structure:Description xml:lang="en">Grossing-up factor for employees</structure:Description>
+</structure:Concept>
+<structure:Concept id="EMP_NUM">
+<structure:Name xml:lang="en">Employees number</structure:Name>
+<structure:Description xml:lang="en">Total number of employees</structure:Description>
+</structure:Concept>
+<structure:Concept id="EMP_SIZE_CLASS">
+<structure:Name xml:lang="en">Employment size class</structure:Name>
+<structure:Description xml:lang="en">Employment size class</structure:Description>
+</structure:Concept>
+<structure:Concept id="EMPCOV">
+<structure:Name xml:lang="en">Employee Coverage</structure:Name>
+<structure:Description xml:lang="en">Coverage relates to the target population</structure:Description>
+</structure:Concept>
+<structure:Concept id="EMPLSTATUS">
+<structure:Name xml:lang="en">Employment status</structure:Name>
+<structure:Description xml:lang="en">The employment status of the victim</structure:Description>
+</structure:Concept>
+<structure:Concept id="EMPTY_CELL">
+<structure:Name xml:lang="en">Empty cell used for technical reasons</structure:Name>
+<structure:Description xml:lang="en">Empty cell used for technical reasons</structure:Description>
+</structure:Concept>
+<structure:Concept id="EMPTY_DIMENSION">
+<structure:Name xml:lang="en">Empty dimension used for technical reasons</structure:Name>
+<structure:Description xml:lang="en">Empty dimension used for technical reasons</structure:Description>
+</structure:Concept>
+<structure:Concept id="ENT_SIZE">
+<structure:Name xml:lang="en">Enterprise size</structure:Name>
+<structure:Description xml:lang="en">Size of enterprise to which the local unit belongs</structure:Description>
+</structure:Concept>
+<structure:Concept id="ENTER_GID">
+<structure:Name xml:lang="en">Enterprise group identification</structure:Name>
+<structure:Description xml:lang="en">Enterprise group identification</structure:Description>
+</structure:Concept>
+<structure:Concept id="ENTERSIZE">
+<structure:Name xml:lang="en">Size of enterprise</structure:Name>
+<structure:Description xml:lang="en">The number of employees working at the local unit of the enterprise. (coded)</structure:Description>
+</structure:Concept>
+<structure:Concept id="ENTITLEMENT">
+<structure:Name xml:lang="en">Entitlement</structure:Name>
+<structure:Description xml:lang="en">Holiday entitlement or number of holidays actually taken</structure:Description>
+</structure:Concept>
+<structure:Concept id="ENV_BREAKDOWN">
+<structure:Name xml:lang="en">Breakdown by environmental domains</structure:Name>
+<structure:Description xml:lang="en">Codes for environnemental demain</structure:Description>
+</structure:Concept>
+<structure:Concept id="ESA_REF_AREA">
+<structure:Name xml:lang="en">Reference area</structure:Name>
+<structure:Description xml:lang="en">Reporting Country in ISOALPHA3 code  (The country, or geographical/political group of countries that the measured economic phenomenon relates to)</structure:Description>
+</structure:Concept>
+<structure:Concept id="ESA95_ACCOUNT">
+<structure:Name xml:lang="en">ESA95 Account</structure:Name>
+<structure:Description xml:lang="en">Stocks/Transaction defined in the European System of Accounts plus some additional codes</structure:Description>
+</structure:Concept>
+<structure:Concept id="ESA95_OBS_TYPE">
+<structure:Name xml:lang="en">ESA95 Observation type</structure:Name>
+<structure:Description xml:lang="en"></structure:Description>
+</structure:Concept>
+<structure:Concept id="ESA95_PRICES">
+<structure:Name xml:lang="en">ESA95 Prices</structure:Name>
+<structure:Description xml:lang="en">Assessment (Current Prices, constant Prices, Ö)</structure:Description>
+</structure:Concept>
+<structure:Concept id="ESA95_SECTOR">
+<structure:Name xml:lang="en">ESA95 sector</structure:Name>
+<structure:Description xml:lang="en">ESA95 sector</structure:Description>
+</structure:Concept>
+<structure:Concept id="ESA95_SUFFIX">
+<structure:Name xml:lang="en">ESA95 suffix</structure:Name>
+<structure:Description xml:lang="en">Transactions codes following questionnaire ESA 95</structure:Description>
+</structure:Concept>
+<structure:Concept id="ESA95TP_ASSET">
+<structure:Name xml:lang="en">Asset/instr classification</structure:Name>
+<structure:Description xml:lang="en">Asset/instr classification</structure:Description>
+</structure:Concept>
+<structure:Concept id="ESA95TP_COFOG">
+<structure:Name xml:lang="en">Functional classification of general government expenditure</structure:Name>
+<structure:Description xml:lang="en">Functional classification of general government expenditure</structure:Description>
+</structure:Concept>
+<structure:Concept id="ESA95TP_COICOP">
+<structure:Name xml:lang="en">Classification of individual consumption by purpose</structure:Name>
+<structure:Description xml:lang="en">Classification of individual consumption by purpose</structure:Description>
+</structure:Concept>
+<structure:Concept id="ESA95TP_COM">
+<structure:Name xml:lang="en">Product breakdown</structure:Name>
+<structure:Description xml:lang="en">Product breakdown</structure:Description>
+</structure:Concept>
+<structure:Concept id="ESA95TP_CONS">
+<structure:Name xml:lang="en">Consolidation</structure:Name>
+<structure:Description xml:lang="en">Consolidation</structure:Description>
+</structure:Concept>
+<structure:Concept id="ESA95TP_CPA_FROM">
+<structure:Name xml:lang="en">Product (/Activity) classification from</structure:Name>
+<structure:Description xml:lang="en">Product (/Activity) classification from</structure:Description>
+</structure:Concept>
+<structure:Concept id="ESA95TP_CPA_TO">
+<structure:Name xml:lang="en">Product (/Activity) classification to</structure:Name>
+<structure:Description xml:lang="en">Product (/Activity) classification to</structure:Description>
+</structure:Concept>
+<structure:Concept id="ESA95TP_CPAREA">
+<structure:Name xml:lang="en">Counterpart area</structure:Name>
+<structure:Description xml:lang="en">Counterpart area</structure:Description>
+</structure:Concept>
+<structure:Concept id="ESA95TP_CPSECTOR">
+<structure:Name xml:lang="en">Counterpart institution sector</structure:Name>
+<structure:Description xml:lang="en">Counterpart institution sector</structure:Description>
+</structure:Concept>
+<structure:Concept id="ESA95TP_DC_AL">
+<structure:Name xml:lang="en">Uses and resources</structure:Name>
+<structure:Description xml:lang="en">Uses and resources</structure:Description>
+</structure:Concept>
+<structure:Concept id="ESA95TP_DENOM">
+<structure:Name xml:lang="en">Denomination</structure:Name>
+<structure:Description xml:lang="en">Denomination</structure:Description>
+</structure:Concept>
+<structure:Concept id="ESA95TP_NACE">
+<structure:Name xml:lang="en">Activity classification code list (NACE)</structure:Name>
+<structure:Description xml:lang="en">Activity classification code list (NACE)</structure:Description>
+</structure:Concept>
+<structure:Concept id="ESA95TP_PRICE">
+<structure:Name xml:lang="en">Valuation</structure:Name>
+<structure:Description xml:lang="en">Valuation</structure:Description>
+</structure:Concept>
+<structure:Concept id="ESA95TP_REGION">
+<structure:Name xml:lang="en">NUTS 3 regional classification</structure:Name>
+<structure:Description xml:lang="en">NUTS 3 regional classification</structure:Description>
+</structure:Concept>
+<structure:Concept id="ESA95TP_SECTOR">
+<structure:Name xml:lang="en">Reporting institutional sector</structure:Name>
+<structure:Description xml:lang="en">Reporting institutional sector</structure:Description>
+</structure:Concept>
+<structure:Concept id="ESA95TP_SUFFIX">
+<structure:Name xml:lang="en">Reference table number</structure:Name>
+<structure:Description xml:lang="en">Reference table number</structure:Description>
+</structure:Concept>
+<structure:Concept id="ESA95TP_TRANS">
+<structure:Name xml:lang="en">Transactions and other flows</structure:Name>
+<structure:Description xml:lang="en">Transactions and other flows</structure:Description>
+</structure:Concept>
+<structure:Concept id="FA_SECTOR">
+<structure:Name xml:lang="en">Financial Account sector</structure:Name>
+<structure:Description xml:lang="en">Sectors for Financial Accounts</structure:Description>
+</structure:Concept>
+<structure:Concept id="FA_TYPE">
+<structure:Name xml:lang="en">Financial Account type</structure:Name>
+<structure:Description xml:lang="en">Financial Accounts type</structure:Description>
+</structure:Concept>
+<structure:Concept id="FATS_ID">
+<structure:Name xml:lang="en">FATS Identification</structure:Name>
+<structure:Description xml:lang="en">FATS identification</structure:Description>
+</structure:Concept>
+<structure:Concept id="FATS_ITEM">
+<structure:Name xml:lang="en">FATS item</structure:Name>
+<structure:Description xml:lang="en">FATS item</structure:Description>
+</structure:Concept>
+<structure:Concept id="FIELD_1">
+<structure:Name xml:lang="en">Variable Field 1</structure:Name>
+<structure:Description xml:lang="en">Transaction, Other Flows, Stocks, Employment</structure:Description>
+</structure:Concept>
+<structure:Concept id="FIELD_2">
+<structure:Name xml:lang="en">Variable Field 2</structure:Name>
+<structure:Description xml:lang="en">Industry, Sector, Product</structure:Description>
+</structure:Concept>
+<structure:Concept id="FIELD_3">
+<structure:Name xml:lang="en">Variable Field 3</structure:Name>
+<structure:Description xml:lang="en">COICOP, COFOG</structure:Description>
+</structure:Concept>
+<structure:Concept id="FIELD_4">
+<structure:Name xml:lang="en">Variable Field 4</structure:Name>
+<structure:Description xml:lang="en">Concept, Consolidation</structure:Description>
+</structure:Concept>
+<structure:Concept id="FLAG">
+<structure:Name xml:lang="en">A series of flag characters</structure:Name>
+<structure:Description xml:lang="en">A series of flag characters</structure:Description>
+</structure:Concept>
+<structure:Concept id="FLOW_CODE">
+<structure:Name xml:lang="en">Flow code</structure:Name>
+<structure:Description xml:lang="en">Indication of the code</structure:Description>
+</structure:Concept>
+<structure:Concept id="FOOTNOTE">
+<structure:Name xml:lang="en">Textual footnote</structure:Name>
+<structure:Description xml:lang="en">Textual footnote</structure:Description>
+</structure:Concept>
+<structure:Concept id="FOOTNOTES">
+<structure:Name xml:lang="en">Footnotes</structure:Name>
+<structure:Description xml:lang="en">Footnotes</structure:Description>
+</structure:Concept>
+<structure:Concept id="FREIGHT_MAIL">
+<structure:Name xml:lang="en">Freight and Mail</structure:Name>
+<structure:Description xml:lang="en">Tonnes of Freight and mail</structure:Description>
+</structure:Concept>
+<structure:Concept id="FREQ">
+<structure:Name xml:lang="en">Frequency</structure:Name>
+<structure:Description xml:lang="en">Frequency of the series (e.g. A, Q, M, D)</structure:Description>
+</structure:Concept>
+<structure:Concept id="FRONT_TRANS">
+<structure:Name xml:lang="en">Mode of transport at the frontier</structure:Name>
+<structure:Description xml:lang="en">Indication of the mode of transport at the external frontier</structure:Description>
+</structure:Concept>
+<structure:Concept id="FT_PT">
+<structure:Name xml:lang="en">Full-time_Part-time</structure:Name>
+<structure:Description xml:lang="en">Full-time or Part-time employee</structure:Description>
+</structure:Concept>
+<structure:Concept id="FUTURE_PURCHASES">
+<structure:Name xml:lang="en">Future purchases</structure:Name>
+<structure:Description xml:lang="en">Level of future purchases</structure:Description>
+</structure:Concept>
+<structure:Concept id="G_TONNAGE">
+<structure:Name xml:lang="en">Gross tonnage of vessels</structure:Name>
+<structure:Description xml:lang="en">Gross tonnage of vessels</structure:Description>
+</structure:Concept>
+<structure:Concept id="G_WEIGHT">
+<structure:Name xml:lang="en">Gross weight of goods in tonnes</structure:Name>
+<structure:Description xml:lang="en">Gross weight of goods in tonnes</structure:Description>
+</structure:Concept>
+<structure:Concept id="GAE">
+<structure:Name xml:lang="en">Gross Annual Earnings</structure:Name>
+<structure:Description xml:lang="en">Total gross annual earnings in the reference year</structure:Description>
+</structure:Concept>
+<structure:Concept id="GENDER">
+<structure:Name xml:lang="en">Gender</structure:Name>
+<structure:Description xml:lang="en">Gender (total, male, female)</structure:Description>
+</structure:Concept>
+<structure:Concept id="GEOGRAPHICAL">
+<structure:Name xml:lang="en">Geographical breakdown</structure:Name>
+<structure:Description xml:lang="en">Code for the geographical breakdown of the partner countries</structure:Description>
+</structure:Concept>
+<structure:Concept id="GEOLOC">
+<structure:Name xml:lang="en">Geographical location</structure:Name>
+<structure:Description xml:lang="en">The territorial unit where the accident has occurred.</structure:Description>
+</structure:Concept>
+<structure:Concept id="GHE">
+<structure:Name xml:lang="en">Gross Hourly Earnings</structure:Name>
+<structure:Description xml:lang="en">Average gross hourly earnings in the representative month</structure:Description>
+</structure:Concept>
+<structure:Concept id="GME">
+<structure:Name xml:lang="en">Gross Monthly Earnings</structure:Name>
+<structure:Description xml:lang="en">Total gross earnings for a representative month</structure:Description>
+</structure:Concept>
+<structure:Concept id="GOODS">
+<structure:Name xml:lang="en">Type of goods</structure:Name>
+<structure:Description xml:lang="en">Type of goods</structure:Description>
+</structure:Concept>
+<structure:Concept id="GOODS_ID">
+<structure:Name xml:lang="en">Goods Operation Identifier</structure:Name>
+<structure:Description xml:lang="en">Goods Operation Identifier</structure:Description>
+</structure:Concept>
+<structure:Concept id="GOV_SCHEME">
+<structure:Name xml:lang="en">Government scheme</structure:Name>
+<structure:Description xml:lang="en">Coverage by a government scheme designed to promote employment</structure:Description>
+</structure:Concept>
+<structure:Concept id="GROUP_SIZE">
+<structure:Name xml:lang="en">Group size</structure:Name>
+<structure:Description xml:lang="en">Size of the group of enterprises</structure:Description>
+</structure:Concept>
+<structure:Concept id="IND_REF_YEAR">
+<structure:Name xml:lang="en">Index Reference Year</structure:Name>
+<structure:Description xml:lang="en">Index Reference Year</structure:Description>
+</structure:Concept>
+<structure:Concept id="INJPART">
+<structure:Name xml:lang="en">Part of body injured</structure:Name>
+<structure:Description xml:lang="en">The part of the body injured.</structure:Description>
+</structure:Concept>
+<structure:Concept id="INJURY">
+<structure:Name xml:lang="en">Type of injury</structure:Name>
+<structure:Description xml:lang="en">The physical consequences for the victim.</structure:Description>
+</structure:Concept>
+<structure:Concept id="INSTRUMENTS">
+<structure:Name xml:lang="en">Transactions of Tables 6&amp;7 ESA95</structure:Name>
+<structure:Description xml:lang="en">Transaction defined in the European System of Accounts  for Tables 6&amp;7</structure:Description>
+</structure:Concept>
+<structure:Concept id="INT_TRANS">
+<structure:Name xml:lang="en">Internal mode of transport</structure:Name>
+<structure:Description xml:lang="en">Indication of the internal mode of transport</structure:Description>
+</structure:Concept>
+<structure:Concept id="INTFRET">
+<structure:Name xml:lang="en">Freight transport activity: international</structure:Name>
+<structure:Description xml:lang="en">Freight transport activity: international</structure:Description>
+</structure:Concept>
+<structure:Concept id="INTPASS">
+<structure:Name xml:lang="en">Passenger transport activity: international</structure:Name>
+<structure:Description xml:lang="en">Passenger transport activity: international</structure:Description>
+</structure:Concept>
+<structure:Concept id="INV_AMOUNT">
+<structure:Name xml:lang="en">Not relevant (ex Invoiced amount)</structure:Name>
+<structure:Description xml:lang="en">Indicate the invoiced amount when the Member State collects this information (at product level)</structure:Description>
+</structure:Concept>
+<structure:Concept id="INV_CONF">
+<structure:Name xml:lang="en">Not relevant (ex  Invoiced amount confidentiality flag)</structure:Name>
+<structure:Description xml:lang="en">Application of confidentiality to the invoiced amount</structure:Description>
+</structure:Concept>
+<structure:Concept id="JOURN_ID">
+<structure:Name xml:lang="en">Journey Sequence Number</structure:Name>
+<structure:Description xml:lang="en">Journey Sequence Number</structure:Description>
+</structure:Concept>
+<structure:Concept id="JOURNEY_TYPE">
+<structure:Name xml:lang="en">Type of Journey (Var. A2.1)</structure:Name>
+<structure:Description xml:lang="en">Type of Journey (Var. A2.1)</structure:Description>
+</structure:Concept>
+<structure:Concept id="JVC_ACTIVITY">
+<structure:Name xml:lang="en">Economic Activity code</structure:Name>
+<structure:Description xml:lang="en">Based on NACE Rev.1</structure:Description>
+</structure:Concept>
+<structure:Concept id="JVC_CONCEPT">
+<structure:Name xml:lang="en">Job Vacancy Statistics Concept</structure:Name>
+<structure:Description xml:lang="en">Concept in JVC Statistics</structure:Description>
+</structure:Concept>
+<structure:Concept id="KEY_E">
+<structure:Name xml:lang="en">KEY_E</structure:Name>
+<structure:Description xml:lang="en">Identification key of the local unit the employee belongs to</structure:Description>
+</structure:Concept>
+<structure:Concept id="KEY_L">
+<structure:Name xml:lang="en">KEY_L</structure:Name>
+<structure:Description xml:lang="en">Key identifying the local unit</structure:Description>
+</structure:Concept>
+<structure:Concept id="KIND_PAYMENT">
+<structure:Name xml:lang="en">Kind payment</structure:Name>
+<structure:Description xml:lang="en">Annual estimation for payments in kind</structure:Description>
+</structure:Concept>
+<structure:Concept id="KM_EMPTY">
+<structure:Name xml:lang="en">Total kilometres empty</structure:Name>
+<structure:Description xml:lang="en">Total vehicle kilometres during the survey period - empty (including journeys without semi-trailer) (Var. A1.8.2)</structure:Description>
+</structure:Concept>
+<structure:Concept id="KM_LOADED">
+<structure:Name xml:lang="en">Total kilometres loaded</structure:Name>
+<structure:Description xml:lang="en">Total vehicle kilometres during the survey period - loaded (Var. A1.8.1)</structure:Description>
+</structure:Concept>
+<structure:Concept id="LCI_ACTIVITY">
+<structure:Name xml:lang="en">Economic Activity code</structure:Name>
+<structure:Description xml:lang="en">NACE Rev. 1 &amp; special aggregates</structure:Description>
+</structure:Concept>
+<structure:Concept id="LCI_INDICATOR">
+<structure:Name xml:lang="en">LCI Indicator</structure:Name>
+<structure:Description xml:lang="en">Type of series, such as Total Labour Cost, Wages and Salaries, etc.</structure:Description>
+</structure:Concept>
+<structure:Concept id="LDG_COUNTRY">
+<structure:Name xml:lang="en">Country of loading</structure:Name>
+<structure:Description xml:lang="en">Country of loading</structure:Description>
+</structure:Concept>
+<structure:Concept id="LDG_DEGREE">
+<structure:Name xml:lang="en">Degree of loading of vehicle (in terms of maximum volume of space used during the journey) (Var. A2.</structure:Name>
+<structure:Description xml:lang="en">Degree of loading of vehicle (in terms of maximum volume of space used during the journey) (Var. A2.10)</structure:Description>
+</structure:Concept>
+<structure:Concept id="LDG_GOODS">
+<structure:Name xml:lang="en">Place of loading of the goods (Var. A3.5)</structure:Name>
+<structure:Description xml:lang="en">Place of loading of the goods (Var. A3.5)</structure:Description>
+</structure:Concept>
+<structure:Concept id="LDG_PLACE">
+<structure:Name xml:lang="en">Place of loading (of the goods road motor vehicle, for a laden journey) (Var. A2.3)</structure:Name>
+<structure:Description xml:lang="en">Place of loading (of the goods road motor vehicle, for a laden journey) (Var. A2.3)</structure:Description>
+</structure:Concept>
+<structure:Concept id="LDG_PLACE_OTHER">
+<structure:Name xml:lang="en">Place of loading, if any, of the goods road motor vehicle on another means of transport (Var. A2.8)</structure:Name>
+<structure:Description xml:lang="en">Place of loading, if any, of the goods road motor vehicle on another means of transport (Var. A2.8)</structure:Description>
+</structure:Concept>
+<structure:Concept id="LDG_ULDG_PORT">
+<structure:Name xml:lang="en">Port of Loading/Unloading</structure:Name>
+<structure:Description xml:lang="en">Port of Loading/Unloading</structure:Description>
+</structure:Concept>
+<structure:Concept id="LEGAL_FORM">
+<structure:Name xml:lang="en">Legal Form</structure:Name>
+<structure:Description xml:lang="en">Legal Form</structure:Description>
+</structure:Concept>
+<structure:Concept id="LEGAL_GEO_BREAKDOWN_CI">
+<structure:Name xml:lang="en">Legal geographical breakdown</structure:Name>
+<structure:Description xml:lang="en">Code for the legal status of the enterprise or for the geographical breakdown of the partner countries</structure:Description>
+</structure:Concept>
+<structure:Concept id="LEGAL_GEO_BREAKDOWN_IS">
+<structure:Name xml:lang="en">Legal geographical breakdown</structure:Name>
+<structure:Description xml:lang="en">Code for the legal status of the enterprise or for the geographical breakdown of the partner countries</structure:Description>
+</structure:Concept>
+<structure:Concept id="LFS_BREAKDOWN">
+<structure:Name xml:lang="en">LFS Breakdown</structure:Name>
+<structure:Description xml:lang="en">NACE Rev.1 sections, level of education, employment and unemployment breakdown.</structure:Description>
+</structure:Concept>
+<structure:Concept id="LFS_INDICATOR">
+<structure:Name xml:lang="en">LFS Indicator</structure:Name>
+<structure:Description xml:lang="en">Type of indicator, such as total employment, unemployment, etc.</structure:Description>
+</structure:Concept>
+<structure:Concept id="LINK_A2">
+<structure:Name xml:lang="en">Number of linked A2 records</structure:Name>
+<structure:Description xml:lang="en">Number of linked A2 records</structure:Description>
+</structure:Concept>
+<structure:Concept id="LINK_A3">
+<structure:Name xml:lang="en">Number of linked A3 records.</structure:Name>
+<structure:Description xml:lang="en">Number of linked A3 records.</structure:Description>
+</structure:Concept>
+<structure:Concept id="LIST">
+<structure:Name xml:lang="en">List</structure:Name>
+<structure:Description xml:lang="en">Code corresponding to the list to which the variable - characteristic - belongs</structure:Description>
+</structure:Concept>
+<structure:Concept id="LOAD_CAP">
+<structure:Name xml:lang="en">Load Capacity (100 kg) (Var. A1.5)</structure:Name>
+<structure:Description xml:lang="en">Load Capacity (100 kg) (Var. A1.5)</structure:Description>
+</structure:Concept>
+<structure:Concept id="LOC_FATS">
+<structure:Name xml:lang="en">Location of ownership or FATS</structure:Name>
+<structure:Description xml:lang="en">Location of ownership - FATS</structure:Description>
+</structure:Concept>
+<structure:Concept id="LOSTDAYS">
+<structure:Name xml:lang="en">Days lost</structure:Name>
+<structure:Description xml:lang="en">The number of calendar days the victim is unfit to work due to an accident at work.</structure:Description>
+</structure:Concept>
+<structure:Concept id="MATRLAGENT">
+<structure:Name xml:lang="en">Material agent of Specific physical activity</structure:Name>
+<structure:Description xml:lang="en">The tool, object, or instrument being used by the victim.</structure:Description>
+</structure:Concept>
+<structure:Concept id="MAX_WEIGHT">
+<structure:Name xml:lang="en">Maximum permissible laden weight (100 kg) (Var. A1.4).</structure:Name>
+<structure:Description xml:lang="en">Maximum permissible laden weight (Var. A1.4).</structure:Description>
+</structure:Concept>
+<structure:Concept id="MOVEMENTS">
+<structure:Name xml:lang="en">Aircraft Movements</structure:Name>
+<structure:Description xml:lang="en">Number of flights</structure:Description>
+</structure:Concept>
+<structure:Concept id="NACE_AGG">
+<structure:Name xml:lang="en">NACE Aggregation</structure:Name>
+<structure:Description xml:lang="en">Aggregation of NACE codes</structure:Description>
+</structure:Concept>
+<structure:Concept id="NACER1">
+<structure:Name xml:lang="en">Economic activity of the employer</structure:Name>
+<structure:Description xml:lang="en">The main ìeconomicî activity of the local unit of the enterprise of the victim.</structure:Description>
+</structure:Concept>
+<structure:Concept id="NAT_TITLE">
+<structure:Name xml:lang="en">National language title</structure:Name>
+<structure:Description xml:lang="en">The full sibling group title that would normally appear in publications (or are otherwise in general use) in the national language of the reporting country</structure:Description>
+</structure:Concept>
+<structure:Concept id="NATFRET">
+<structure:Name xml:lang="en">Freight transport activity: national</structure:Name>
+<structure:Description xml:lang="en">Freight transport activity: national</structure:Description>
+</structure:Concept>
+<structure:Concept id="NATIONAL">
+<structure:Name xml:lang="en">Nationality</structure:Name>
+<structure:Description xml:lang="en">The country of citizenship.</structure:Description>
+</structure:Concept>
+<structure:Concept id="NATPASS">
+<structure:Name xml:lang="en">Passenger transport activity: national</structure:Name>
+<structure:Description xml:lang="en">Passenger transport activity: national</structure:Description>
+</structure:Concept>
+<structure:Concept id="NBRITU">
+<structure:Name xml:lang="en">Number of Intermodal transport unit</structure:Name>
+<structure:Description xml:lang="en">Number of Intermodal transport unit</structure:Description>
+</structure:Concept>
+<structure:Concept id="NET_CONF">
+<structure:Name xml:lang="en">Quantity confidentiality flag</structure:Name>
+<structure:Description xml:lang="en">Application of confidentiality to net mass</structure:Description>
+</structure:Concept>
+<structure:Concept id="NET_MASS">
+<structure:Name xml:lang="en">Quantity expressed in net mass</structure:Name>
+<structure:Description xml:lang="en">Indicate net mass if the threshold indicator is equal to 1</structure:Description>
+</structure:Concept>
+<structure:Concept id="NETSEG">
+<structure:Name xml:lang="en">Network Segment</structure:Name>
+<structure:Description xml:lang="en">Network Segment</structure:Description>
+</structure:Concept>
+<structure:Concept id="NON_RESID_ECON_ACT">
+<structure:Name xml:lang="en">Non-resident economic activity</structure:Name>
+<structure:Description xml:lang="en">Non-resident economic activity</structure:Description>
+</structure:Concept>
+<structure:Concept id="NR_PASSENGERS">
+<structure:Name xml:lang="en">Number of Passengers</structure:Name>
+<structure:Description xml:lang="en">Number of Passengers (excluding cruise passengers)</structure:Description>
+</structure:Concept>
+<structure:Concept id="NR_UNITS">
+<structure:Name xml:lang="en">Number of units</structure:Name>
+<structure:Description xml:lang="en">Number of units</structure:Description>
+</structure:Concept>
+<structure:Concept id="NUMENTERPRISES">
+<structure:Name xml:lang="en">Number of enterprises</structure:Name>
+<structure:Description xml:lang="en">Number of enterprises</structure:Description>
+</structure:Concept>
+<structure:Concept id="NUTS1">
+<structure:Name xml:lang="en">Regional Code</structure:Name>
+<structure:Description xml:lang="en">Regional code according to NUTS classification (level 1) in Regulation (EC) no 1059/2003</structure:Description>
+</structure:Concept>
+<structure:Concept id="NUTS2">
+<structure:Name xml:lang="en">Regional Code</structure:Name>
+<structure:Description xml:lang="en">Regional code according to NUTS classification (level 2) in Regulation (EC) no 1059/2003</structure:Description>
+</structure:Concept>
+<structure:Concept id="OBS_COM">
+<structure:Name xml:lang="en">Observation comment</structure:Name>
+<structure:Description xml:lang="en">Information explaining an abnormal or missing observation value</structure:Description>
+</structure:Concept>
+<structure:Concept id="OBS_CONF">
+<structure:Name xml:lang="en">Observation confidentiality</structure:Name>
+<structure:Description xml:lang="en">Information about whether or not the observation can be made known outside the receiving institution</structure:Description>
+</structure:Concept>
+<structure:Concept id="OBS_PRE_BREAK">
+<structure:Name xml:lang="en">Pre-break observation value</structure:Name>
+<structure:Description xml:lang="en">Pre-break observation value</structure:Description>
+</structure:Concept>
+<structure:Concept id="OBS_STATUS">
+<structure:Name xml:lang="en">Observation status</structure:Name>
+<structure:Description xml:lang="en">Infomation on quality of value or an unusual or missing value</structure:Description>
+</structure:Concept>
+<structure:Concept id="OBS_VALUE">
+<structure:Name xml:lang="en">Observation value</structure:Name>
+<structure:Description xml:lang="en">Observation value</structure:Description>
+</structure:Concept>
+<structure:Concept id="OBSERVATION_TYPE">
+<structure:Name xml:lang="en">Type of observation</structure:Name>
+<structure:Description xml:lang="en">Type of observation</structure:Description>
+</structure:Concept>
+<structure:Concept id="OCCUPATION">
+<structure:Name xml:lang="en">Occupation</structure:Name>
+<structure:Description xml:lang="en">Occupation</structure:Description>
+</structure:Concept>
+<structure:Concept id="ORGANISATION">
+<structure:Name xml:lang="en">Organisation</structure:Name>
+<structure:Description xml:lang="en">Reporting/sending or receiving organisation</structure:Description>
+</structure:Concept>
+<structure:Concept id="OTH_PART_CONF">
+<structure:Name xml:lang="en">Not relevant (ex  Other partner country confidential code)</structure:Name>
+<structure:Description xml:lang="en">Other partner country</structure:Description>
+</structure:Concept>
+<structure:Concept id="OTH_PART_COUNTRY">
+<structure:Name xml:lang="en">Other partner country</structure:Name>
+<structure:Description xml:lang="en">GEONOM code of the country of consignment (for imports only)</structure:Description>
+</structure:Concept>
+<structure:Concept id="OVERT_EARNINGS">
+<structure:Name xml:lang="en">Overtime earnings</structure:Name>
+<structure:Description xml:lang="en">Earnings related to overtime</structure:Description>
+</structure:Concept>
+<structure:Concept id="OWN_FATS">
+<structure:Name xml:lang="en">Ownership or FATS</structure:Name>
+<structure:Description xml:lang="en">Ownership or FATS identification</structure:Description>
+</structure:Concept>
+<structure:Concept id="OWN_LOCATION">
+<structure:Name xml:lang="en">Location of ownership</structure:Name>
+<structure:Description xml:lang="en">Location of ownership</structure:Description>
+</structure:Concept>
+<structure:Concept id="P_ANNUAL_SICK">
+<structure:Name xml:lang="en">Paid annual sick</structure:Name>
+<structure:Description xml:lang="en">Annual days of sick leave paid by the employer</structure:Description>
+</structure:Concept>
+<structure:Concept id="P_OVERTIME_H">
+<structure:Name xml:lang="en">Paid overtime hours</structure:Name>
+<structure:Description xml:lang="en">Number of overtime hours paid in the reference month</structure:Description>
+</structure:Concept>
+<structure:Concept id="PAID_H">
+<structure:Name xml:lang="en">Paid hours</structure:Name>
+<structure:Description xml:lang="en">Number of paid hours during the representative month</structure:Description>
+</structure:Concept>
+<structure:Concept id="PART_AIPORT">
+<structure:Name xml:lang="en">Partner Airport</structure:Name>
+<structure:Description xml:lang="en">The ICAO code of the partner airport</structure:Description>
+</structure:Concept>
+<structure:Concept id="PART_CONF">
+<structure:Name xml:lang="en">Partner country(confidentiality code)</structure:Name>
+<structure:Description xml:lang="en">Partner country conforming to regulations</structure:Description>
+</structure:Concept>
+<structure:Concept id="PART_COUNTRY">
+<structure:Name xml:lang="en">Partner country (real code)</structure:Name>
+<structure:Description xml:lang="en">For imports the country of origin and for exports the country of destination</structure:Description>
+</structure:Concept>
+<structure:Concept id="PASS">
+<structure:Name xml:lang="en">Total passenger transport</structure:Name>
+<structure:Description xml:lang="en">Total passenger transport</structure:Description>
+</structure:Concept>
+<structure:Concept id="PASSENGERS">
+<structure:Name xml:lang="en">Passengers</structure:Name>
+<structure:Description xml:lang="en">Number of passengers</structure:Description>
+</structure:Concept>
+<structure:Concept id="PASSENGERS_CR">
+<structure:Name xml:lang="en">Number of Passengers</structure:Name>
+<structure:Description xml:lang="en">Number of Passengers on cruise passenger excursion</structure:Description>
+</structure:Concept>
+<structure:Concept id="PASSENGERS_SE_C">
+<structure:Name xml:lang="en">Number of Passengers</structure:Name>
+<structure:Description xml:lang="en">Number of Passengers starting and ending and cruise</structure:Description>
+</structure:Concept>
+<structure:Concept id="PASSKM">
+<structure:Name xml:lang="en">Total passenger transport (1000 passengers km)</structure:Name>
+<structure:Description xml:lang="en">Total passenger transport (1000 passengers km)</structure:Description>
+</structure:Concept>
+<structure:Concept id="PERIOD">
+<structure:Name xml:lang="en">Reference Period</structure:Name>
+<structure:Description xml:lang="en">The reported period</structure:Description>
+</structure:Concept>
+<structure:Concept id="PERIODICITY">
+<structure:Name xml:lang="en">Periodicity</structure:Name>
+<structure:Description xml:lang="en">Periodicity</structure:Description>
+</structure:Concept>
+<structure:Concept id="PERS_I">
+<structure:Name xml:lang="en">Number of persons seriously injured</structure:Name>
+<structure:Description xml:lang="en">Number of persons seriously injured</structure:Description>
+</structure:Concept>
+<structure:Concept id="PERS_K">
+<structure:Name xml:lang="en">Number of persons killed</structure:Name>
+<structure:Description xml:lang="en">Number of persons killed</structure:Description>
+</structure:Concept>
+<structure:Concept id="PERSID">
+<structure:Name xml:lang="en">Category Person</structure:Name>
+<structure:Description xml:lang="en">Catergory Person</structure:Description>
+</structure:Concept>
+<structure:Concept id="PHYSACTIV">
+<structure:Name xml:lang="en">Specific physical activity</structure:Name>
+<structure:Description xml:lang="en">What the victim was doing at the time of the accident.</structure:Description>
+</structure:Concept>
+<structure:Concept id="POPULATION">
+<structure:Name xml:lang="en">Population</structure:Name>
+<structure:Description xml:lang="en">Population</structure:Description>
+</structure:Concept>
+<structure:Concept id="POSITION">
+<structure:Name xml:lang="en">Position</structure:Name>
+<structure:Description xml:lang="en">Management position or supervisory position</structure:Description>
+</structure:Concept>
+<structure:Concept id="PRCCODE">
+<structure:Name xml:lang="en">PRODCOM code</structure:Name>
+<structure:Description xml:lang="en">PRODCOM code</structure:Description>
+</structure:Concept>
+<structure:Concept id="PREFERENCE">
+<structure:Name xml:lang="en">Preference</structure:Name>
+<structure:Description xml:lang="en">Preference for imports only</structure:Description>
+</structure:Concept>
+<structure:Concept id="PRICE_BASE">
+<structure:Name xml:lang="en">Unit price base</structure:Name>
+<structure:Description xml:lang="en">Unit price base</structure:Description>
+</structure:Concept>
+<structure:Concept id="PRICES">
+<structure:Name xml:lang="en">Assessment/Prices</structure:Name>
+<structure:Description xml:lang="en">Assessment/Prices</structure:Description>
+</structure:Concept>
+<structure:Concept id="PRIN_MARKET">
+<structure:Name xml:lang="en">Principal market</structure:Name>
+<structure:Description xml:lang="en">Principal market for the enterprise&apos;s products</structure:Description>
+</structure:Concept>
+<structure:Concept id="PROD_ANNUAL_BONUS">
+<structure:Name xml:lang="en">Productivity annual bonus</structure:Name>
+<structure:Description xml:lang="en">Annual bonuses based on productivity</structure:Description>
+</structure:Concept>
+<structure:Concept id="PROD_BREAKDOWN">
+<structure:Name xml:lang="en">Product breakdown</structure:Name>
+<structure:Description xml:lang="en">Product breakdown</structure:Description>
+</structure:Concept>
+<structure:Concept id="PRODTYPEQ1">
+<structure:Name xml:lang="en">Production type of first group of specified quantity</structure:Name>
+<structure:Description xml:lang="en">Production type of first group of specified quantity</structure:Description>
+</structure:Concept>
+<structure:Concept id="PRODTYPEQ2">
+<structure:Name xml:lang="en">Production type of second group of specified quantity</structure:Name>
+<structure:Description xml:lang="en">Production type of second group of specified quantity</structure:Description>
+</structure:Concept>
+<structure:Concept id="PRODTYPEVAL">
+<structure:Name xml:lang="en">Production type for specified value</structure:Name>
+<structure:Description xml:lang="en">Production type for specified value</structure:Description>
+</structure:Concept>
+<structure:Concept id="PRODUCT">
+<structure:Name xml:lang="en">Product</structure:Name>
+<structure:Description xml:lang="en">An exhaustive breakdown of turnover by product is to be provided</structure:Description>
+</structure:Concept>
+<structure:Concept id="PRODUCT_CODE">
+<structure:Name xml:lang="en">CN product code or TARIC (real code)</structure:Name>
+<structure:Description xml:lang="en">CN product code or TARIC. (real code)</structure:Description>
+</structure:Concept>
+<structure:Concept id="PRODUCT_CODE_CONF">
+<structure:Name xml:lang="en">CN product (confidential code)</structure:Name>
+<structure:Description xml:lang="en">Confidentiality code</structure:Description>
+</structure:Concept>
+<structure:Concept id="PRODUCT_SEC">
+<structure:Name xml:lang="en">Product specialisation</structure:Name>
+<structure:Description xml:lang="en">Product specialisation class</structure:Description>
+</structure:Concept>
+<structure:Concept id="PUBL_MU">
+<structure:Name xml:lang="en">Source publication (EA only)</structure:Name>
+<structure:Description xml:lang="en">Source publication (EA only)</structure:Description>
+</structure:Concept>
+<structure:Concept id="PUBL_PUBLIC">
+<structure:Name xml:lang="en">Source publication (public)</structure:Name>
+<structure:Description xml:lang="en">Source publication (public)</structure:Description>
+</structure:Concept>
+<structure:Concept id="QUANTITY1A">
+<structure:Name xml:lang="en">Quantity value for first group using measuring method A</structure:Name>
+<structure:Description xml:lang="en">Quantity value for first group using measuring method A</structure:Description>
+</structure:Concept>
+<structure:Concept id="QUANTITY1B">
+<structure:Name xml:lang="en">Quantity value for first group using measuring method B</structure:Name>
+<structure:Description xml:lang="en">Quantity value for first group using measuring method B</structure:Description>
+</structure:Concept>
+<structure:Concept id="QUANTITY2A">
+<structure:Name xml:lang="en">Quantity value for second group using measuring method A</structure:Name>
+<structure:Description xml:lang="en">Quantity value for second group using measuring method A</structure:Description>
+</structure:Concept>
+<structure:Concept id="QUANTITY2B">
+<structure:Name xml:lang="en">Quantity value for second group using measuring method B</structure:Name>
+<structure:Description xml:lang="en">Quantity value for second group using measuring method B</structure:Description>
+</structure:Concept>
+<structure:Concept id="QUARTER">
+<structure:Name xml:lang="en">Quarter of the data set</structure:Name>
+<structure:Description xml:lang="en">Quarter of the data set</structure:Description>
+</structure:Concept>
+<structure:Concept id="QUESTN">
+<structure:Name xml:lang="en">Questionnaire number</structure:Name>
+<structure:Description xml:lang="en">Questionnaire number</structure:Description>
+</structure:Concept>
+<structure:Concept id="RAIL_TEN">
+<structure:Name xml:lang="en">Rail Transport European Network</structure:Name>
+<structure:Description xml:lang="en">Rail Transport European Network flag</structure:Description>
+</structure:Concept>
+<structure:Concept id="RCOUNT">
+<structure:Name xml:lang="en">Reporting country</structure:Name>
+<structure:Description xml:lang="en">Reporting country</structure:Description>
+</structure:Concept>
+<structure:Concept id="REF_AREA">
+<structure:Name xml:lang="en">Reference area</structure:Name>
+<structure:Description xml:lang="en">The country, or geographical/political group of countries that the measured economic phenomenon relates to</structure:Description>
+</structure:Concept>
+<structure:Concept id="REF_COUNTRY">
+<structure:Name xml:lang="en">Reporting country</structure:Name>
+<structure:Description xml:lang="en">GEONOM indication code for  the reporting Member State</structure:Description>
+</structure:Concept>
+<structure:Concept id="REF_PERIOD">
+<structure:Name xml:lang="en">Time period or range</structure:Name>
+<structure:Description xml:lang="en">The calendar month in which VAT  is due on the intra-Community transactions to be surveyed</structure:Description>
+</structure:Concept>
+<structure:Concept id="REF_QUARTER">
+<structure:Name xml:lang="en">The quarter of the year</structure:Name>
+<structure:Description xml:lang="en">The quarter of the year</structure:Description>
+</structure:Concept>
+<structure:Concept id="REF_YEAR">
+<structure:Name xml:lang="en">Reference Year</structure:Name>
+<structure:Description xml:lang="en">&quot;The year of th reported period with format &quot;&quot;YYYY&quot;&quot; (e.g. 2000)&quot;</structure:Description>
+</structure:Concept>
+<structure:Concept id="REG_NATIONAL">
+<structure:Name xml:lang="en">Registration Nationality</structure:Name>
+<structure:Description xml:lang="en">Nationality of registration of vessel</structure:Description>
+</structure:Concept>
+<structure:Concept id="REGION">
+<structure:Name xml:lang="en">Region</structure:Name>
+<structure:Description xml:lang="en">Geographical location of the observation unit</structure:Description>
+</structure:Concept>
+<structure:Concept id="REGULAR_BONUS">
+<structure:Name xml:lang="en">Regular bonus</structure:Name>
+<structure:Description xml:lang="en">Regular bonuses not paid at every pay period</structure:Description>
+</structure:Concept>
+<structure:Concept id="RELATION">
+<structure:Name xml:lang="en">Relation</structure:Name>
+<structure:Description xml:lang="en">Relation (Maritime Coastal Area)</structure:Description>
+</structure:Concept>
+<structure:Concept id="REP_COUNTRY">
+<structure:Name xml:lang="en">Reporting Country</structure:Name>
+<structure:Description xml:lang="en">Reporting Country</structure:Description>
+</structure:Concept>
+<structure:Concept id="REPORTING_COUNTRY">
+<structure:Name xml:lang="en">Reporting Country</structure:Name>
+<structure:Description xml:lang="en">Reporting Country</structure:Description>
+</structure:Concept>
+<structure:Concept id="REPORTING_PORT">
+<structure:Name xml:lang="en">The reporting port</structure:Name>
+<structure:Description xml:lang="en">The reporting port</structure:Description>
+</structure:Concept>
+<structure:Concept id="RES_COUNTRY">
+<structure:Name xml:lang="en">Residence country</structure:Name>
+<structure:Description xml:lang="en">Country of residence of the entity controlling the group of enterprises</structure:Description>
+</structure:Concept>
+<structure:Concept id="RESID_ECON_ACT">
+<structure:Name xml:lang="en">Resident economic activity</structure:Name>
+<structure:Description xml:lang="en">Resident economic activity</structure:Description>
+</structure:Concept>
+<structure:Concept id="RESIDENCE">
+<structure:Name xml:lang="en">Residence</structure:Name>
+<structure:Description xml:lang="en">Residence of the client</structure:Description>
+</structure:Concept>
+<structure:Concept id="SALES_SIZE">
+<structure:Name xml:lang="en">Sales size</structure:Name>
+<structure:Description xml:lang="en">Sales area size</structure:Description>
+</structure:Concept>
+<structure:Concept id="SBS_ACTIVITY">
+<structure:Name xml:lang="en">Economic Activity</structure:Name>
+<structure:Description xml:lang="en">SBS economic Activity</structure:Description>
+</structure:Concept>
+<structure:Concept id="SBS_CONFIDENTIALITY">
+<structure:Name xml:lang="en">Confidentiality flag</structure:Name>
+<structure:Description xml:lang="en">Confidentiality status of the value</structure:Description>
+</structure:Concept>
+<structure:Concept id="SBS_INSURANCE">
+<structure:Name xml:lang="en">Insurance</structure:Name>
+<structure:Description xml:lang="en">Type of insurance enterprise or insurance business</structure:Description>
+</structure:Concept>
+<structure:Concept id="SBS_MEASUREMENT">
+<structure:Name xml:lang="en">Measurement</structure:Name>
+<structure:Description xml:lang="en">Type of measurement</structure:Description>
+</structure:Concept>
+<structure:Concept id="SBS_QUALITY">
+<structure:Name xml:lang="en">Quality flag</structure:Name>
+<structure:Description xml:lang="en">Quality of the value</structure:Description>
+</structure:Concept>
+<structure:Concept id="SBS_UNIT">
+<structure:Name xml:lang="en">Unit</structure:Name>
+<structure:Description xml:lang="en">Codes for indicating if non-standard units have been used</structure:Description>
+</structure:Concept>
+<structure:Concept id="SBS_VARIABLE">
+<structure:Name xml:lang="en">SBS Variable</structure:Name>
+<structure:Description xml:lang="en">SBS Variable code</structure:Description>
+</structure:Concept>
+<structure:Concept id="SBSQR_ACTIVITY">
+<structure:Name xml:lang="en">Economic Activity for SBS Quality Indicators domain</structure:Name>
+<structure:Description xml:lang="en">SBS Quality Indicators economic Activity</structure:Description>
+</structure:Concept>
+<structure:Concept id="SBSQR_INDICATOR">
+<structure:Name xml:lang="en">SBS Quality Indicator</structure:Name>
+<structure:Description xml:lang="en">SBS Quality Indicator</structure:Description>
+</structure:Concept>
+<structure:Concept id="SBSQR_SERIES">
+<structure:Name xml:lang="en">Series for SBS Quality Indicators</structure:Name>
+<structure:Description xml:lang="en">Series for SBS Quality Indicators</structure:Description>
+</structure:Concept>
+<structure:Concept id="SBSQR_TERR_UNIT">
+<structure:Name xml:lang="en">Territorial unit</structure:Name>
+<structure:Description xml:lang="en">Corresponds to the country code</structure:Description>
+</structure:Concept>
+<structure:Concept id="SBSQR_VALUE">
+<structure:Name xml:lang="en">The value reported for the SBS Quality Indicators</structure:Name>
+<structure:Description xml:lang="en">The value reported for the SBS Quality Indicators</structure:Description>
+</structure:Concept>
+<structure:Concept id="SBSS_PROD_PLANT">
+<structure:Name xml:lang="en">Type of Production or Plant in Steel Statistics</structure:Name>
+<structure:Description xml:lang="en">Type of Production or Plant in Steel Statistics</structure:Description>
+</structure:Concept>
+<structure:Concept id="SBSS_VARIABLE">
+<structure:Name xml:lang="en">Steel Statistics variable</structure:Name>
+<structure:Description xml:lang="en">Steel Statistics variable</structure:Description>
+</structure:Concept>
+<structure:Concept id="SCHEDULED">
+<structure:Name xml:lang="en">Scheduled/Non Scheduled</structure:Name>
+<structure:Description xml:lang="en">Code indication of scheduled/non scheduled flight</structure:Description>
+</structure:Concept>
+<structure:Concept id="SEATS_AVAIL">
+<structure:Name xml:lang="en">Passenger seats available</structure:Name>
+<structure:Description xml:lang="en">Number of passenger seats available for sale (or a concepts as close as possible to this definition)</structure:Description>
+</structure:Concept>
+<structure:Concept id="SEC_CONTR_TAX">
+<structure:Name xml:lang="en">Security Contributions and taxes</structure:Name>
+<structure:Description xml:lang="en">Employees&apos; social security contributions and taxes paid by the employer on behalf of the employee to government authorities during the representative month</structure:Description>
+</structure:Concept>
+<structure:Concept id="SERIES">
+<structure:Name xml:lang="en">SBS Series</structure:Name>
+<structure:Description xml:lang="en">Type of SBS series</structure:Description>
+</structure:Concept>
+<structure:Concept id="SERIES_DENOM">
+<structure:Name xml:lang="en">Series denominat/spec calcul</structure:Name>
+<structure:Description xml:lang="en">Series denominat/spec calcul</structure:Description>
+</structure:Concept>
+<structure:Concept id="SERIES_DS">
+<structure:Name xml:lang="en">SBSDS Series</structure:Name>
+<structure:Description xml:lang="en">Series for SBS Demand for Services</structure:Description>
+</structure:Concept>
+<structure:Concept id="SERIES_FATS">
+<structure:Name xml:lang="en">SBSFATS Series</structure:Name>
+<structure:Description xml:lang="en">Series for SBS Inward Foreign Affiliates Statistics</structure:Description>
+</structure:Concept>
+<structure:Concept id="SERIES_S">
+<structure:Name xml:lang="en">Series for Steel Statistics</structure:Name>
+<structure:Description xml:lang="en">Series for Steel Statistics</structure:Description>
+</structure:Concept>
+<structure:Concept id="SERV_PROV">
+<structure:Name xml:lang="en">Main Service Provider</structure:Name>
+<structure:Description xml:lang="en">Main Service Provider</structure:Description>
+</structure:Concept>
+<structure:Concept id="SERVICE">
+<structure:Name xml:lang="en">Type of Service</structure:Name>
+<structure:Description xml:lang="en">Type of service (Passenger/all freight and mail) flight</structure:Description>
+</structure:Concept>
+<structure:Concept id="SERVICE_LENGTH">
+<structure:Name xml:lang="en">Service length</structure:Name>
+<structure:Description xml:lang="en">Length of service in the enterprise</structure:Description>
+</structure:Concept>
+<structure:Concept id="SERVICES">
+<structure:Name xml:lang="en">Service activity or Services</structure:Name>
+<structure:Description xml:lang="en">Service activity of Services or Service related investment</structure:Description>
+</structure:Concept>
+<structure:Concept id="TABLE">
+<structure:Name xml:lang="en">Table</structure:Name>
+<structure:Description xml:lang="en">The type of the reported table</structure:Description>
+</structure:Concept>
+<structure:Concept id="TAX">
+<structure:Name xml:lang="en">Tax</structure:Name>
+<structure:Description xml:lang="en">Taxes</structure:Description>
+</structure:Concept>
+<structure:Concept id="TERR_UNIT">
+<structure:Name xml:lang="en">Territorial unit</structure:Name>
+<structure:Description xml:lang="en">Corresponds to the country code</structure:Description>
+</structure:Concept>
+<structure:Concept id="TEUITU">
+<structure:Name xml:lang="en">Intermodal transport units carried in TEU</structure:Name>
+<structure:Description xml:lang="en">Intermodal transport units carried in TEU</structure:Description>
+</structure:Concept>
+<structure:Concept id="THRESHOLD_IND">
+<structure:Name xml:lang="en">Threshold indicator</structure:Name>
+<structure:Description xml:lang="en">Threshold indicator</structure:Description>
+</structure:Concept>
+<structure:Concept id="TIME">
+<structure:Name xml:lang="en">Time period</structure:Name>
+<structure:Description xml:lang="en">The time period</structure:Description>
+</structure:Concept>
+<structure:Concept id="TIME_FORMAT">
+<structure:Name xml:lang="en">Time format code</structure:Name>
+<structure:Description xml:lang="en">Technical use in the message</structure:Description>
+</structure:Concept>
+<structure:Concept id="TIME_PERIOD">
+<structure:Name xml:lang="en">Time period or range</structure:Name>
+<structure:Description xml:lang="en">Technical use in the message</structure:Description>
+</structure:Concept>
+<structure:Concept id="TIME_PERIODICITY">
+<structure:Name xml:lang="en">Periodicity</structure:Name>
+<structure:Description xml:lang="en">The periodicity of the time</structure:Description>
+</structure:Concept>
+<structure:Concept id="TITLE">
+<structure:Name xml:lang="en">Title</structure:Name>
+<structure:Description xml:lang="en">The title of the sibling group in English</structure:Description>
+</structure:Concept>
+<structure:Concept id="TITLE_COMPL">
+<structure:Name xml:lang="en">Title complement</structure:Name>
+<structure:Description xml:lang="en">Elements of the full national title, or sub-title, which are not included in the title or which appear there in a significantly modified or abbreviated form.usage:  In English</structure:Description>
+</structure:Concept>
+<structure:Concept id="TKM">
+<structure:Name xml:lang="en">Total freight transport (1000 tkm)</structure:Name>
+<structure:Description xml:lang="en">Total freight transport (1000 tkm)</structure:Description>
+</structure:Concept>
+<structure:Concept id="TONKM">
+<structure:Name xml:lang="en">Tonnes x Km effected during the journey (Var. A2.6)</structure:Name>
+<structure:Description xml:lang="en">Tonnes x Km effected during the journey (Var. A2.6)</structure:Description>
+</structure:Concept>
+<structure:Concept id="TONS">
+<structure:Name xml:lang="en">Total freight transport (in tonnes)</structure:Name>
+<structure:Description xml:lang="en">Total freight transport (in tonnes)</structure:Description>
+</structure:Concept>
+<structure:Concept id="TOT_MOVEMENTS">
+<structure:Name xml:lang="en">Total aircraft movements</structure:Name>
+<structure:Description xml:lang="en">Total number of movements (excludes flights by State aircraft)</structure:Description>
+</structure:Concept>
+<structure:Concept id="TOUR_ACTIVITY">
+<structure:Name xml:lang="en">Activity (Tourism)</structure:Name>
+<structure:Description xml:lang="en">Activity (Tourism)</structure:Description>
+</structure:Concept>
+<structure:Concept id="TOUR_COUNT_AREA">
+<structure:Name xml:lang="en">Counterpart area (Tourism)</structure:Name>
+<structure:Description xml:lang="en">Counterpart area (Tourism)</structure:Description>
+</structure:Concept>
+<structure:Concept id="TOUR_INDICATOR">
+<structure:Name xml:lang="en">Indicator (Tourism)</structure:Name>
+<structure:Description xml:lang="en">Indicator (Tourism)</structure:Description>
+</structure:Concept>
+<structure:Concept id="TOUR_PURPOSE">
+<structure:Name xml:lang="en">Purpose (Tourism)</structure:Name>
+<structure:Description xml:lang="en">Purpose (Tourism)</structure:Description>
+</structure:Concept>
+<structure:Concept id="TOURREF_AREA">
+<structure:Name xml:lang="en">Reference area (Tourism)</structure:Name>
+<structure:Description xml:lang="en">Reference area (Tourism)</structure:Description>
+</structure:Concept>
+<structure:Concept id="TRAIN">
+<structure:Name xml:lang="en">Number of Train</structure:Name>
+<structure:Description xml:lang="en">Number of Train</structure:Description>
+</structure:Concept>
+<structure:Concept id="TRAINKM">
+<structure:Name xml:lang="en">Goods train movement in 1000 km</structure:Name>
+<structure:Description xml:lang="en">Goods train movement in 1000 km</structure:Description>
+</structure:Concept>
+<structure:Concept id="TRANS_ESA95_PLUS">
+<structure:Name xml:lang="en">Transactions ESA95 + others</structure:Name>
+<structure:Description xml:lang="en">Transaction defined in the European System of Accounts plus some additional codes</structure:Description>
+</structure:Concept>
+<structure:Concept id="TRANS_NATION">
+<structure:Name xml:lang="en">Nationality code of means of transport</structure:Name>
+<structure:Description xml:lang="en">Indication of  the nationality of the active means of transport according to the geonomeclature</structure:Description>
+</structure:Concept>
+<structure:Concept id="TRANS_PASSENGERS">
+<structure:Name xml:lang="en">Transit passengers</structure:Name>
+<structure:Description xml:lang="en">Number of direct transit passengers</structure:Description>
+</structure:Concept>
+<structure:Concept id="TRANSACTION">
+<structure:Name xml:lang="en">Nature of transaction</structure:Name>
+<structure:Description xml:lang="en">Indication of this data when collected by Member States in trade with third countries</structure:Description>
+</structure:Concept>
+<structure:Concept id="TRANSID">
+<structure:Name xml:lang="en">Type of transport</structure:Name>
+<structure:Description xml:lang="en">Type of transport</structure:Description>
+</structure:Concept>
+<structure:Concept id="TRANSPORT_TYPE">
+<structure:Name xml:lang="en">Type of Transport (Var. A1.7)</structure:Name>
+<structure:Description xml:lang="en">Type of Transport (Var. A1.7)</structure:Description>
+</structure:Concept>
+<structure:Concept id="TTU">
+<structure:Name xml:lang="en">Type of transport Unit</structure:Name>
+<structure:Description xml:lang="en">Type of transport Unit</structure:Description>
+</structure:Concept>
+<structure:Concept id="TURNOVER_SIZE">
+<structure:Name xml:lang="en">Turnover size</structure:Name>
+<structure:Description xml:lang="en">Turnover size</structure:Description>
+</structure:Concept>
+<structure:Concept id="TYPE_OF_CARGO">
+<structure:Name xml:lang="en">Type of Cargo</structure:Name>
+<structure:Description xml:lang="en">Type of Cargo</structure:Description>
+</structure:Concept>
+<structure:Concept id="TYPE_OF_PURCHASE">
+<structure:Name xml:lang="en">Type of Purchase</structure:Name>
+<structure:Description xml:lang="en">Type of purchase or Location of main service provider</structure:Description>
+</structure:Concept>
+<structure:Concept id="TYPE_OF_VESSEL">
+<structure:Name xml:lang="en">Type of vessel</structure:Name>
+<structure:Description xml:lang="en">Type of vessel</structure:Description>
+</structure:Concept>
+<structure:Concept id="UCI_COUNTRY">
+<structure:Name xml:lang="en">Country of UCI</structure:Name>
+<structure:Description xml:lang="en">Code corresponding to the coutnry where the UCI is resident</structure:Description>
+</structure:Concept>
+<structure:Concept id="UCODE">
+<structure:Name xml:lang="en">Undertaking code</structure:Name>
+<structure:Description xml:lang="en">Undertaking code</structure:Description>
+</structure:Concept>
+<structure:Concept id="UN_ANNUAL_SICK">
+<structure:Name xml:lang="en">Unpaid annual sick</structure:Name>
+<structure:Description xml:lang="en">Annual days of sick leave not paid by the employer</structure:Description>
+</structure:Concept>
+<structure:Concept id="SES_ECON_ACTIVITY">
+<structure:Name xml:lang="en">Economic activity</structure:Name>
+<structure:Description xml:lang="en">Principal economic activity of the observation unit</structure:Description>
+</structure:Concept>
+<structure:Concept id="SES_TABLE">
+<structure:Name xml:lang="en">Table</structure:Name>
+<structure:Description xml:lang="en">Table identification</structure:Description>
+</structure:Concept>
+<structure:Concept id="SEX">
+<structure:Name xml:lang="en">Sex</structure:Name>
+<structure:Description xml:lang="en">Sex</structure:Description>
+</structure:Concept>
+<structure:Concept id="SHARE_HOURS">
+<structure:Name xml:lang="en">Share hours</structure:Name>
+<structure:Description xml:lang="en">Share of a full-timer&apos;s normal hours</structure:Description>
+</structure:Concept>
+<structure:Concept id="SITC_PRODUCT">
+<structure:Name xml:lang="en">SITC product code (confidential code)</structure:Name>
+<structure:Description xml:lang="en">SITC confidentiality code</structure:Description>
+</structure:Concept>
+<structure:Concept id="SIZE_CLASS_14">
+<structure:Name xml:lang="en">Size class</structure:Name>
+<structure:Description xml:lang="en">Code for the size class</structure:Description>
+</structure:Concept>
+<structure:Concept id="SIZE_CLASS_BD">
+<structure:Name xml:lang="en">Size Class</structure:Name>
+<structure:Description xml:lang="en">Size Class</structure:Description>
+</structure:Concept>
+<structure:Concept id="SIZE_CLASS_DS">
+<structure:Name xml:lang="en">Size class</structure:Name>
+<structure:Description xml:lang="en">Employment Size class</structure:Description>
+</structure:Concept>
+<structure:Concept id="SIZE_CLASS_FATS">
+<structure:Name xml:lang="en">Size class</structure:Name>
+<structure:Description xml:lang="en">Code for size class</structure:Description>
+</structure:Concept>
+<structure:Concept id="SIZE_CLASS_PF">
+<structure:Name xml:lang="en">Size class</structure:Name>
+<structure:Description xml:lang="en">Code for the size class</structure:Description>
+</structure:Concept>
+<structure:Concept id="SIZE_CLASS_QR">
+<structure:Name xml:lang="en">SBS employment size class</structure:Name>
+<structure:Description xml:lang="en">Code for SBS employment size class</structure:Description>
+</structure:Concept>
+<structure:Concept id="SIZE_CLASS_RES">
+<structure:Name xml:lang="en">Size class</structure:Name>
+<structure:Description xml:lang="en">Code for the size class</structure:Description>
+</structure:Concept>
+<structure:Concept id="SIZE_OF_DW">
+<structure:Name xml:lang="en">Size of vessel Deadweight</structure:Name>
+<structure:Description xml:lang="en">Size of vessel Deadweight</structure:Description>
+</structure:Concept>
+<structure:Concept id="SIZE_OF_GT">
+<structure:Name xml:lang="en">Size of vessel Gross Tonnage</structure:Name>
+<structure:Description xml:lang="en">Size of vessel Gross Tonnage</structure:Description>
+</structure:Concept>
+<structure:Concept id="SOURCE_AGENCY">
+<structure:Name xml:lang="en">Source agency</structure:Name>
+<structure:Description xml:lang="en">The publisher of SOURCE_PUBL</structure:Description>
+</structure:Concept>
+<structure:Concept id="SOURCE_PUB">
+<structure:Name xml:lang="en">Source publication</structure:Name>
+<structure:Description xml:lang="en">A publication where the data are published.</structure:Description>
+</structure:Concept>
+<structure:Concept id="SPECIAL_PAY">
+<structure:Name xml:lang="en">Special payments</structure:Name>
+<structure:Description xml:lang="en">Special payments for shift work</structure:Description>
+</structure:Concept>
+<structure:Concept id="STAT_PROC">
+<structure:Name xml:lang="en">Statistical procedure</structure:Name>
+<structure:Description xml:lang="en">Statistical procedures</structure:Description>
+</structure:Concept>
+<structure:Concept id="STAT_PROC_CONF">
+<structure:Name xml:lang="en">Not relevant (ex  Statistical procedure confidential code)</structure:Name>
+<structure:Description xml:lang="en">Procedure confidentiality code</structure:Description>
+</structure:Concept>
+<structure:Concept id="STAT_VALUE">
+<structure:Name xml:lang="en">Statistical Value</structure:Name>
+<structure:Description xml:lang="en">Statistical Value</structure:Description>
+</structure:Concept>
+<structure:Concept id="STPFS_ADJUSTMENT">
+<structure:Name xml:lang="en">Adjustment</structure:Name>
+<structure:Description xml:lang="en"></structure:Description>
+</structure:Concept>
+<structure:Concept id="STPFS_REF_AREA">
+<structure:Name xml:lang="en">Reference area</structure:Name>
+<structure:Description xml:lang="en">Reporting Country in ISOALPHA3 code  (The country, or geographical/political group of countries that the measured economic phenomenon relates to)</structure:Description>
+</structure:Concept>
+<structure:Concept id="STPFS_SECTOR">
+<structure:Name xml:lang="en">STPFS ESA95 sector</structure:Name>
+<structure:Description xml:lang="en">STPFS ESA95 sector</structure:Description>
+</structure:Concept>
+<structure:Concept id="STPFS_SECTOR_P">
+<structure:Name xml:lang="en">STPFS ESA95 Paying sector</structure:Name>
+<structure:Description xml:lang="en"></structure:Description>
+</structure:Concept>
+<structure:Concept id="STPFS_SECTOR_R">
+<structure:Name xml:lang="en">STPFS ESA95 Receiving sector</structure:Name>
+<structure:Description xml:lang="en"></structure:Description>
+</structure:Concept>
+<structure:Concept id="STPFS_SUFFIX">
+<structure:Name xml:lang="en">Payable/Receivable Transaction</structure:Name>
+<structure:Description xml:lang="en">Transactions codes following questionnaire ESA 95</structure:Description>
+</structure:Concept>
+<structure:Concept id="STPFS_TRANS">
+<structure:Name xml:lang="en">STPFS ESA95 Transactions</structure:Name>
+<structure:Description xml:lang="en">Transaction defined in the European System of Accounts plus some additional codes</structure:Description>
+</structure:Concept>
+<structure:Concept id="STRATUM">
+<structure:Name xml:lang="en">Stratum identifier</structure:Name>
+<structure:Description xml:lang="en">Stratum identifier of sample in which vehicle appears</structure:Description>
+</structure:Concept>
+<structure:Concept id="STS_ACTIVITY">
+<structure:Name xml:lang="en">Economic Activity code</structure:Name>
+<structure:Description xml:lang="en">NACE Rev.1 &amp; special STS aggregates</structure:Description>
+</structure:Concept>
+<structure:Concept id="STS_BASE_YEAR">
+<structure:Name xml:lang="en">Series variation in short-term statistics</structure:Name>
+<structure:Description xml:lang="en">Concept to distinguish series variations in a short-term stats context</structure:Description>
+</structure:Concept>
+<structure:Concept id="STS_INDICATOR">
+<structure:Name xml:lang="en">STS Indicator</structure:Name>
+<structure:Description xml:lang="en">Type of indicator, such as production, turnover, etc.</structure:Description>
+</structure:Concept>
+<structure:Concept id="STS_INSTITUTION">
+<structure:Name xml:lang="en">Institution originating STS dataflow to ECB</structure:Name>
+<structure:Description xml:lang="en">Institution originating STS data-flow to the ECB</structure:Description>
+</structure:Concept>
+<structure:Concept id="SUP_UNIT">
+<structure:Name xml:lang="en">Quantity expressed in supplementary units</structure:Name>
+<structure:Description xml:lang="en">Indicate these if the threshold indicator is equal to 1,when provided for in the Combined Nomeclature</structure:Description>
+</structure:Concept>
+<structure:Concept id="SUPPL_CONF">
+<structure:Name xml:lang="en">Supplementary units confidentiality flag</structure:Name>
+<structure:Description xml:lang="en">Application of confidentiality to supplementary units</structure:Description>
+</structure:Concept>
+<structure:Concept id="T_INFO">
+<structure:Name xml:lang="en">T_Info (Tourism)</structure:Name>
+<structure:Description xml:lang="en">T_Info (Tourism)</structure:Description>
+</structure:Concept>
+<structure:Concept id="VHCL_AGE">
+<structure:Name xml:lang="en">Age of the road motor vehicle (lorry or road tractor) (Var. A1.3)</structure:Name>
+<structure:Description xml:lang="en">Age of the road motor vehicle (lorry or road tractor) (Var. A1.3)</structure:Description>
+</structure:Concept>
+<structure:Concept id="VOCATIONAL_TRAINING">
+<structure:Name xml:lang="en">Vocational training</structure:Name>
+<structure:Description xml:lang="en">Annual days of vocational training</structure:Description>
+</structure:Concept>
+<structure:Concept id="VOCCUP">
+<structure:Name xml:lang="en">Occupation of the victim</structure:Name>
+<structure:Description xml:lang="en">The victimís occupation at the time of the accident.</structure:Description>
+</structure:Concept>
+<structure:Concept id="W_ACTIVITY">
+<structure:Name xml:lang="en">NACE Activity code</structure:Name>
+<structure:Description xml:lang="en">NACE Activity Code</structure:Description>
+</structure:Concept>
+<structure:Concept id="W_CONFIDENTIALITY">
+<structure:Name xml:lang="en">Confidentiality flag</structure:Name>
+<structure:Description xml:lang="en">Confidentiality flag</structure:Description>
+</structure:Concept>
+<structure:Concept id="W_ITEM">
+<structure:Name xml:lang="en">Waste item</structure:Name>
+<structure:Description xml:lang="en">Waste item</structure:Description>
+</structure:Concept>
+<structure:Concept id="W_MEASURE">
+<structure:Name xml:lang="en">Type of measure</structure:Name>
+<structure:Description xml:lang="en">Type of measure</structure:Description>
+</structure:Concept>
+<structure:Concept id="W_OPERATION">
+<structure:Name xml:lang="en">Recovery or Disposal Operation</structure:Name>
+<structure:Description xml:lang="en">Code referring to Annexes of Directive 75/442/EEC</structure:Description>
+</structure:Concept>
+<structure:Concept id="W_REGIO">
+<structure:Name xml:lang="en">Type of regional observation</structure:Name>
+<structure:Description xml:lang="en">Type of regional observation</structure:Description>
+</structure:Concept>
+<structure:Concept id="W_UPDATE">
+<structure:Name xml:lang="en">Value status flag</structure:Name>
+<structure:Description xml:lang="en">Value status flag</structure:Description>
+</structure:Concept>
+<structure:Concept id="WEEKS_GAE">
+<structure:Name xml:lang="en">Weeks Gross Annual Earnings</structure:Name>
+<structure:Description xml:lang="en">Number of weeks to which the gross annual earnings relate</structure:Description>
+</structure:Concept>
+<structure:Concept id="WEIGHT">
+<structure:Name xml:lang="en">Weight</structure:Name>
+<structure:Description xml:lang="en">Weight</structure:Description>
+</structure:Concept>
+<structure:Concept id="WEIGHT_GDS">
+<structure:Name xml:lang="en">Weight of goods (100 Kg) (Var. A3.2)</structure:Name>
+<structure:Description xml:lang="en">Weight of goods (100 Kg) (Var. A3.2)</structure:Description>
+</structure:Concept>
+<structure:Concept id="WEIGHT_JRN">
+<structure:Name xml:lang="en">Weight of goods (100 kg) (Var. 2.2)</structure:Name>
+<structure:Description xml:lang="en">Weight of goods (100 kg) (Var. 2.2)</structure:Description>
+</structure:Concept>
+<structure:Concept id="WEIGHTING">
+<structure:Name xml:lang="en">Vehicle weighting</structure:Name>
+<structure:Description xml:lang="en">Vehicle weighting to be used to get full results from individual data, if the collection of data is carried out from a sample (Var. A1.9)</structure:Description>
+</structure:Concept>
+<structure:Concept id="WET_DRY">
+<structure:Name xml:lang="en">Wet or Dry Waste</structure:Name>
+<structure:Description xml:lang="en">Wet or Dry Waste</structure:Description>
+</structure:Concept>
+<structure:Concept id="WORKENV">
+<structure:Name xml:lang="en">Working environment</structure:Name>
+<structure:Description xml:lang="en">The workplace where the accident happened.</structure:Description>
+</structure:Concept>
+<structure:Concept id="WORKPROC">
+<structure:Name xml:lang="en">Working process</structure:Name>
+<structure:Description xml:lang="en">The main type of work being performed by the victim.</structure:Description>
+</structure:Concept>
+<structure:Concept id="WORKSTATION">
+<structure:Name xml:lang="en">Workstation</structure:Name>
+<structure:Description xml:lang="en">The place/post occupied by the victim at the time of the accident.</structure:Description>
+</structure:Concept>
+<structure:Concept id="YEAR">
+<structure:Name xml:lang="en">Reference Year</structure:Name>
+<structure:Description xml:lang="en">&quot;The year of the reported period with format &quot;&quot;YYYY&quot;&quot; (e.g. 2003)&quot;</structure:Description>
+</structure:Concept>
+<structure:Concept id="UNAME">
+<structure:Name xml:lang="en">Name of undertaking</structure:Name>
+<structure:Description xml:lang="en">Name of undertaking</structure:Description>
+</structure:Concept>
+<structure:Concept id="UNIT">
+<structure:Name xml:lang="en">Unit</structure:Name>
+<structure:Description xml:lang="en">The unit of measure of the reported data</structure:Description>
+</structure:Concept>
+<structure:Concept id="UNIT_GROSS_FACTOR">
+<structure:Name xml:lang="en">Unit gross factor</structure:Name>
+<structure:Description xml:lang="en">Grossing-up factor for the local unit</structure:Description>
+</structure:Concept>
+<structure:Concept id="UNIT_INDEX_BASE">
+<structure:Name xml:lang="en">Unit index base</structure:Name>
+<structure:Description xml:lang="en">Indicates the base reference and base value for indices. (Formatting guidelines to be drafted)</structure:Description>
+</structure:Concept>
+<structure:Concept id="UNIT_MULT">
+<structure:Name xml:lang="en">Unit multiplier</structure:Name>
+<structure:Description xml:lang="en">Exponent in base 10 specified so that multiplying the observation numeric values by 10^UNIT_MULT gives a value expressed in the UNIT</structure:Description>
+</structure:Concept>
+<structure:Concept id="UNIT_MULTIPLIER">
+<structure:Name xml:lang="en">Unit multiplier</structure:Name>
+<structure:Description xml:lang="en">The number of units in which the cell value is measured</structure:Description>
+</structure:Concept>
+<structure:Concept id="UNITQ1A">
+<structure:Name xml:lang="en">Combined Unit measuring method A for first group</structure:Name>
+<structure:Description xml:lang="en">Combined Unit measuring method A for first group</structure:Description>
+</structure:Concept>
+<structure:Concept id="UNITQ1B">
+<structure:Name xml:lang="en">Combined Unit measuring method B for first group</structure:Name>
+<structure:Description xml:lang="en">Combined Unit measuring method B for first group</structure:Description>
+</structure:Concept>
+<structure:Concept id="UNITQ2A">
+<structure:Name xml:lang="en">Combined Unit measuring method A for second group</structure:Name>
+<structure:Description xml:lang="en">Combined Unit measuring method A for second group</structure:Description>
+</structure:Concept>
+<structure:Concept id="UNITQ2B">
+<structure:Name xml:lang="en">Combined Unit measuring method B for second group</structure:Name>
+<structure:Description xml:lang="en">Combined Unit measuring method B for second group</structure:Description>
+</structure:Concept>
+<structure:Concept id="UNITS">
+<structure:Name xml:lang="en">Unit</structure:Name>
+<structure:Description xml:lang="en">National currency or euro or fixed euro.</structure:Description>
+</structure:Concept>
+<structure:Concept id="UNITS_NO_CARGO">
+<structure:Name xml:lang="en">Number of units without cargo</structure:Name>
+<structure:Description xml:lang="en">Number of units without cargo</structure:Description>
+</structure:Concept>
+<structure:Concept id="UNLG_COUNTRY">
+<structure:Name xml:lang="en">Country of unloading</structure:Name>
+<structure:Description xml:lang="en">Country of unloading</structure:Description>
+</structure:Concept>
+<structure:Concept id="UNLG_GOODS">
+<structure:Name xml:lang="en">Place of unloading of the goods (Var. A3.6)</structure:Name>
+<structure:Description xml:lang="en">Place of unloading of the goods (Var. A3.6)</structure:Description>
+</structure:Concept>
+<structure:Concept id="UNLG_PLACE">
+<structure:Name xml:lang="en">Place of unloading (of the goods road motor vehicle, for a laden journey) (Var. A2.4)</structure:Name>
+<structure:Description xml:lang="en">Place of unloading (of the goods road motor vehicle, for a laden journey) (Var. A2.3)</structure:Description>
+</structure:Concept>
+<structure:Concept id="UNLG_PLACE_OTHER">
+<structure:Name xml:lang="en">Place of unloading, if any, of the goods road motor vehicle on another means of transport (Var. A2.9</structure:Name>
+<structure:Description xml:lang="en">Place of unloading, if any, of the goods road motor vehicle on another means of transport (Var. A2.9)</structure:Description>
+</structure:Concept>
+<structure:Concept id="VAGE">
+<structure:Name xml:lang="en">Age of victim</structure:Name>
+<structure:Description xml:lang="en">Age of the victim at the time of the accident.</structure:Description>
+</structure:Concept>
+<structure:Concept id="VAL">
+<structure:Name xml:lang="en">Monetary value</structure:Name>
+<structure:Description xml:lang="en">Monetary value</structure:Description>
+</structure:Concept>
+<structure:Concept id="VALUE">
+<structure:Name xml:lang="en">The value reported</structure:Name>
+<structure:Description xml:lang="en">The value reported</structure:Description>
+</structure:Concept>
+<structure:Concept id="VALUE_CONF">
+<structure:Name xml:lang="en">Value confidentiality flag</structure:Name>
+<structure:Description xml:lang="en">Application of confidentiality to the value</structure:Description>
+</structure:Concept>
+<structure:Concept id="VESSELS">
+<structure:Name xml:lang="en">Number of vessels</structure:Name>
+<structure:Description xml:lang="en">Number of vessels</structure:Description>
+</structure:Concept>
+<structure:Concept id="VESSELS_DW">
+<structure:Name xml:lang="en">Deadweight of vessels in tonnes</structure:Name>
+<structure:Description xml:lang="en">Deadweight of vessels in tonnes</structure:Description>
+</structure:Concept>
+<structure:Concept id="VGENDER">
+<structure:Name xml:lang="en">Sex of victim</structure:Name>
+<structure:Description xml:lang="en">Gender of the victim</structure:Description>
+</structure:Concept>
+</structure:ConceptScheme>
+</Concepts>
+<KeyFamilies>
+<structure:KeyFamily id="DEMOGRAPHY" agencyID="ESTAT" version="3.0" isFinal="false" urn="urn:estat:sdmx.infomodel.keyfamily.KeyFamily=ESTAT:DEMOGRAPHY:3.0" xmlns:structure='http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure'>
+<structure:Name xml:lang="en">Demography Data Structure Definition</structure:Name>
+<structure:Components>
+<structure:Dimension conceptRef="FREQ" codelist="CL_FREQ" codelistAgency="ESTAT" codelistVersion="1.0" conceptSchemeAgency="ESTAT" conceptSchemeVersion="2.0" conceptSchemeRef="DEMO_CONCEPTS" crossSectionalAttachGroup="true" isFrequencyDimension="true">
+</structure:Dimension>
+<structure:Dimension conceptRef="COUNTRY" codelist="CL_COUNTRY" codelistAgency="ESTAT" codelistVersion="1.0" conceptSchemeAgency="ESTAT" conceptSchemeVersion="2.0" conceptSchemeRef="DEMO_CONCEPTS" crossSectionalAttachGroup="true">
+</structure:Dimension>
+<structure:Dimension conceptRef="SEX" conceptSchemeAgency="ESTAT" conceptSchemeVersion="2.0" conceptSchemeRef="DEMO_CONCEPTS" crossSectionalAttachObservation="true">
+</structure:Dimension>
+<structure:Dimension conceptRef="DEMO" codelist="CL_DEMO" codelistAgency="ESTAT" codelistVersion="1.0" conceptSchemeAgency="ESTAT" conceptSchemeVersion="2.0" conceptSchemeRef="DEMO_CONCEPTS" isMeasureDimension="true">
+</structure:Dimension>
+<structure:TimeDimension  conceptRef="TIME" conceptSchemeAgency="ESTAT" conceptSchemeVersion="2.0" conceptSchemeRef="DEMO_CONCEPTS" crossSectionalAttachGroup="true">
+</structure:TimeDimension>
+<structure:Group id="TESTGROUP">
+<structure:DimensionRef>DEMO</structure:DimensionRef>
+<structure:DimensionRef>SEX</structure:DimensionRef>
+<structure:DimensionRef>COUNTRY</structure:DimensionRef>
+</structure:Group>
+<structure:PrimaryMeasure  conceptRef="OBS_VALUE" conceptSchemeAgency="ESTAT" conceptSchemeRef="DEMO_CONCEPTS" conceptSchemeVersion="2.0">
+</structure:PrimaryMeasure>
+<structure:CrossSectionalMeasure conceptRef="ADJT" measureDimension="DEMO" conceptSchemeRef="DEMO_CONCEPTS" conceptSchemeVersion="2.0" conceptSchemeAgency="ESTAT" code="ADJT">
+</structure:CrossSectionalMeasure>
+<structure:CrossSectionalMeasure conceptRef="DEATHST" measureDimension="DEMO" conceptSchemeRef="DEMO_CONCEPTS" conceptSchemeVersion="2.0" conceptSchemeAgency="ESTAT" code="DEATHST">
+</structure:CrossSectionalMeasure>
+<structure:CrossSectionalMeasure conceptRef="DEATHUN1" measureDimension="DEMO" conceptSchemeRef="DEMO_CONCEPTS" conceptSchemeVersion="2.0" conceptSchemeAgency="ESTAT" code="DEATHUN1">
+</structure:CrossSectionalMeasure>
+<structure:CrossSectionalMeasure conceptRef="DIV" measureDimension="DEMO" conceptSchemeRef="DEMO_CONCEPTS" conceptSchemeVersion="2.0" conceptSchemeAgency="ESTAT" code="DIV">
+</structure:CrossSectionalMeasure>
+<structure:CrossSectionalMeasure conceptRef="EMIGT" measureDimension="DEMO" conceptSchemeRef="DEMO_CONCEPTS" conceptSchemeVersion="2.0" conceptSchemeAgency="ESTAT" code="EMIGT">
+</structure:CrossSectionalMeasure>
+<structure:CrossSectionalMeasure conceptRef="IMMIT" measureDimension="DEMO" conceptSchemeRef="DEMO_CONCEPTS" conceptSchemeVersion="2.0" conceptSchemeAgency="ESTAT" code="IMMIT">
+</structure:CrossSectionalMeasure>
+<structure:CrossSectionalMeasure conceptRef="LBIRTHOUT" measureDimension="DEMO" conceptSchemeRef="DEMO_CONCEPTS" conceptSchemeVersion="2.0" conceptSchemeAgency="ESTAT" code="LBIRTHOUT">
+</structure:CrossSectionalMeasure>
+<structure:CrossSectionalMeasure conceptRef="LBIRTHST" measureDimension="DEMO" conceptSchemeRef="DEMO_CONCEPTS" conceptSchemeVersion="2.0" conceptSchemeAgency="ESTAT" code="LBIRTHST">
+</structure:CrossSectionalMeasure>
+<structure:CrossSectionalMeasure conceptRef="LEXPNSIT" measureDimension="DEMO" conceptSchemeRef="DEMO_CONCEPTS" conceptSchemeVersion="2.0" conceptSchemeAgency="ESTAT" code="LEXPNSIT">
+</structure:CrossSectionalMeasure>
+<structure:CrossSectionalMeasure conceptRef="MAR" measureDimension="DEMO" conceptSchemeRef="DEMO_CONCEPTS" conceptSchemeVersion="2.0" conceptSchemeAgency="ESTAT" code="MAR">
+</structure:CrossSectionalMeasure>
+<structure:CrossSectionalMeasure conceptRef="NETMT" measureDimension="DEMO" conceptSchemeRef="DEMO_CONCEPTS" conceptSchemeVersion="2.0" conceptSchemeAgency="ESTAT" code="NETMT">
+</structure:CrossSectionalMeasure>
+<structure:CrossSectionalMeasure conceptRef="PJAN1T" measureDimension="DEMO" conceptSchemeRef="DEMO_CONCEPTS" conceptSchemeVersion="2.0" conceptSchemeAgency="ESTAT" code="PJAN1T">
+</structure:CrossSectionalMeasure>
+<structure:CrossSectionalMeasure conceptRef="PJANT" measureDimension="DEMO" conceptSchemeRef="DEMO_CONCEPTS" conceptSchemeVersion="2.0" conceptSchemeAgency="ESTAT" code="PJANT">
+</structure:CrossSectionalMeasure>
+<structure:CrossSectionalMeasure conceptRef="TFRNSI" measureDimension="DEMO" conceptSchemeRef="DEMO_CONCEPTS" conceptSchemeVersion="2.0" conceptSchemeAgency="ESTAT" code="TFRNSI">
+</structure:CrossSectionalMeasure>
+<structure:Attribute conceptRef="CONSOLIDATE" conceptSchemeAgency="ESTAT" conceptSchemeVersion="1.0" conceptSchemeRef="GESMES_CONCEPTS" crossSectionalAttachDataSet="true" crossSectionalAttachGroup="true" crossSectionalAttachSection="true" crossSectionalAttachObservation="true" attachmentLevel="Observation" assignmentStatus="Conditional">
+</structure:Attribute>
+<structure:Attribute conceptRef="OBS_STATUS" codelist="CL_OBS_STATUS" codelistAgency="ESTAT" codelistVersion="1.0" conceptSchemeAgency="ESTAT" conceptSchemeVersion="2.0" conceptSchemeRef="DEMO_CONCEPTS" crossSectionalAttachObservation="true" attachmentLevel="Observation" assignmentStatus="Conditional">
+<structure:AttachmentMeasure>TFRNSI</structure:AttachmentMeasure>
+<structure:AttachmentMeasure>PJAN1T</structure:AttachmentMeasure>
+<structure:AttachmentMeasure>PJANT</structure:AttachmentMeasure>
+<structure:AttachmentMeasure>NETMT</structure:AttachmentMeasure>
+<structure:AttachmentMeasure>LEXPNSIT</structure:AttachmentMeasure>
+<structure:AttachmentMeasure>LBIRTHOUT</structure:AttachmentMeasure>
+<structure:AttachmentMeasure>EMIGT</structure:AttachmentMeasure>
+<structure:AttachmentMeasure>DEATHUN1</structure:AttachmentMeasure>
+<structure:AttachmentMeasure>ADJT</structure:AttachmentMeasure>
+<structure:AttachmentMeasure>DEATHST</structure:AttachmentMeasure>
+<structure:AttachmentMeasure>DIV</structure:AttachmentMeasure>
+<structure:AttachmentMeasure>IMMIT</structure:AttachmentMeasure>
+<structure:AttachmentMeasure>LBIRTHST</structure:AttachmentMeasure>
+<structure:AttachmentMeasure>MAR</structure:AttachmentMeasure>
+</structure:Attribute>
+<structure:Attribute conceptRef="DECI" codelist="CL_DECI" codelistAgency="ESTAT" codelistVersion="1.0" conceptSchemeAgency="ESTAT" conceptSchemeVersion="2.0" conceptSchemeRef="DEMO_CONCEPTS" crossSectionalAttachSection="true" attachmentLevel="Series" assignmentStatus="Mandatory">
+</structure:Attribute>
+<structure:Attribute conceptRef="TIME_FORMAT" codelist="CL_TIME_FORMAT" codelistAgency="ESTAT" codelistVersion="1.0" conceptSchemeAgency="ESTAT" conceptSchemeVersion="2.0" conceptSchemeRef="DEMO_CONCEPTS" crossSectionalAttachGroup="true" attachmentLevel="Series" assignmentStatus="Mandatory">
+</structure:Attribute>
+<structure:Attribute conceptRef="UNIT" codelist="CL_UNIT" codelistAgency="ESTAT" codelistVersion="1.0" conceptSchemeAgency="ESTAT" conceptSchemeVersion="2.0" conceptSchemeRef="DEMO_CONCEPTS" crossSectionalAttachSection="true" attachmentLevel="Series" assignmentStatus="Mandatory">
+</structure:Attribute>
+<structure:Attribute conceptRef="UNIT_MULT" codelist="CL_UNIT_MULT" codelistAgency="ESTAT" codelistVersion="1.0" conceptSchemeAgency="ESTAT" conceptSchemeVersion="2.0" conceptSchemeRef="DEMO_CONCEPTS" crossSectionalAttachSection="true" attachmentLevel="Series" assignmentStatus="Mandatory">
+</structure:Attribute>
+</structure:Components>
+</structure:KeyFamily>
+</KeyFamilies>
+</Structure>

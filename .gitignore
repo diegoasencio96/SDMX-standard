@@ -102,3 +102,9 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+
+# dirs webapps
+nsi-client/
+nsi-jax-ws/
+

@@ -1,0 +1,33 @@
+#pb-content {
+    height: 100%; width: 100%;
+}
+
+#pb-dataflows {
+    overflow: auto; border:1px solid #3399CC;
+}
+
+#pb-workarea {
+    overflow: auto; border:1px solid #3399CC;
+    -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0;
+}
+
+#pb-content .ui-layout-resizer-west {
+    background-color: #D3D3D3;
+    border-top: 1px solid #3399CC; border-bottom: 1px solid #3399CC;
+}
+
+#pb-content .ui-layout-resizer-west-closed {
+    border-left: 1px solid #3399CC;
+}
+
+#pb-content .ui-layout-toggler-west-open {
+    background: #D3D3D3 url("../image/toggle-left.gif") no-repeat scroll center center;
+}
+
+#pb-content .ui-layout-toggler-west-closed {
+    background: #D3D3D3 url("../image/toggle-right.gif") no-repeat scroll center center;
+}
+
+.ui-layout-pane {
+    background-color: white;
+}

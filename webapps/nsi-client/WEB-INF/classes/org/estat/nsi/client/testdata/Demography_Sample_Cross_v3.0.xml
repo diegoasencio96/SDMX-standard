@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CrossSectionalData xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message"
+    xmlns:cross="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/cross"
+    xmlns:demo="urn:estat:sdmx.infomodel.keyfamily.KeyFamily=ESTAT:DEMOGRAPHY:3.0:cross" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message http://katharma.agilis-sa.gr/SDMXML/SDMXMessage.xsd
+    urn:estat:sdmx.infomodel.keyfamily.KeyFamily=ESTAT:DEMOGRAPHY:3.0:cross ESTAT_DEMOGRAPHY_Cross.xsd">
+    <Header>
+        <ID>DEMOGRAPHY_RQ</ID>
+        <Test>true</Test>
+        <Truncated>false</Truncated>
+        <Name xml:lang="en">Dataset for Demography Rapid Questionnaire</Name>
+        <Prepared>2007-09-11T12:00:00+02:00</Prepared>
+        <Sender id="FI1">
+            <Name xml:lang="en">Statistics Finland</Name>
+        </Sender>
+        <Receiver id="ESTAT">
+            <Name xml:lang="en">Statistical Office of the European Communities</Name>
+        </Receiver>
+        <DataSetID>DEMOGRAPHY_RAPID_Q_XS1</DataSetID>
+        <Extracted>2007-09-11T12:00:00+02:00</Extracted>
+        <ReportingBegin>2005-01-01T00:00:00+02:00</ReportingBegin>
+        <ReportingEnd>2005-12-31T23:59:59+02:00</ReportingEnd>
+    </Header>
+    <demo:DataSet>
+        <demo:Group COUNTRY="FI" FREQ="A" TIME="2005" TIME_FORMAT="P1Y">
+            <demo:Section DECI="0" UNIT="PERS" UNIT_MULT="0">
+                <demo:ADJT OBS_STATUS="P" SEX="F" value="35"/>
+                <demo:DEATHST OBS_STATUS="P" SEX="F" value="23871"/>
+                <demo:LBIRTHST OBS_STATUS="P" SEX="F" value="28345"/>
+                <demo:NETMT OBS_STATUS="P" SEX="F" value="4187"/>
+                <demo:PJAN1T OBS_STATUS="P" SEX="F" value="2683230"/>
+                <demo:PJANT OBS_STATUS="P" SEX="F" value="2674534"/>
+                <demo:ADJT OBS_STATUS="P" SEX="M" value="131"/>
+                <demo:DEATHST OBS_STATUS="P" SEX="M" value="24057"/>
+                <demo:LBIRTHST OBS_STATUS="P" SEX="M" value="29400"/>
+                <demo:NETMT OBS_STATUS="P" SEX="M" value="4799"/>
+                <demo:PJAN1T OBS_STATUS="P" SEX="M" value="2572350"/>
+                <demo:PJANT OBS_STATUS="P" SEX="M" value="2562077"/>
+                <demo:ADJT OBS_STATUS="P" SEX="T" value="166"/>
+                <demo:DEATHST OBS_STATUS="P" SEX="T" value="47928"/>
+                <demo:LBIRTHST OBS_STATUS="P" SEX="T" value="57745"/>
+                <demo:NETMT OBS_STATUS="P" SEX="T" value="8986"/>
+                <demo:PJAN1T OBS_STATUS="P" SEX="T" value="5255580"/>
+                <demo:PJANT OBS_STATUS="P" SEX="T" value="5236611"/>
+            </demo:Section>
+            <demo:Section DECI="0" UNIT="PERS" UNIT_MULT="0">
+                <demo:DEATHUN1 OBS_STATUS="P" SEX="T" value="174"/>
+                <demo:LBIRTHOUT OBS_STATUS="P" SEX="T" value="23319"/>
+            </demo:Section>
+            <demo:Section DECI="0" UNIT="PURE_NUMB" UNIT_MULT="0">
+                <demo:DIV OBS_STATUS="P" SEX="T" value="13383"/>
+                <demo:MAR OBS_STATUS="P" SEX="T" value="29283"/>
+            </demo:Section>
+            <demo:Section DECI="0" UNIT="PERS" UNIT_MULT="0">
+                <demo:IMMIT OBS_STATUS="P" SEX="M" value="10837"/>
+                <demo:EMIGT OBS_STATUS="P" SEX="M" value="6038"/>
+                <demo:IMMIT OBS_STATUS="P" SEX="F" value="10581"/>
+                <demo:EMIGT OBS_STATUS="P" SEX="F" value="6331"/>
+                <demo:IMMIT OBS_STATUS="P" SEX="T" value="21355"/>
+                <demo:EMIGT OBS_STATUS="P" SEX="T" value="12369"/>
+            </demo:Section>
+            <demo:Section DECI="3" UNIT="PURE_NUMB" UNIT_MULT="0">
+                <demo:TFRNSI SEX="T" value="1800"/>
+            </demo:Section>
+            <demo:Section DECI="2" UNIT="PURE_NUMB" UNIT_MULT="0">
+                <demo:LEXPNSIT OBS_STATUS="P" SEX="M" value="7550"/>
+                <demo:LEXPNSIT OBS_STATUS="P" SEX="F" value="8230"/>
+                <demo:LEXPNSIT OBS_STATUS="P" SEX="T" value="7830"/>
+            </demo:Section>
+        </demo:Group>
+    </demo:DataSet>
+</CrossSectionalData>

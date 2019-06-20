@@ -1,0 +1,640 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Structure
+	xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message"
+	xmlns:cross="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/cross"
+	xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure"
+	xmlns:common="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/common"
+	xmlns:registry="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/registry"
+	xmlns:genericmetadata="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/genericmetadata"
+	xmlns:metadatareport="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/metadatareport"
+	xmlns:compact="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/compact"
+	xmlns:generic="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/generic"
+	xmlns:utility="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/utility"
+	xmlns:query="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/query"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message http://katharma.agilis-sa.gr/SDMXML/SDMXMessage.xsd"
+	>
+    <Header>
+        <ID>REGISTRY_RESPONSE</ID>
+        <Test>true</Test>
+        <Truncated>false</Truncated>
+        <Prepared>2008-04-18T13:07:27</Prepared>
+        <Sender id="EUROSTAT"/>
+        <Extracted>2008-04-18T13:07:27</Extracted>
+    </Header>
+    <CodeLists>
+        <structure:CodeList version="1.0" isFinal="true" id="CL_AGE" agencyID="ESTAT">
+            <structure:Name xml:lang="en">Age code list</structure:Name>
+            <structure:Code value="TOT" parentCode="">
+                <structure:Description xml:lang="en">Total</structure:Description>
+            </structure:Code>
+            <structure:Code value="001" parentCode="TOT">
+                <structure:Description xml:lang="en">Under 5 years</structure:Description>
+            </structure:Code>
+            <structure:Code value="002" parentCode="TOT">
+                <structure:Description xml:lang="en">5 to 9 years</structure:Description>
+            </structure:Code>
+            <structure:Code value="003" parentCode="TOT">
+                <structure:Description xml:lang="en">10 to 14 years</structure:Description>
+            </structure:Code>
+            <structure:Code value="004" parentCode="TOT">
+                <structure:Description xml:lang="en">15 to 19 years</structure:Description>
+            </structure:Code>
+            <structure:Code value="005" parentCode="TOT">
+                <structure:Description xml:lang="en">20 to 24 years</structure:Description>
+            </structure:Code>
+            <structure:Code value="006" parentCode="TOT">
+                <structure:Description xml:lang="en">25 to 29 years</structure:Description>
+            </structure:Code>
+            <structure:Code value="007" parentCode="TOT">
+                <structure:Description xml:lang="en">30 to 34 years</structure:Description>
+            </structure:Code>
+            <structure:Code value="008" parentCode="TOT">
+                <structure:Description xml:lang="en">35 to 39 years</structure:Description>
+            </structure:Code>
+            <structure:Code value="009" parentCode="TOT">
+                <structure:Description xml:lang="en">40 to 44 years</structure:Description>
+            </structure:Code>
+            <structure:Code value="010" parentCode="TOT">
+                <structure:Description xml:lang="en">45 to 49 years</structure:Description>
+            </structure:Code>
+            <structure:Code value="011" parentCode="TOT">
+                <structure:Description xml:lang="en">50 to 54 years</structure:Description>
+            </structure:Code>
+            <structure:Code value="012" parentCode="TOT">
+                <structure:Description xml:lang="en">55 to 59 years</structure:Description>
+            </structure:Code>
+            <structure:Code value="013" parentCode="TOT">
+                <structure:Description xml:lang="en">60 to 64 years</structure:Description>
+            </structure:Code>
+            <structure:Code value="014" parentCode="TOT">
+                <structure:Description xml:lang="en">65 to 69 years</structure:Description>
+            </structure:Code>
+            <structure:Code value="015" parentCode="TOT">
+                <structure:Description xml:lang="en">70 to 74 years</structure:Description>
+            </structure:Code>
+            <structure:Code value="016" parentCode="TOT">
+                <structure:Description xml:lang="en">75 to 79 years</structure:Description>
+            </structure:Code>
+            <structure:Code value="017" parentCode="TOT">
+                <structure:Description xml:lang="en">80 to 84 years</structure:Description>
+            </structure:Code>
+            <structure:Code value="018" parentCode="TOT">
+                <structure:Description xml:lang="en">85 to 89 years</structure:Description>
+            </structure:Code>
+            <structure:Code value="019" parentCode="TOT">
+                <structure:Description xml:lang="en">90 to 94 years</structure:Description>
+            </structure:Code>
+            <structure:Code value="020" parentCode="TOT">
+                <structure:Description xml:lang="en">95 to 99 years</structure:Description>
+            </structure:Code>
+            <structure:Code value="021" parentCode="TOT">
+                <structure:Description xml:lang="en">100 years and over</structure:Description>
+            </structure:Code>
+        </structure:CodeList>
+        <structure:CodeList version="1.0" isFinal="true" id="CL_CAS" agencyID="ESTAT">
+            <structure:Name xml:lang="en">Current activity status code list</structure:Name>
+            <structure:Code value="TOT" parentCode="">
+                <structure:Description xml:lang="en">Total</structure:Description>
+            </structure:Code>
+            <structure:Code value="001" parentCode="TOT">
+                <structure:Description xml:lang="en">Persons aged 15 years and over</structure:Description>
+            </structure:Code>
+            <structure:Code value="002" parentCode="001">
+                <structure:Description xml:lang="en">Economically active</structure:Description>
+            </structure:Code>
+            <structure:Code value="003" parentCode="002">
+                <structure:Description xml:lang="en">Employed</structure:Description>
+            </structure:Code>
+            <structure:Code value="004" parentCode="002">
+                <structure:Description xml:lang="en">Unemployed</structure:Description>
+            </structure:Code>
+            <structure:Code value="005" parentCode="001">
+                <structure:Description xml:lang="en">Not economically active</structure:Description>
+            </structure:Code>
+            <structure:Code value="NST" parentCode="001">
+                <structure:Description xml:lang="en">Not stated (of the persons aged 15 years or over)</structure:Description>
+            </structure:Code>
+            <structure:Code value="NAP" parentCode="TOT">
+                <structure:Description xml:lang="en">Not applicable (persons below 15 years of age)</structure:Description>
+            </structure:Code>
+        </structure:CodeList>
+        <structure:CodeList version="1.0" isFinal="true" id="CL_GEO" agencyID="ESTAT">
+            <structure:Name xml:lang="en">Geographical code list</structure:Name>
+            <structure:Code value="IT">
+                <structure:Description xml:lang="en">Italy</structure:Description>
+            </structure:Code>
+            <structure:Code value="ITC" parentCode="IT">
+                <structure:Description xml:lang="en">Nord-Ovest</structure:Description>
+            </structure:Code>
+            <structure:Code value="ITC1" parentCode="ITC">
+                <structure:Description xml:lang="en">Piemonte</structure:Description>
+            </structure:Code>
+            <structure:Code value="ITC11" parentCode="ITC1">
+                <structure:Description xml:lang="en">Torino</structure:Description>
+            </structure:Code>
+            <structure:Code value="ITC11_001001" parentCode="ITC11">
+                <structure:Description xml:lang="en">Agliè</structure:Description>
+            </structure:Code>
+            <structure:Code value="ITC11_001002" parentCode="ITC11">
+                <structure:Description xml:lang="en">Airasca</structure:Description>
+            </structure:Code>
+            <structure:Code value="ITC12" parentCode="ITC1">
+                <structure:Description xml:lang="en">Vercelli</structure:Description>
+            </structure:Code>
+            <structure:Code value="ITC12_002002" parentCode="ITC12">
+                <structure:Description xml:lang="en">Alagna Valsesia</structure:Description>
+            </structure:Code>
+            <structure:Code value="ITC12_002003" parentCode="ITC12">
+                <structure:Description xml:lang="en">Albano Vercellese</structure:Description>
+            </structure:Code>
+            <structure:Code value="ITC3" parentCode="ITC">
+                <structure:Description xml:lang="en">Liguria</structure:Description>
+            </structure:Code>
+            <structure:Code value="ITC31" parentCode="ITC3">
+                <structure:Description xml:lang="en">Imperia</structure:Description>
+            </structure:Code>
+            <structure:Code value="ITC31_008001" parentCode="ITC31">
+                <structure:Description xml:lang="en">Airole</structure:Description>
+            </structure:Code>
+            <structure:Code value="ITC31_008002" parentCode="ITC31">
+                <structure:Description xml:lang="en">Apricale</structure:Description>
+            </structure:Code>
+            <structure:Code value="ITC32" parentCode="ITC3">
+                <structure:Description xml:lang="en">Savona</structure:Description>
+            </structure:Code>
+            <structure:Code value="ITC32_009001" parentCode="ITC32">
+                <structure:Description xml:lang="en">Alassio</structure:Description>
+            </structure:Code>
+            <structure:Code value="ITC32_009002" parentCode="ITC32">
+                <structure:Description xml:lang="en">Albenga</structure:Description>
+            </structure:Code>
+            <structure:Code value="NL" parentCode="">
+                <structure:Description xml:lang="en">Netherlands</structure:Description>
+            </structure:Code>
+            <structure:Code value="NL1" parentCode="NL">
+                <structure:Description xml:lang="en">Noord-Nederland</structure:Description>
+            </structure:Code>
+            <structure:Code value="NL11" parentCode="NL1">
+                <structure:Description xml:lang="en">Groningen</structure:Description>
+            </structure:Code>
+            <structure:Code value="NL111" parentCode="NL11">
+                <structure:Description xml:lang="en">Oost-Groningen</structure:Description>
+            </structure:Code>
+            <structure:Code value="NL1110007" parentCode="NL111">
+                <structure:Description xml:lang="en">Bellingwedde</structure:Description>
+            </structure:Code>
+            <structure:Code value="NL1111987" parentCode="NL111">
+                <structure:Description xml:lang="en">Menterwolde</structure:Description>
+            </structure:Code>
+            <structure:Code value="NL112" parentCode="NL11">
+                <structure:Description xml:lang="en">Delfzijl en omgeving</structure:Description>
+            </structure:Code>
+            <structure:Code value="NL1120003" parentCode="NL112">
+                <structure:Description xml:lang="en">Appingedam</structure:Description>
+            </structure:Code>
+            <structure:Code value="NL1120010" parentCode="NL112">
+                <structure:Description xml:lang="en">Delfzijl</structure:Description>
+            </structure:Code>
+            <structure:Code value="NL12" parentCode="NL1">
+                <structure:Description xml:lang="en">Friesland (NL)</structure:Description>
+            </structure:Code>
+            <structure:Code value="NL121" parentCode="NL12">
+                <structure:Description xml:lang="en">Noord-Friesland</structure:Description>
+            </structure:Code>
+            <structure:Code value="NL1210059" parentCode="NL121">
+                <structure:Description xml:lang="en">Achtkarspelen</structure:Description>
+            </structure:Code>
+            <structure:Code value="NL1210060" parentCode="NL121">
+                <structure:Description xml:lang="en">Ameland</structure:Description>
+            </structure:Code>
+            <structure:Code value="NL122" parentCode="NL12">
+                <structure:Description xml:lang="en">Zuidwest-Friesland</structure:Description>
+            </structure:Code>
+            <structure:Code value="NL1220653" parentCode="NL122">
+                <structure:Description xml:lang="en">Gaasterlân-Sleat</structure:Description>
+            </structure:Code>
+            <structure:Code value="NL1220082" parentCode="NL122">
+                <structure:Description xml:lang="en">Lemsterland</structure:Description>
+            </structure:Code>
+            <structure:Code value="IE">
+                <structure:Description xml:lang="en">Ireland</structure:Description>
+            </structure:Code>
+            <structure:Code value="IE01" parentCode="IE">
+                <structure:Description xml:lang="en">Border, Midland and Western</structure:Description>
+            </structure:Code>
+            <structure:Code value="IE011" parentCode="IE01">
+                <structure:Description xml:lang="en">Border</structure:Description>
+            </structure:Code>
+            <structure:Code value="IE011_001" parentCode="IE011">
+                <structure:Description xml:lang="en">CAVAN URBAN</structure:Description>
+            </structure:Code>
+            <structure:Code value="IE011_002" parentCode="IE011">
+                <structure:Description xml:lang="en">BAILIEBOROUGH</structure:Description>
+            </structure:Code>
+            <structure:Code value="IE012" parentCode="IE01">
+                <structure:Description xml:lang="en">Midland</structure:Description>
+            </structure:Code>
+            <structure:Code value="IE012_001" parentCode="IE012">
+                <structure:Description xml:lang="en">ABBEYLEIX</structure:Description>
+            </structure:Code>
+            <structure:Code value="IE012_002" parentCode="IE012">
+                <structure:Description xml:lang="en">AGHMACART</structure:Description>
+            </structure:Code>
+            <structure:Code value="IE02" parentCode="IE">
+                <structure:Description xml:lang="en">Southern and Eastern</structure:Description>
+            </structure:Code>
+            <structure:Code value="IE021" parentCode="IE02">
+                <structure:Description xml:lang="en">Dublin</structure:Description>
+            </structure:Code>
+            <structure:Code value="IE021_001" parentCode="IE021">
+                <structure:Description xml:lang="en">ARRAN QUAY A</structure:Description>
+            </structure:Code>
+            <structure:Code value="IE021_002" parentCode="IE021">
+                <structure:Description xml:lang="en">ARRAN QUAY B</structure:Description>
+            </structure:Code>
+            <structure:Code value="IE022" parentCode="IE02">
+                <structure:Description xml:lang="en">Mid-East</structure:Description>
+            </structure:Code>
+            <structure:Code value="IE022_001" parentCode="IE022">
+                <structure:Description xml:lang="en">ATHY EAST URBAN</structure:Description>
+            </structure:Code>
+            <structure:Code value="IE022_002" parentCode="IE022">
+                <structure:Description xml:lang="en">ATHY WEST URBAN</structure:Description>
+            </structure:Code>
+            <structure:Code value="PT">
+                <structure:Description xml:lang="en">Portugal</structure:Description>
+            </structure:Code>
+            <structure:Code value="PT1" parentCode="PT">
+                <structure:Description xml:lang="en">Continente</structure:Description>
+            </structure:Code>
+            <structure:Code value="PT11" parentCode="PT1">
+                <structure:Description xml:lang="en">Norte</structure:Description>
+            </structure:Code>
+            <structure:Code value="PT111" parentCode="PT11">
+                <structure:Description xml:lang="en">Minho-Lima</structure:Description>
+            </structure:Code>
+            <structure:Code value="PT111_160101" parentCode="PT111">
+                <structure:Description xml:lang="en">Aboim das Choças</structure:Description>
+            </structure:Code>
+            <structure:Code value="PT111_160102" parentCode="PT111">
+                <structure:Description xml:lang="en">Aguiã</structure:Description>
+            </structure:Code>
+            <structure:Code value="PT112" parentCode="PT11">
+                <structure:Description xml:lang="en">Cávado</structure:Description>
+            </structure:Code>
+            <structure:Code value="PT112_030101" parentCode="PT112">
+                <structure:Description xml:lang="en">Amares</structure:Description>
+            </structure:Code>
+            <structure:Code value="PT112_030102" parentCode="PT112">
+                <structure:Description xml:lang="en">Barreiros</structure:Description>
+            </structure:Code>
+            <structure:Code value="PT16" parentCode="PT1">
+                <structure:Description xml:lang="en">Centro (P)</structure:Description>
+            </structure:Code>
+            <structure:Code value="PT161" parentCode="PT16">
+                <structure:Description xml:lang="en">Baixo Vouga</structure:Description>
+            </structure:Code>
+            <structure:Code value="PT161_010101" parentCode="PT161">
+                <structure:Description xml:lang="en">Agadão</structure:Description>
+            </structure:Code>
+            <structure:Code value="PT161_010102" parentCode="PT161">
+                <structure:Description xml:lang="en">Aguada de Baixo</structure:Description>
+            </structure:Code>
+            <structure:Code value="PT162" parentCode="PT16">
+                <structure:Description xml:lang="en">Baixo Mondego</structure:Description>
+            </structure:Code>
+            <structure:Code value="PT162_060801" parentCode="PT162">
+                <structure:Description xml:lang="en">Mira</structure:Description>
+            </structure:Code>
+            <structure:Code value="PT162_060802" parentCode="PT162">
+                <structure:Description xml:lang="en">Seixo</structure:Description>
+            </structure:Code>
+            <structure:Code value="DE">
+                <structure:Description xml:lang="en">Germany</structure:Description>
+            </structure:Code>
+            <structure:Code value="DE1" parentCode="DE">
+                <structure:Description xml:lang="en">Baden-Württemberg</structure:Description>
+            </structure:Code>
+            <structure:Code value="DE11" parentCode="DE1">
+                <structure:Description xml:lang="en">Stuttgart</structure:Description>
+            </structure:Code>
+            <structure:Code value="DE112" parentCode="DE11">
+                <structure:Description xml:lang="en">Böblingen</structure:Description>
+            </structure:Code>
+            <structure:Code value="DE112_08115003" parentCode="DE112">
+                <structure:Description xml:lang="en">Böblingen, Stadt</structure:Description>
+            </structure:Code>
+            <structure:Code value="DE112_08115028" parentCode="DE112">
+                <structure:Description xml:lang="en">Leonberg, Stadt</structure:Description>
+            </structure:Code>
+            <structure:Code value="DE113" parentCode="DE11">
+                <structure:Description xml:lang="en">Esslingen</structure:Description>
+            </structure:Code>
+            <structure:Code value="DE113_08116015" parentCode="DE113">
+                <structure:Description xml:lang="en">Denkendorf</structure:Description>
+            </structure:Code>
+            <structure:Code value="DE113_08116019" parentCode="DE113">
+                <structure:Description xml:lang="en">Esslingen am Neckar, Stadt</structure:Description>
+            </structure:Code>
+            <structure:Code value="DE12" parentCode="DE1">
+                <structure:Description xml:lang="en">Karlsruhe</structure:Description>
+            </structure:Code>
+            <structure:Code value="DE123" parentCode="DE12">
+                <structure:Description xml:lang="en">Karlsruhe, Landkreis</structure:Description>
+            </structure:Code>
+            <structure:Code value="DE123_08215017" parentCode="DE123">
+                <structure:Description xml:lang="en">Ettlingen, Stadt</structure:Description>
+            </structure:Code>
+            <structure:Code value="DE123_08215046" parentCode="DE123">
+                <structure:Description xml:lang="en">Malsch</structure:Description>
+            </structure:Code>
+            <structure:Code value="DE124" parentCode="DE12">
+                <structure:Description xml:lang="en">Rastatt</structure:Description>
+            </structure:Code>
+            <structure:Code value="DE124_08216008" parentCode="DE124">
+                <structure:Description xml:lang="en">Bühlertal</structure:Description>
+            </structure:Code>
+            <structure:Code value="DE124_08216013" parentCode="DE124">
+                <structure:Description xml:lang="en">Forbach</structure:Description>
+            </structure:Code>
+            <structure:Code value="CZ">
+                <structure:Description xml:lang="cz">Czech Republic</structure:Description>
+            </structure:Code>
+            <structure:Code value="CZ0" parentCode="CZ">
+                <structure:Description xml:lang="cz">Ceská republika</structure:Description>
+            </structure:Code>
+            <structure:Code value="CZ02" parentCode="CZ0">
+                <structure:Description xml:lang="cz">Strední Cechy</structure:Description>
+            </structure:Code>
+            <structure:Code value="CZ020" parentCode="CZ02">
+                <structure:Description xml:lang="cz">Stredoceský kraj</structure:Description>
+            </structure:Code>
+            <structure:Code value="CZ020513482" parentCode="CZ020">
+                <structure:Description xml:lang="cz">Vysoký Újezd</structure:Description>
+            </structure:Code>
+            <structure:Code value="CZ020529303" parentCode="CZ020">
+                <structure:Description xml:lang="cz">Benešov</structure:Description>
+            </structure:Code>
+            <structure:Code value="CZ03" parentCode="CZ0">
+                <structure:Description xml:lang="cz">Jihozápad</structure:Description>
+            </structure:Code>
+            <structure:Code value="CZ031" parentCode="CZ03">
+                <structure:Description xml:lang="cz">Jihoceský kraj</structure:Description>
+            </structure:Code>
+            <structure:Code value="CZ031529729" parentCode="CZ031">
+                <structure:Description xml:lang="cz">Kvítkovice</structure:Description>
+            </structure:Code>
+            <structure:Code value="CZ031535176" parentCode="CZ031">
+                <structure:Description xml:lang="cz">Planá</structure:Description>
+            </structure:Code>
+            <structure:Code value="CZ032" parentCode="CZ03">
+                <structure:Description xml:lang="cz">Plzenský kraj</structure:Description>
+            </structure:Code>
+            <structure:Code value="CZ032553425" parentCode="CZ032">
+                <structure:Description xml:lang="cz">Domažlice</structure:Description>
+            </structure:Code>
+            <structure:Code value="CZ032553433" parentCode="CZ032">
+                <structure:Description xml:lang="cz">Babylon</structure:Description>
+            </structure:Code>
+            <structure:Code value="EE" parentCode="">
+                <structure:Description xml:lang="en">Estonia</structure:Description>
+            </structure:Code>
+            <structure:Code value="EE0" parentCode="EE">
+                <structure:Description xml:lang="en">Eesti</structure:Description>
+            </structure:Code>
+            <structure:Code value="EE00" parentCode="EE0">
+                <structure:Description xml:lang="en">Eesti</structure:Description>
+            </structure:Code>
+            <structure:Code value="EE001" parentCode="EE00">
+                <structure:Description xml:lang="en">Põhja-Eesti</structure:Description>
+            </structure:Code>
+            <structure:Code value="EE001_0112" parentCode="EE001">
+                <structure:Description xml:lang="en">Aegviidu</structure:Description>
+            </structure:Code>
+            <structure:Code value="EE001_0140" parentCode="EE001">
+                <structure:Description xml:lang="en">Anija</structure:Description>
+            </structure:Code>
+            <structure:Code value="EE004" parentCode="EE00">
+                <structure:Description xml:lang="en">Lääne-Eesti</structure:Description>
+            </structure:Code>
+            <structure:Code value="EE004_0175" parentCode="EE004">
+                <structure:Description xml:lang="en">Emmaste</structure:Description>
+            </structure:Code>
+            <structure:Code value="EE004_0392" parentCode="EE004">
+                <structure:Description xml:lang="en">Kõrgessaare</structure:Description>
+            </structure:Code>
+            <structure:Code value="BG" parentCode="">
+                <structure:Description xml:lang="en">Bulgaria</structure:Description>
+            </structure:Code>
+            <structure:Code value="BG3" parentCode="BG">
+                <structure:Description xml:lang="en">Severna i iztochna bulgaria</structure:Description>
+            </structure:Code>
+            <structure:Code value="BG31" parentCode="BG3">
+                <structure:Description xml:lang="en">Severozapaden</structure:Description>
+            </structure:Code>
+            <structure:Code value="BG311" parentCode="BG31">
+                <structure:Description xml:lang="en">Vidin</structure:Description>
+            </structure:Code>
+            <structure:Code value="BG311_03616" parentCode="BG311">
+                <structure:Description xml:lang="en">Belogradchik</structure:Description>
+            </structure:Code>
+            <structure:Code value="BG311_05582" parentCode="BG311">
+                <structure:Description xml:lang="en">Borovitsa</structure:Description>
+            </structure:Code>
+            <structure:Code value="BG312" parentCode="BG31">
+                <structure:Description xml:lang="en">Montana</structure:Description>
+            </structure:Code>
+            <structure:Code value="BG312_02542" parentCode="BG312">
+                <structure:Description xml:lang="en">Balyuvitsa</structure:Description>
+            </structure:Code>
+            <structure:Code value="BG312_03928" parentCode="BG312">
+                <structure:Description xml:lang="en">Berkovitsa</structure:Description>
+            </structure:Code>
+            <structure:Code value="BG32" parentCode="BG3">
+                <structure:Description xml:lang="en">Severen tsantralen</structure:Description>
+            </structure:Code>
+            <structure:Code value="BG321" parentCode="BG32">
+                <structure:Description xml:lang="en">Veliko Tarnovo</structure:Description>
+            </structure:Code>
+            <structure:Code value="BG321_00583" parentCode="BG321">
+                <structure:Description xml:lang="en">Arbanasi</structure:Description>
+            </structure:Code>
+            <structure:Code value="BG321_02364" parentCode="BG321">
+                <structure:Description xml:lang="en">Balvan</structure:Description>
+            </structure:Code>
+            <structure:Code value="BG322" parentCode="BG32">
+                <structure:Description xml:lang="en">Gabrovo</structure:Description>
+            </structure:Code>
+            <structure:Code value="BG322_00456" parentCode="BG322">
+                <structure:Description xml:lang="en">Angelov</structure:Description>
+            </structure:Code>
+            <structure:Code value="BG322_00638" parentCode="BG322">
+                <structure:Description xml:lang="en">Armenite</structure:Description>
+            </structure:Code>
+            <structure:Code value="MT" parentCode="">
+                <structure:Description xml:lang="en">Malta</structure:Description>
+            </structure:Code>
+            <structure:Code value="MT0" parentCode="MT">
+                <structure:Description xml:lang="en">Malta</structure:Description>
+            </structure:Code>
+            <structure:Code value="MT00" parentCode="MT0">
+                <structure:Description xml:lang="en">Malta</structure:Description>
+            </structure:Code>
+            <structure:Code value="MT001" parentCode="MT00">
+                <structure:Description xml:lang="en">Island of Malta</structure:Description>
+            </structure:Code>
+            <structure:Code value="MT01_101" parentCode="MT001">
+                <structure:Description xml:lang="en">VALLETTA (CITTA' UMILISSIMA)</structure:Description>
+            </structure:Code>
+            <structure:Code value="MT01_103" parentCode="MT001">
+                <structure:Description xml:lang="en">BIRGU (CITTA' VITTORIOSA)</structure:Description>
+            </structure:Code>
+            <structure:Code value="MT002" parentCode="MT00">
+                <structure:Description xml:lang="en">Gozo and Comino / Ghawdex u Kemmuna</structure:Description>
+            </structure:Code>
+            <structure:Code value="MT02_611" parentCode="MT002">
+                <structure:Description xml:lang="en">RABAT (GOZO) (CITTA' VICTORIA)</structure:Description>
+            </structure:Code>
+            <structure:Code value="MT02_619" parentCode="MT002">
+                <structure:Description xml:lang="en">FONTANA</structure:Description>
+            </structure:Code>
+            <structure:Code value="SI" parentCode="">
+                <structure:Description xml:lang="en">Slovenia</structure:Description>
+            </structure:Code>
+            <structure:Code value="SI0" parentCode="SI">
+                <structure:Description xml:lang="en">Slovenija</structure:Description>
+            </structure:Code>
+            <structure:Code value="SI01" parentCode="SI0">
+                <structure:Description xml:lang="en">Slovenija</structure:Description>
+            </structure:Code>
+            <structure:Code value="SI011" parentCode="SI01">
+                <structure:Description xml:lang="en">Pomurska</structure:Description>
+            </structure:Code>
+            <structure:Code value="SI011029" parentCode="SI011">
+                <structure:Description xml:lang="en">Gornja Radgona</structure:Description>
+            </structure:Code>
+            <structure:Code value="SI011100" parentCode="SI011">
+                <structure:Description xml:lang="en">Radenci</structure:Description>
+            </structure:Code>
+            <structure:Code value="SI012" parentCode="SI01">
+                <structure:Description xml:lang="en">Podravska</structure:Description>
+            </structure:Code>
+            <structure:Code value="SI012058" parentCode="SI012">
+                <structure:Description xml:lang="en">Lenart</structure:Description>
+            </structure:Code>
+            <structure:Code value="SI012148" parentCode="SI012">
+                <structure:Description xml:lang="en">Benedikt</structure:Description>
+            </structure:Code>
+        </structure:CodeList>
+        <structure:CodeList version="1.0" isFinal="true" id="CL_SEX" agencyID="ESTAT">
+            <structure:Name xml:lang="en">Sex code list</structure:Name>
+            <structure:Code value="TOT" parentCode="">
+                <structure:Description xml:lang="en">Total</structure:Description>
+            </structure:Code>
+            <structure:Code value="001" parentCode="TOT">
+                <structure:Description xml:lang="en">Male</structure:Description>
+            </structure:Code>
+            <structure:Code value="002" parentCode="TOT">
+                <structure:Description xml:lang="en">Female</structure:Description>
+            </structure:Code>
+        </structure:CodeList>
+        <structure:CodeList version="1.0" isFinal="true" id="CL_FREQ" agencyID="ESTAT">
+            <structure:Name xml:lang="en">Frequency codelist</structure:Name>
+            <structure:Code value="A">
+                <structure:Description xml:lang="en">Annual</structure:Description>
+            </structure:Code>
+            <structure:Code value="M">
+                <structure:Description xml:lang="en">Monthly</structure:Description>
+            </structure:Code>
+        </structure:CodeList>
+        <structure:CodeList version="1.0" isFinal="true" id="CL_OBS_STATUS" agencyID="ESTAT">
+            <structure:Name xml:lang="en">Observation status code list</structure:Name>
+            <structure:Code value="C" parentCode="">
+                <structure:Description xml:lang="en">Confidential</structure:Description>
+            </structure:Code>
+            <structure:Code value="NA" parentCode="">
+                <structure:Description xml:lang="en">Not available</structure:Description>
+            </structure:Code>
+            <structure:Code value="ND" parentCode="">
+                <structure:Description xml:lang="en">Not defined</structure:Description>
+            </structure:Code>
+        </structure:CodeList>
+        <structure:CodeList version="1.0" isFinal="true" id="CL_TIME_FORMAT" agencyID="ESTAT">
+            <structure:Name xml:lang="en">Time Format</structure:Name>
+            <structure:Code value="P1Y">
+                <structure:Description xml:lang="en">Annual</structure:Description>
+            </structure:Code>
+            <structure:Code value="P6M">
+                <structure:Description xml:lang="en">Semi-Annual</structure:Description>
+            </structure:Code>
+            <structure:Code value="P3M">
+                <structure:Description xml:lang="en">Quarterly</structure:Description>
+            </structure:Code>
+            <structure:Code value="P1M">
+                <structure:Description xml:lang="en">Monthly</structure:Description>
+            </structure:Code>
+            <structure:Code value="P7D">
+                <structure:Description xml:lang="en">Weekly</structure:Description>
+            </structure:Code>
+            <structure:Code value="P1D">
+                <structure:Description xml:lang="en">Daily</structure:Description>
+            </structure:Code>
+            <structure:Code value="PT1M">
+                <structure:Description xml:lang="en">Minutely</structure:Description>
+            </structure:Code>
+        </structure:CodeList>
+    </CodeLists>
+    <Concepts>
+        <structure:ConceptScheme version="1.0" isFinal="true" id="CENSUSHUB_CONCEPTS" agencyID="ESTAT">
+            <structure:Name xml:lang="en">CensusHub domain concept scheme</structure:Name>
+            <structure:Concept id="FREQ">
+                <structure:Name xml:lang="en">Frequency</structure:Name>
+            </structure:Concept>
+            <structure:Concept id="TIME">
+                <structure:Name xml:lang="en">Time period or range</structure:Name>
+            </structure:Concept>
+            <structure:Concept id="OBS_STATUS">
+                <structure:Name xml:lang="en">Observation Status</structure:Name>
+            </structure:Concept>
+            <structure:Concept id="OBS_VALUE">
+                <structure:Name xml:lang="en">Observation value</structure:Name>
+            </structure:Concept>
+            <structure:Concept id="TIME_FORMAT">
+                <structure:Name xml:lang="en">Time format code</structure:Name>
+            </structure:Concept>
+            <structure:Concept id="SEX">
+                <structure:Name xml:lang="en">Sex</structure:Name>
+            </structure:Concept>
+            <structure:Concept id="AGE">
+                <structure:Name xml:lang="en">Age</structure:Name>
+            </structure:Concept>
+            <structure:Concept id="GEO">
+                <structure:Name xml:lang="en">Geographical area</structure:Name>
+            </structure:Concept>
+            <structure:Concept id="CAS">
+                <structure:Name xml:lang="en">Current activity status</structure:Name>
+            </structure:Concept>
+        </structure:ConceptScheme>
+    </Concepts>
+    <KeyFamilies>
+        <structure:KeyFamily version="2.0" isFinal="true" id="CENSUSHUB" agencyID="ESTAT">
+            <structure:Name xml:lang="en">CensusHub Data Structure Definition</structure:Name>
+            <structure:Components>
+                <structure:Dimension crossSectionalAttachObservation="true" conceptSchemeVersion="1.0" conceptSchemeRef="CENSUSHUB_CONCEPTS" conceptSchemeAgency="ESTAT" conceptRef="AGE" codelistVersion="1.0" codelistAgency="ESTAT" codelist="CL_AGE"/>
+                <structure:Dimension crossSectionalAttachObservation="true" conceptSchemeVersion="1.0" conceptSchemeRef="CENSUSHUB_CONCEPTS" conceptSchemeAgency="ESTAT" conceptRef="CAS" codelistVersion="1.0" codelistAgency="ESTAT" codelist="CL_CAS"/>
+                <structure:Dimension crossSectionalAttachObservation="true" conceptSchemeVersion="1.0" conceptSchemeRef="CENSUSHUB_CONCEPTS" conceptSchemeAgency="ESTAT" conceptRef="GEO" codelistVersion="1.0" codelistAgency="ESTAT" codelist="CL_GEO"/>
+                <structure:Dimension crossSectionalAttachObservation="true" conceptSchemeVersion="1.0" conceptSchemeRef="CENSUSHUB_CONCEPTS" conceptSchemeAgency="ESTAT" conceptRef="SEX" codelistVersion="1.0" codelistAgency="ESTAT" codelist="CL_SEX"/>
+                <structure:Dimension isFrequencyDimension="true" crossSectionalAttachGroup="true" conceptSchemeVersion="1.0" conceptSchemeRef="CENSUSHUB_CONCEPTS" conceptSchemeAgency="ESTAT" conceptRef="FREQ" codelistVersion="1.0" codelistAgency="ESTAT" codelist="CL_FREQ"/>
+                <structure:TimeDimension crossSectionalAttachGroup="true" conceptSchemeVersion="1.0" conceptSchemeRef="CENSUSHUB_CONCEPTS" conceptSchemeAgency="ESTAT" conceptRef="TIME">
+                    <structure:TextFormat textType="Year"/>
+                </structure:TimeDimension>
+                <structure:PrimaryMeasure conceptSchemeVersion="1.0" conceptSchemeRef="CENSUSHUB_CONCEPTS" conceptSchemeAgency="ESTAT" conceptRef="OBS_VALUE">
+                    <structure:TextFormat textType="Long"/>
+                </structure:PrimaryMeasure>
+                <structure:Attribute crossSectionalAttachObservation="true" conceptSchemeVersion="1.0" conceptSchemeRef="CENSUSHUB_CONCEPTS" conceptSchemeAgency="ESTAT" conceptRef="OBS_STATUS" codelistVersion="1.0" codelistAgency="ESTAT" codelist="CL_OBS_STATUS" attachmentLevel="Observation" assignmentStatus="Conditional"/>
+                <structure:Attribute isTimeFormat="true" crossSectionalAttachGroup="true" conceptSchemeVersion="1.0" conceptSchemeRef="CENSUSHUB_CONCEPTS" conceptSchemeAgency="ESTAT" conceptRef="TIME_FORMAT" codelistVersion="1.0" codelistAgency="ESTAT" codelist="CL_TIME_FORMAT" attachmentLevel="Group" assignmentStatus="Mandatory"/>
+            </structure:Components>
+        </structure:KeyFamily>
+    </KeyFamilies>
+</Structure>

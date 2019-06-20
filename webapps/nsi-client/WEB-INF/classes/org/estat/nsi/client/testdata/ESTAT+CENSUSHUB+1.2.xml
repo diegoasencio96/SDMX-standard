@@ -1,0 +1,24 @@
+         <mes:RegistryInterface xmlns:mes="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message" xmlns:reg="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/registry" xmlns:str="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure">
+            <mes:Header>
+               <mes:ID>IDREF4</mes:ID>
+               <mes:Test>true</mes:Test>
+               <mes:Prepared>2013-07-17T15:04:34.437Z</mes:Prepared>
+               <mes:Sender id="Unknown"/>
+               <mes:Receiver id="Unknown"/>
+            </mes:Header>
+            <mes:QueryStructureResponse>
+               <reg:StatusMessage status="Success"/>
+               <reg:KeyFamilies>
+                  <str:KeyFamily agencyID="ESTAT" id="CENSUSHUB" isFinal="true" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=ESTAT:CENSUSHUB(1.2)" version="1.2">
+                     <str:Name xml:lang="en">CensusHub Data Structure Definition</str:Name>
+                     <str:Components>
+                        <str:Dimension codelist="CL_AGE" codelistAgency="ESTAT" codelistVersion="1.0" conceptRef="AGE" conceptSchemeAgency="ESTAT" conceptSchemeRef="CENSUSHUB_CONCEPTS" conceptVersion="1.2" crossSectionalAttachObservation="true"/>
+                        <str:Dimension codelist="CL_CAS" codelistAgency="ESTAT" codelistVersion="1.0" conceptRef="CAS" conceptSchemeAgency="ESTAT" conceptSchemeRef="CENSUSHUB_CONCEPTS" conceptVersion="1.2" crossSectionalAttachObservation="true"/>
+                        <str:Dimension codelist="CL_GEO" codelistAgency="ESTAT" codelistVersion="2.0" conceptRef="GEO" conceptSchemeAgency="ESTAT" conceptSchemeRef="CENSUSHUB_CONCEPTS" conceptVersion="1.2" crossSectionalAttachObservation="true"/>
+                        <str:Dimension codelist="CL_SEX" codelistAgency="ESTAT" codelistVersion="1.0" conceptRef="SEX" conceptSchemeAgency="ESTAT" conceptSchemeRef="CENSUSHUB_CONCEPTS" conceptVersion="1.2" crossSectionalAttachObservation="true"/>
+                        <str:PrimaryMeasure conceptRef="OBS_VALUE" conceptSchemeAgency="ESTAT" conceptSchemeRef="CENSUSHUB_CONCEPTS" conceptVersion="1.2"/>
+                     </str:Components>
+                  </str:KeyFamily>
+               </reg:KeyFamilies>
+            </mes:QueryStructureResponse>
+         </mes:RegistryInterface>
