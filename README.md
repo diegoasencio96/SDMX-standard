@@ -29,7 +29,7 @@ Se deben descargar previamente las siguientes herramientas tecnológicas
 
 ### Instalación 🔧
 
-Las herramientas _Data Structure Wizard_ y _Mapping Assistant_ se deben instalar en un Sistema Operativo Windows
+Las herramientas de escritorio _Data Structure Wizard_ y _Mapping Assistant_ se deben instalar en un Sistema Operativo Windows
 
 #### Data Structure Wizard
 
