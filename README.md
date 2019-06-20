@@ -81,7 +81,7 @@ Este proyecto está bajo la Licencia (GNU General Public License v3.0) - mira el
 * Comenta a otros sobre este proyecto 📢
 * Invita una cerveza 🍺 a alguien del equipo. 
 * Da las gracias públicamente 🤓.
-* Ayuda a reportar y/o corregir fallos.
+* Ayuda a reportar y/o corregir fallos :bug:.
 
 <br>
 
