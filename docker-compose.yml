@@ -1,6 +1,20 @@
 version: 
   '3.3'
 services:
+  mysql:
+    build:
+      ./docker_images/mysql/
+    container_name:
+      sdmx_db_mysql_dissemination
+    env_file: 
+      ./secrets/mysql_env
+    volumes:
+      - sdmx_db_mysql_dissemination_data:/var/lib/mysql
+    ports:
+      - "3333:3306"
+    restart:
+      on-failure
+
   tomcat:
     build:
       ./docker_images/tomcat/
@@ -10,7 +24,14 @@ services:
       - '8080:8080'
     volumes:
       - ./docker_images/tomcat/conf/nsi-jax-ws.xml:/usr/local/tomcat/conf/Catalina/localhost/nsi-jax-ws.xml
+      - ./docker_images/tomcat/bin/nsi-client:/usr/local/tomcat/bin/nsi-client
+      - ./docker_images/tomcat/bin/params:/usr/local/tomcat/bin/params
       - ./webapps/nsi-client.war:/usr/local/tomcat/webapps/nsi-client.war
       - ./webapps/nsi-jax-ws.war:/usr/local/tomcat/webapps/nsi-jax-ws.war
+    depends_on:
+      - mysql
     restart:
       on-failure
+
+volumes:
+  sdmx_db_mysql_dissemination_data:

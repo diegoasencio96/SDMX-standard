@@ -1,9 +1,7 @@
-FROM tomcat:8.5.35-jre10
+FROM tomcat:8-jre7
 MAINTAINER "Diego Alejandro Asencio Cuellar <diegoasencio96@gmail.com">
 
-
-VOLUME ["/usr/local/tomcat/conf"]
-VOLUME ["/usr/local/tomcat/webapps"]
+ENV CLASSPATH="/usr/local/tomcat/bin/bootstrap.jar:/usr/local/tomcat/bin/tomcat-juli.jar"
 
 EXPOSE 8080
 CMD chmod +x /usr/local/tomcat/bin/catalina.sh
