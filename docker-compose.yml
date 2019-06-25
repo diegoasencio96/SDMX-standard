@@ -6,6 +6,8 @@ services:
       ./docker_images/mysql/
     container_name:
       sdmx_db_mysql_dissemination
+    command: 
+      mysqld --default-authentication-plugin=mysql_native_password
     env_file: 
       ./secrets/mysql_env
     volumes:
