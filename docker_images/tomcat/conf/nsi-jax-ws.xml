@@ -2,6 +2,15 @@
 <Context antiResourceLocking="true" path="/nsi-jax-ws">
 
 <!--  Mapping Store MySQL sample -->
-<Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" maxActive="8" maxIdle="4" name="jdbc/situr_dissemination_db" password="" type="javax.sql.DataSource" url="jdbc:mysql://sdmx_db_mysql_dissemination:3306/situr_sdmx_dissemination_db" username="root"/>
+<Resource 
+    auth="Container" 
+    driverClassName="com.mysql.jdbc.Driver" 
+    maxActive="8" 
+    maxIdle="4" 
+    name="jdbc/mastore" 
+    type="javax.sql.DataSource"
+    url="jdbc:mysql://192.168.1.147:3000/situr_sdmx_dissemination_db?characterEncoding=latin1" 
+    username="situr_user" 
+    password="S1TUR_p455" />
 
 </Context>
