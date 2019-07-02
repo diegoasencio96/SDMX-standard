@@ -9,7 +9,7 @@
     maxIdle="4" 
     name="jdbc/mastore" 
     type="javax.sql.DataSource" 
-    url="jdbc:mysql://192.168.1.147:3001/situr_sdmx_dissemination_db?characterEncoding=latin1" 
+    url="jdbc:mysql://sdmx_db_mysql_dissemination:3001/situr_sdmx_dissemination_db?characterEncoding=latin1" 
     username="situr_user" 
     password="S1TUR_p455" />
 
