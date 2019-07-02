@@ -11,14 +11,11 @@ services:
     env_file: 
       ./secrets/mysql_env
     volumes:
-      - ./docker_images/mysql/conf/my.cnf:/etc/mysql/my.cnf
       - sdmx_db_mysql_dissemination_data:/var/lib/mysql
     ports:
       - "3001:3306"
     expose:
       - "3001"
-    networks:
-      - my-network
     restart:
       on-failure
 
@@ -39,13 +36,8 @@ services:
       - mysql_dissemination
     depends_on:
       - mysql_dissemination
-    networks:
-      - my-network
     restart:
       on-failure
 
 volumes:
   sdmx_db_mysql_dissemination_data:
-
-networks:
-  my-network:
