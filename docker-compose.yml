@@ -13,7 +13,7 @@ services:
     volumes:
       - sdmx_db_mysql_dissemination_data:/var/lib/mysql
     ports:
-      - "3000:3306"
+      - "3001:3306"
     restart:
       on-failure
 
@@ -30,6 +30,8 @@ services:
       - ./docker_images/tomcat/bin/nsi-client:/usr/local/tomcat/nsi-client
       - ./docker_images/tomcat/bin/params:/usr/local/tomcat/params
       - ./webapps/nsi-client.war:/usr/local/tomcat/webapps/nsi-client.war
+    links:
+      - mysql_dissemination
     depends_on:
       - mysql_dissemination
     restart:
